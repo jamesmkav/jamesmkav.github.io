@@ -4,8 +4,6 @@
     padding-top: 60px;
     padding-bottom: 10px;
     margin-bottom: 0px;    
-    background-color: orangered;
-    
     
 }
 
@@ -14,9 +12,9 @@
     width: 55%;
     margin-left: 23%;
     border-style: double;
-    border-radius: 50%;
-    color: white;
+    border-radius: 3%;
     border-color: black;
+    border-width: thick;
     
 }
 
@@ -29,7 +27,6 @@
 
 .MissionStatementJumboTron {
     clear: left;
-    background-color: orangered;
     font-family: 'Lobster', cursive;
     padding: 10px;
     
