@@ -1,0 +1,114 @@
+.JumboTronBio {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;    
+    background-color: orangered;
+    
+    
+}
+
+.Jim {
+    align-content: center;
+    width: 55%;
+    margin-left: 23%;
+    border-style: double;
+    border-radius: 50%;
+    color: white;
+    border-color: black;
+    
+}
+
+
+
+.BioPic {
+    float: left;
+}
+
+
+.MissionStatementJumboTron {
+    clear: left;
+    background-color: orangered;
+    font-family: 'Lobster', cursive;
+    padding: 10px;
+    
+}    
+    
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 300px) {
+    .Name {
+        font-size: 28px;
+    }
+
+    .Title {
+        font-size: 14px;
+    }
+
+}
+@media (min-width: 576px) {
+    .Name {
+        font-size: 40px;
+    }
+    .Title {
+        font-size: 20px;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .Name {
+        font-size: 55px;
+    }
+    .Title {
+        font-size: 28px;
+    }
+    
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .Name {
+        font-size: 65px;
+    }
+    .Title {
+        font-size: 33px;
+    }
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .Name {
+        font-size: 75px;
+    }
+    .Title {
+        font-size: 38px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* FONTS!
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Shadows Into Light', cursive;
+
+    font-family: 'Amita', cursive;
+
+    font-family: 'Shrikhand', cursive;
+
+}*/
+
+
