@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .JumboTronBio {
     font-family: 'Lobster', cursive;
     padding-top: 60px;
@@ -65,65 +64,7 @@
 
     font-family: 'Shrikhand', cursive;
 
-=======
-.navbar {
-    background-color: darkred;
-    font-family: 'Shrikhand';
-}
-
-.nav-link {
-    color: white;
-}
-
-.jumbotrontop {
-    background-image: url(jumbotron%20image.JPG);
-    background-size: cover;
-    padding-top: 10%;
-    margin-bottom: 0;
-    height: 500px;
-}
-
-.jumbotopname, .lead, .protitle {
-    font-family: 'Lobster', cursive;
-}
-
-.jumbotopname {
-    background: transparent;
-    font-weight: bold;
-    color: black;
-    font-size: 150px;
-}
-
-.protitle {
-    color: black;
-    border-style: double;
-    border-color: black;
-}
-
-.lead {
-    color: white;
-    padding: 20px;
-    background-color:red;
-    text-align: center;
-}
+}*/
 
 
 
-
-
-
-
-
-
-
-/*
-    font-family: 'Lobster', cursive;
-
-    font-family: 'Shadows Into Light', cursive;
-
-    font-family: 'Amita', cursive;
-
-    font-family: 'Shrikhand', cursive;
-
->>>>>>> ca936826cbd85c9e965ce59118db871a76effdf2
-*/
