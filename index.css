@@ -2,8 +2,11 @@
     text-align: center;
     font-family: 'Lobster', cursive;
     padding-top: 60px;
-    padding-bottom: 10px;
-    margin-bottom: 0px;    
+    padding-bottom: 30%;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    background-image:url("./images/nature/nature6.jpg");
+    background-size: 100%;
     
 }
 
@@ -14,24 +17,64 @@
     border-style: double;
     border-radius: 3%;
     border-color: black;
-    border-width: thick;
+    border-width: thick;   
+}
+
+.ChuckQuote {
+    text-align: center;
+    padding: 2%;
+    border-style: solid;;
+    border-bottom-style: solid;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 0px;
+}
+
+.BioContainer {
+    width: 100%;  
+    display: inline-block;     
+    margin-top: 0%;
+    border-style: solid;
+    border-top-style: none;
+    background-color: green;
     
 }
-
-
-
-.BioPic {
+.BioPic {  
+    height: auto;
+    width: 50%; 
     float: left;
+    margin-right: 3%;
 }
+.BioText, .contactInfoNotice {
+    margin-top: 3%;
+    margin-right: 3%;
+    color: white;   
+}
+.contactInfoNotice {
 
-
+}
 .MissionStatementJumboTron {
     clear: left;
-    font-family: 'Lobster', cursive;
-    padding: 10px;
-    
-}    
-    
+    padding: 10px;   
+}
+
+.proContainer {
+    margin: 0px;
+}
+
+.projumbo {
+    margin: 0px;
+    padding: 20px;
+    clear: left;
+}
+
+
+.professionalCard {
+    width: 12.5%;
+    float: left;    
+}
+
+
+
 
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -43,7 +86,9 @@
     .Title {
         font-size: 14px;
     }
-
+    .BioText, .contactInfoNotice {
+        font-size: 68%;
+    }
 }
 @media (min-width: 576px) {
     .Name {
@@ -52,7 +97,9 @@
     .Title {
         font-size: 20px;
     }
-    
+    .BioText, .contactInfoNotice {
+        font-size: 83%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -63,7 +110,9 @@
     .Title {
         font-size: 28px;
     }
-    
+    .BioText, .contactInfoNotice {
+        font-size: 105%;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -74,7 +123,9 @@
     .Title {
         font-size: 33px;
     }
-    
+    .BioText, .contactInfoNotice {
+        font-size: 165%;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -84,6 +135,9 @@
     }
     .Title {
         font-size: 38px;
+    }
+    .BioText, .contactInfoNotice {
+        font-size: 165%;
     }
     
 }
