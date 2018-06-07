@@ -5,7 +5,7 @@
     padding-bottom: 30%;
     margin-bottom: 0px;
     margin-top: 30px;
-    background-image:url("./images/nature/nature6.jpg");
+    background-image:url("./images/nature6.jpg");
     background-size: 100%;
     
 }
@@ -23,7 +23,7 @@
 .ChuckQuote {
     text-align: center;
     padding: 2%;
-    border-style: solid;;
+    border-style: solid;
     border-bottom-style: solid;
     font-family: 'Lobster', cursive;
     margin-bottom: 0px;
