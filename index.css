@@ -5,8 +5,9 @@
     padding-bottom: 30%;
     margin-bottom: 0px;
     margin-top: 30px;
-    background-image: url(".\images\nature\Nature6.jpg");
-    
+    background-image: url("./images/Nature/nature6.jpg");
+    background-position: top;
+    background-size: cover;
 }
 
 .Jim {
@@ -16,7 +17,7 @@
     border-style: double;
     border-radius: 3%;
     border-color: black;
-    border-width: thick;   
+    border-width: thick;
 }
 
 .ChuckQuote {
@@ -26,6 +27,7 @@
     border-bottom-style: solid;
     font-family: 'Lobster', cursive;
     margin-bottom: 0px;
+    
 }
 
 .BioContainer {
