@@ -5,7 +5,7 @@
     padding-bottom: 30%;
     margin-bottom: 0px;
     margin-top: 30px;
-    background-image:url("./images/nature6.png");
+    background-image:url("./images/nature/Nature6.jpg");
     background-size: 100%;
     
 }
@@ -23,7 +23,7 @@
 .ChuckQuote {
     text-align: center;
     padding: 2%;
-    border-style: solid;
+    border-style: solid;;
     border-bottom-style: solid;
     font-family: 'Lobster', cursive;
     margin-bottom: 0px;
@@ -72,11 +72,9 @@
     width: 12.5%;
     float: left;    
 }
-
-
-
-
-
+.contactInfoNotice {
+    text-align: center;
+}
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 300px) {
     .Name {
@@ -98,7 +96,7 @@
         font-size: 20px;
     }
     .BioText, .contactInfoNotice {
-        font-size: 83%;
+        font-size: 80%;
     }
 }
 
@@ -111,7 +109,7 @@
         font-size: 28px;
     }
     .BioText, .contactInfoNotice {
-        font-size: 105%;
+        font-size: 100%;
     }
 }
 
@@ -124,7 +122,7 @@
         font-size: 33px;
     }
     .BioText, .contactInfoNotice {
-        font-size: 165%;
+        font-size: 135%;
     }
 }
 
