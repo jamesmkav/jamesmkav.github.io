@@ -5,10 +5,8 @@
     padding-bottom: 30%;
     margin-bottom: 0px;
     margin-top: 30px;
-    background-image: url("./images/nature/Nature6.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(".\images\nature\Nature6.jpg");
+    
 }
 
 .Jim {
@@ -24,7 +22,7 @@
 .ChuckQuote {
     text-align: center;
     padding: 2%;
-    border-style: solid;;
+    border-style: solid;
     border-bottom-style: solid;
     font-family: 'Lobster', cursive;
     margin-bottom: 0px;
