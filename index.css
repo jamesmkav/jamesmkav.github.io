@@ -1,7 +1,47 @@
+.topPortion {
+    position: relative;
+    width: 100%;
+}
+.backgroundImage {
+    width: 100%;
+}
+.nameAndJobTitle {
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 2%;
+    width: 100%;
+    text-align:center;
+    align-content: center;
+    font-size: 5px;
+}
+.techIconBar {
+    width: 100%;
+    padding: 0px;
+}
 .techIcon {
     display: inline;     
-    width: 9%;
+    margin: 0px;
+    width: 10%;
+    
+ 
 }
 .jumbotron {
     padding: 3%;
+    margin: 0px;
+}
+@media (min-width: 200px) {
+    .techIcon {
+        width: 9.5%;
+    }
+}
+@media (min-width: 400px) {
+    .techIcon {
+        width: 10%;
+    }
+}
+@media (min-width: 800px) {
+    .techIcon {
+        width: 10.6%;
+    }
 }
