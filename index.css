@@ -1,3 +1,6 @@
+body {
+    font-family: 'Merriweather', serif;
+}
 .topPortion {
     position: relative;
     width: 100%;
@@ -7,13 +10,38 @@
 }
 .nameAndJobTitle {
     position: absolute;
-    background-color: black;
     color: white;
-    top: 2%;
+    top: 25px;
+    width: 75%;
+    left: 12.5%;
+    border: double;
+    background-color: black;
+    text-align: center;
+    
+}
+
+.Name {
     width: 100%;
-    text-align:center;
-    align-content: center;
-    font-size: 5px;
+}
+.Title {
+    color: firebrick;
+    width: 100%;
+}
+.profile {
+    position: absolute;
+    display: inline;
+    width: 80%;
+    left: 12.5%;
+}
+.proPic {
+    width: 40%;
+    border: solid;
+   
+}
+.profileText {
+    color: white;
+    width: 50%;
+    float: right;
 }
 .techIconBar {
     width: 100%;
@@ -23,25 +51,104 @@
     display: inline;     
     margin: 0px;
     width: 10%;
-    
- 
 }
 .jumbotron {
     padding: 3%;
     margin: 0px;
 }
-@media (min-width: 200px) {
-    .techIcon {
-        width: 9.5%;
+
+
+
+
+
+
+    @media (min-width: 400px) {
+        .techIcon {
+            width: 10%;
+        }
+
+        .Name {
+            font-size: 250%;
+        }
+
+        .Title {
+            font-size: 125%;
+        }
+
+        .profile {
+            top: 150px;
+        }
+
+        .profileText {
+            font-size: 85%;
+        }
+    }
+@media (min-width: 600px) {
+    .Name {
+        font-size: 300%;
+    }
+
+    .Title {
+        font-size: 150%;
+    }
+
+    .profile {
+        top: 170px;
+    }
+
+    .profileText {
+        font-size: 110%;
     }
 }
-@media (min-width: 400px) {
-    .techIcon {
-        width: 10%;
+
+    @media (min-width: 800px) {
+        .techIcon {
+            width: 10.6%;
+        }
+
+        .Name {
+            font-size: 400%;
+        }
+
+        .Title {
+            font-size: 175%;
+        }
+
+        .profile {
+            top: 200px;
+        }
+
+        .profileText {
+            font-size: 150%;
+        }
     }
-}
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     .techIcon {
         width: 10.6%;
     }
+
+    .Name {
+        font-size: 500%;
+    }
+
+    .Title {
+        font-size: 200%;
+    }
+
+    .profile {
+        top: 275px;
+    }
+
+    .profileText {
+        font-size: 175%;
+    }
 }
+
+
+        @media (min-width: 1200px) {
+        }
+        /*
+font-family: 'Merriweather', serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Amatic SC', cursive;
