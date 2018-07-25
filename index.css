@@ -63,14 +63,34 @@ card-title {
 
 
 
+@media (min-width: 200px) {
+    .techIcon {
+        width: 10%;
+    }
 
+    .Name {
+        font-size: 150%;
+    }
+
+    .Title {
+        font-size: 100%;
+    }
+
+    .profile {
+        top: 100px;
+    }
+
+    .profileText {
+        font-size: 85%;
+    }
+}
     @media (min-width: 400px) {
         .techIcon {
             width: 10%;
         }
 
         .Name {
-            font-size: 250%;
+            font-size: 230%;
         }
 
         .Title {
