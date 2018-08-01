@@ -2,12 +2,16 @@ body {
     font-family: 'Merriweather', serif;
 }
 .navbar-brand {
-    font-size: 150%;
-    margin-left: 10%;
-}
-.nav-item {
     margin-left: 5%;
-    text-align: center;
+}
+
+.Name {
+    color: white;
+    
+}
+.Title {
+    color: darkgray;
+    font-style: oblique;
 }
 
 
@@ -61,8 +65,8 @@ body {
     width: 10%;
 }
 .jumbotron {
-    padding: 3%;
     margin: 0px;
+    color: white;
 }
 card-title {
     font-weight: bold;
