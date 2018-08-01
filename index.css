@@ -1,25 +1,17 @@
 body {
     font-family: 'Merriweather', serif;
 }
-
-.nameAndJobTitle {
-    color: white;
-    top: 1%;
-    width: 100%;
-    margin: 0px;
-    background-color: black;
+.navbar-brand {
+    font-size: 150%;
+    margin-left: 10%;
+}
+.nav-item {
+    margin-left: 5%;
     text-align: center;
-    
 }
 
-.Name {
-    width: 100%;
-}
-.Title {
-    color: white;
-    width: 100%;
-    margin: 0px;
-}
+
+
 .profile {
     width: 100%;
     margin: 0px;
@@ -27,19 +19,19 @@ body {
 }
   
 .proPic1 {
-    width: 33%;
+    width: 40%;
     border: solid;
     border-color: black;
     margin: 1%;
 }
 .proPic2 {
-    width: 33%;
+    width: 40%;
     border: solid;
     border-color: black;
     margin: 1%;
 }
 .proPic3 {
-    width: 33%;
+    width: 35%;
     border: solid;
     border-color: black;
     margin: 1%;
@@ -48,7 +40,7 @@ body {
 .textbox {
     width: auto;
     margin: 0px;
-    background-color: turquoise;
+    background-color: deepskyblue;
     color: black;
     
     line-height: 150%;
@@ -79,7 +71,23 @@ card-title {
 
 
 
+@media (min-width: 200px) {
+    .techIcon {
+        width: 9.75%;
+    }
 
+    .Name {
+        font-size: 130%;
+    }
+
+    .Title {
+        font-size: 75%;
+    }
+
+    .textbox {
+        font-size: 50%;
+    }
+}
     @media (min-width: 400px) {
         .techIcon {
             width: 10%;
@@ -98,6 +106,9 @@ card-title {
   
     }
 @media (min-width: 600px) {
+    .techIcon {
+        width: 10.3%;
+    }
     .Name {
         font-size: 250%;
     }
