@@ -1,20 +1,12 @@
 body {
     font-family: 'Merriweather', serif;
 }
-.topPortion {
-    position: relative;
-    width: 100%;
-}
-.backgroundImage {
-    width: 100%;
-}
+
 .nameAndJobTitle {
-    position: absolute;
     color: white;
-    top: 25px;
-    width: 75%;
-    left: 12.5%;
-    border: double;
+    top: 1%;
+    width: 100%;
+    margin: 0px;
     background-color: black;
     text-align: center;
     
@@ -24,28 +16,52 @@ body {
     width: 100%;
 }
 .Title {
-    color: firebrick;
+    color: white;
     width: 100%;
+    margin: 0px;
 }
 .profile {
-    position: absolute;
-    display: inline;
-    width: 80%;
-    left: 12.5%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
-.proPic {
-    width: 40%;
+  
+.proPic1 {
+    width: 33%;
     border: solid;
-   
+    border-color: black;
+    margin: 1%;
 }
-.profileText {
-    color: white;
-    width: 50%;
-    float: right;
+.proPic2 {
+    width: 33%;
+    border: solid;
+    border-color: black;
+    margin: 1%;
+}
+.proPic3 {
+    width: 33%;
+    border: solid;
+    border-color: black;
+    margin: 1%;
+}
+
+.textbox {
+    width: auto;
+    margin: 0px;
+    background-color: turquoise;
+    color: black;
+    
+    line-height: 150%;
+    padding: 2%;
+    text-align: center;
+}
+.textbox::first-letter {
+        font-size: 300%;
 }
 .techIconBar {
     width: 100%;
     padding: 0px;
+    margin: 0px;
 }
 .techIcon {
     display: inline;     
@@ -63,64 +79,36 @@ card-title {
 
 
 
-@media (min-width: 200px) {
-    .techIcon {
-        width: 10%;
-    }
 
-    .Name {
-        font-size: 150%;
-    }
-
-    .Title {
-        font-size: 100%;
-    }
-
-    .profile {
-        top: 100px;
-    }
-
-    .profileText {
-        font-size: 85%;
-    }
-}
     @media (min-width: 400px) {
         .techIcon {
             width: 10%;
         }
 
         .Name {
-            font-size: 230%;
+            font-size: 170%;
         }
 
         .Title {
-            font-size: 125%;
+            font-size: 100%;
         }
-
-        .profile {
-            top: 150px;
+        .textbox {
+            font-size: 60%;
         }
-
-        .profileText {
-            font-size: 85%;
-        }
+  
     }
 @media (min-width: 600px) {
     .Name {
-        font-size: 300%;
+        font-size: 250%;
     }
 
     .Title {
-        font-size: 150%;
+        font-size: 125%;
+    }
+    .textbox {
+        font-size: 75%;
     }
 
-    .profile {
-        top: 170px;
-    }
-
-    .profileText {
-        font-size: 110%;
-    }
 }
 
     @media (min-width: 800px) {
@@ -129,20 +117,16 @@ card-title {
         }
 
         .Name {
-            font-size: 400%;
+            font-size: 350%;
         }
 
         .Title {
-            font-size: 175%;
-        }
-
-        .profile {
-            top: 200px;
-        }
-
-        .profileText {
             font-size: 150%;
         }
+        .textbox {
+            font-size: 100%;
+        }
+
     }
 @media (min-width: 1000px) {
     .techIcon {
@@ -150,20 +134,16 @@ card-title {
     }
 
     .Name {
-        font-size: 500%;
+        font-size: 430%;
     }
 
     .Title {
         font-size: 200%;
     }
-
-    .profile {
-        top: 275px;
+    .textbox {
+        font-size: 130%;
     }
 
-    .profileText {
-        font-size: 175%;
-    }
 }
 
 
