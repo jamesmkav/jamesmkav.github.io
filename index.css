@@ -67,7 +67,9 @@ body {
 card-title {
     font-weight: bold;
 }
-
+.contact {
+    font-size: 75%;
+}
 
 
 
