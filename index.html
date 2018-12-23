@@ -1,0 +1,44 @@
+<DOCTYPE! html>
+    <html>
+    <div class='carthook-buy-button style1' id='dTKQ9IexSrWSebvKy7fD'></div>
+<script type='text/javascript'>
+(function(){
+    function load_button_1(){
+        var this_id = 'ch-buy-button-corejs-dTKQ9IexSrWSebvKy7fD';
+        var remove = document.getElementById(this_id);
+        if(remove){
+            remove.parentNode.removeChild(remove);
+        }
+        var script=document.createElement('script');
+        script.setAttribute('src', 'https://api.c.carthook.com/api/v1/code/dTKQ9IexSrWSebvKy7fD/buyButton.js?style=style1');
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('id', this_id);
+        document.getElementsByTagName('head')[0].appendChild(script);
+    }
+    function load_button_css(){
+        var this_id = 'ch-buy-button-css-dTKQ9IexSrWSebvKy7fD';
+        var remove = document.getElementById(this_id);
+        if(remove){
+            remove.parentNode.removeChild(remove);
+        }
+        var link=document.createElement('link');
+        link.id=this_id;
+        link.rel='stylesheet';
+        link.type='text/css';
+        link.href='https://api.c.carthook.com/api/v1/code/dTKQ9IexSrWSebvKy7fD/buyButton.css?style=style1';
+        link.media='all';
+        link.addEventListener('load', function(){
+            load_button_1();
+        });
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+    load_button_css();
+})();
+if(typeof chTranslationVariables == 'undefined'){
+    var chTranslationVariables = { "dTKQ9IexSrWSebvKy7fD" : {"$defVariant":"all","$quantity":"Quantity","$maxQuantity":10,"$buyText":"BUY NOW","$buyTextBackground":"#ff9f00","$buyTextColor":"#ffffff","$validation2":"Sorry! This item is currently not available in this "} };
+} else {
+    chTranslationVariables["dTKQ9IexSrWSebvKy7fD"] = {"$defVariant":"all","$quantity":"Quantity","$maxQuantity":10,"$buyText":"BUY NOW","$buyTextBackground":"#ff9f00","$buyTextColor":"#ffffff","$validation2":"Sorry! This item is currently not available in this "};
+}
+</script>
+    </html>
+</DOCTYPE!>
