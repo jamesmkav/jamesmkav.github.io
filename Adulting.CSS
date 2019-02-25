@@ -1,0 +1,10 @@
+.nav-item {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.jumbotron.jumbotron-fluid {
+    margin-bottom: 0px;
+}
+.carousel.slide {
+    width: 30%;
+}
