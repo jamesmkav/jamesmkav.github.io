@@ -8,3 +8,10 @@
 .carousel.slide {
     width: 30%;
 }
+h2 {
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    border: solid;
+    border-color: black;
+}
