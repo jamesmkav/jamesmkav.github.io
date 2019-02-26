@@ -1,5 +1,6 @@
 body {
     padding: 0px;
+    background-color: black;
 }
 .nav-item {
     padding-left: 30px;
@@ -22,9 +23,14 @@ h2 {
     margin: 0px;
     padding: 0px;
 }
-.img.card-img {
-    width: 20%;
+.card-title {
+    text-align: center;
 }
+
+.card-text, .card-title {
+    color: white;
+}
+.
 .table {
     margin-bottom: 0px;
 }
