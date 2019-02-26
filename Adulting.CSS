@@ -1,5 +1,7 @@
 body {
     padding: 0px;
+}
+.backgroundBody{
     background-color: black;
 }
 .nav-item {
@@ -23,14 +25,19 @@ h2 {
     margin: 0px;
     padding: 0px;
 }
-.card-title {
+.card-title, .salaryTreeTitle {
     text-align: center;
 }
 
-.card-text, .card-title {
+.card-text, .card-title, .salaryTreeTitle {
     color: white;
+}
+.card-body {
+    margin: 0px;
 }
 .
 .table {
-    margin-bottom: 0px;
+}
+.classCard {
+    margin-bottom: -20px;
 }
