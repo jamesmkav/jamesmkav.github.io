@@ -1,6 +1,9 @@
 body {
     padding: 0px;
 }
+p {
+    margin: 2%;
+}
 .backgroundBody{
     background-color: black;
 }
@@ -15,11 +18,17 @@ body {
     width: 30%;
 }
 h2 {
-    background-color: cornflowerblue;
+    background-color: black;
     color: white;
     text-align: center;
     border: solid;
     border-color: black;
+}
+h3 {
+    margin: 2%;
+}
+.pokerRules {
+    margin: 1%;
 }
 .card {
     margin: 0px;
@@ -34,9 +43,14 @@ h2 {
 }
 .card-body {
     margin: 0px;
+    padding: 0px;
+}
+.propRefGuideTitle{
+    margin-bottom: 0px;
 }
 .table {
+    margin: 0px;
 }
 .classCard {
-    margin-bottom: -20px;
+    margin-bottom: 0px;
 }
