@@ -22,6 +22,9 @@ h2 {
     margin: 0px;
     padding: 0px;
 }
+.img.card-img {
+    width: 20%;
+}
 .table {
     margin-bottom: 0px;
 }
