@@ -7,35 +7,98 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./Adulting.CSS">
 
     <title>Adulting ScoreCard</title>
   </head>
   <body>
       <!-- NAVBAR START -->
-
     <div class="jumbotron jumbotron-fluid text-center">
   <div class="container">
     <h1 class="display-4">Lets get Started!</h1>
-    <p class="lead">First, we need to get all the player's information. There is a maximum of 6 players per game.</p>
+    <p class="lead">It sounds like there will be 2 Players going head to head on this one. Lets get their info. Fill out the form at the bottom and click Submit to start the game.</p>
   </div>
 </div>
-<!-- NAVBAR END -->
-      <!-- PLAYER INFO INPUT FORM START -->
+<br>
+<!-- NAVBAR END --> 
+<div class="playerInfoContainer">
+<!-- PLAYER 1 INFO INPUT -->
       <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Player Name</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name/Handle">
+  <div class="player1NameForm">
+    <label for="playerNameTitle"><strong>Player 1 Name</strong></label>
+    <input type="text" class="form-control" id="player1Name" aria-describedby="emailHelp" placeholder="Enter Name/Handle">
     <small id="emailHelp" class="form-text text-muted">This will be your handle for the game. Choose your real name or a fictional one want to use.</small>
+      <br>
   </div>
-</form>
-      <!-- PLAYER CLASS -->
+      <!-- PLAYER 1 CLASS -->
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios1">Assassin</label>
+  <input class="form-check-input" type="radio" name="" id="" value="" checked>
+  <label class="form-check-label" for="">Assassin</label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-  <label class="form-check-label" for="exampleRadios2">Criminal</label>
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Criminal</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Hobo</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Inventor</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Magician</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Police</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Politician</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Pornstar</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Racing</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Rapper</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Sales</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Spy</label>
+</div>
+</form>
+<br><br> 
+
+            <!-- PLAYER 1 INFO INPUT -->
+      <!-- PLAYER 2 INFO INPUT -->
+      <form>
+  <div class="player2NameForm">
+    <label for="playerNameTitle"><strong>Player 2 Name</strong></label>
+    <input type="text" class="form-control" id="player2Name"  placeholder="Enter Name/Handle">
+    <small id="emailHelp" class="form-text text-muted">This will be your handle for the game. Choose your real name or a fictional one want to use.</small>
+      <br>
+  </div>
+      <!-- PLAYER 2 CLASS -->
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="" checked>
+  <label class="form-check-label" for="">Assassin</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="" id="" value="">
+  <label class="form-check-label" for="">Criminal</label>
 </div>
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
@@ -77,16 +140,12 @@
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
   <label class="form-check-label" for="exampleRadios3">Spy</label>
 </div>
+</form>
 <br><br> 
-<button type="submit" class="btn btn-primary">Submit</button>
-
-      
-            <!-- PLAYER INFO INPUT FORM END -->
-
-      
-      
-      
-      
+</div>
+<button type="button" class="btn btn-primary btn-lg btn-block">Submit Player info and Start the Game</button>
+            <!-- PLAYER 2 INFO INPUT -->
+      <!-- MAIN CONTAINER END -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

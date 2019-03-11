@@ -2,7 +2,7 @@ body {
     padding: 0px;
 }
 p {
-    margin: 2%;
+    margin: 0%;
 }
 .backgroundBody{
     background-color: black;
@@ -13,6 +13,7 @@ p {
 }
 .jumbotron.jumbotron-fluid {
     margin-bottom: 0px;
+    padding: 0px;
 }
 .carousel.slide {
     width: 30%;
@@ -41,6 +42,10 @@ h3 {
 .card-text, .card-title, .salaryTreeTitle {
     color: white;
 }
+.card-group {
+    border: solid;
+    border-color: 
+}
 .card-body {
     margin: 0px;
     padding: 20px;
@@ -53,4 +58,8 @@ h3 {
 }
 .classCard {
     margin-bottom: 0px;
+}
+.playerInfoContainer {
+    padding-left: 10%;
+    padding-right: 10%;
 }
