@@ -116,7 +116,7 @@ switch (a) {
     var player1MaritalStatus = false;
     player1MasterContainerArray.push(player1MaritalStatus);
     var player1Mobility = 0;
-    player1MasterContainerArray.push(player1Mobility);
+    player1MasterContainerArray.push(player1Mobility);      
     break;
         
         
@@ -137,8 +137,7 @@ switch (a) {
     player2MasterContainerArray.push(player2MaritalStatus);
     var player2Mobility = 0;
     player2MasterContainerArray.push(player2Mobility);
-
-    break;
+        break;
         
         
     case 3:
@@ -180,6 +179,7 @@ switch (a) {
     player4MasterContainerArray.push(player4MaritalStatus);
     var player4Mobility = 0;
     player4MasterContainerArray.push(player4Mobility);
+
     break;
         
         
@@ -201,6 +201,7 @@ switch (a) {
     player5MasterContainerArray.push(player5MaritalStatus);
     var player5Mobility = 0;
     player5MasterContainerArray.push(player5Mobility);
+
     break;
         
         
@@ -455,6 +456,74 @@ switch (player6Class) {
         }
 //ONBOARDING SEQUENCE END
 
+var playerTurnNumberSequencer = 1;
+var turnNumber = 1;
+var turnsRemaining = (numberofTurnsInt - turnNumber);
+
+
+
+while (turnNumber <= numberofTurnsInt) {
+    //MAIN GAME LOOP
+    
+    
+    while (playerTurnNumberSequencer <= numberofPlayersInt) {
+        //PLAYER NUMBER SEQUENCER
+        
+        
+        if (playerTurnNumberSequencer == 1) {
+            //PLAYER 1 TURN START
+            document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
+            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + turnsRemaining;
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player1Money + player1MasterContainerArray[7][1][0]);                                                                   
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player1XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player1Children;
+                if (player1MaritalStatus === true)
+                    {
+                       document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Married";
+                    }
+                else
+                    {
+                        document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
+                    }    
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player1MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player1MasterContainerArray[7][1][0];
+            document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player1MasterContainerArray[7][4];
+            document.getElementById("currentPlayerStrengths").innerHTML = player1MasterContainerArray[7][2];
+            document.getElementById("currentPlayerWeaknesses").innerHTML = player1MasterContainerArray[7][3];
+            player
+            playerTurnNumberSequencer++;
+            //(PLAYER 1 TURN END)
+        }
+        else if (playerTurnNumberSequencer == 2) {
+            //PLAYER 2 TURN START
+            document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
+            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + turnsRemaining;
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player2Money + player2MasterContainerArray[7][1][0]);                                                                   
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player2XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player2Children;
+                if (player2MaritalStatus === true)
+                    {
+                       document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Married";
+                    }
+                else
+                    {
+                        document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
+                    }    
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player1MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player1MasterContainerArray[7][1][0];
+            document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player1MasterContainerArray[7][4];
+            document.getElementById("currentPlayerStrengths").innerHTML = player1MasterContainerArray[7][2];
+            document.getElementById("currentPlayerWeaknesses").innerHTML = player1MasterContainerArray[7][3];
+            player
+            playerTurnNumberSequencer++;
+            //(PLAYER 2 TURN END
+
+}
+
+
+//TESTING ABOVE
+/*PLAYER 1 TURN START
+document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
+document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + turnsRemaining;
+
 //GAME START (PLAYER 1 START)
 document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player1Money + player1MasterContainerArray[7][1][0]);                                                                   
 document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player1XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player1Children;
@@ -472,11 +541,5 @@ document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" +
 document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player1MasterContainerArray[7][4];
 document.getElementById("currentPlayerStrengths").innerHTML = player1MasterContainerArray[7][2];
 document.getElementById("currentPlayerWeaknesses").innerHTML = player1MasterContainerArray[7][3];
-//(PLAYER 1 END)
-
-
-
-
-//PLAYER 1 CURRENT STATS SCRIPTS END
-//MY SCRIPTS INTIALIZING DATA
-//MY SCRIPTS END
+player
+(PLAYER 1 TURN END)*/
