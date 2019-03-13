@@ -517,7 +517,8 @@ while (turnNumber <= numberofTurnsInt) {
             //(PLAYER 2 TURN END
 
 }
-
+}
+}
 
 //TESTING ABOVE
 /*PLAYER 1 TURN START
@@ -542,4 +543,4 @@ document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + pla
 document.getElementById("currentPlayerStrengths").innerHTML = player1MasterContainerArray[7][2];
 document.getElementById("currentPlayerWeaknesses").innerHTML = player1MasterContainerArray[7][3];
 player
-(PLAYER 1 TURN END)*/
+PLAYER 1 TURN END*/
