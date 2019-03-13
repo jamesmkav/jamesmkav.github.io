@@ -12,6 +12,20 @@ var rapperSalaryArray = [5000, 25000, 40000, 500000, 2000000, 4000000];
 var salesSalaryArray = [300000, 500000, 3000000];
 var spySalaryArray = [2000, 400000, 1500000, 1000000, 50000, 3000000];
 
+var policeMobility = 2;
+var assassinMobility = 1;
+var criminalMobility = 1;
+var hoboMobility = 1;
+var inventorMobility = 1;
+var magicianMobility = 1;
+var politicianMobility = 1;
+var pornstarMobility = 1;
+var racingMobility = 2;
+var rapperMobility = 1;
+var salesMobility = 1;
+var spyMobility = 2;
+
+
 //SALARY END
 //STRENGTHS START
 var policeStrengths = '<p class="card-text"><small class="text-muted"><div id="policeStrengths"><strong>ALL LEVELS=</strong> No effects from any space in "Life of Crime".<br>Double your dice total for movement when any player is in "Life of Crime", including you.<br>Any player passed by you in the "Life of Crime" immediately go to jail for 2 turns<br>When you are going through the Start space, you may choose to use the "Speed Trap" space and park there. While parked, you may choose to not move after rolling. You collect our salary and other assets or liabilities as any normal turn.<br><strong>@LEVEL 2=</strong> Every player passed by the cop on the game board pays the cop $500K or lose their next turn.<br><strong>@LEVEL 3=</strong> +1 Mobility<br><strong>@LEVEL 3=</strong> If the Assassin attempts a hit on you and fails, you may counter by attempting to shoot them. This is done by both players rolling 4 dice once. Whichever player has the highest total on the dice wins the shootout. If the Police wins the roll, the assassin goes to jail for 4 turns. If the assassin wins, nothing happens and play resumes as normal.<br><strong>@LEVEL 4=</strong> +1 Mobility<br></div></small></p>';
@@ -59,54 +73,410 @@ var spyJobTitleArray = ["Troubled Youth", "Hacker", "Disguise Expert", "CIA Mole
 //JOB TITLES END
 
 //JOB CONTAINER ARRAYS START
-var policeContainerArray = [policeJobTitleArray, policeSalaryArray, policeStrengths, policeWeaknesses];
-var assassinContainerArray = [assassinJobTitleArray, assassinSalaryArray, assassinStrengths, assassinWeaknesses];
-var criminalContainerArray = [criminalJobTitleArray, criminalSalaryArray, criminalStrengths, criminalWeaknesses];
-var hoboContainerArray = [hoboJobTitleArray, hoboSalaryArray, hoboStrengths, hoboWeaknesses];
-var inventorContainerArray = [inventorJobTitleArray, inventorSalaryArray, inventorStrengths, inventorWeaknesses];
-var magicianContainerArray = [magicianJobTitleArray, magicianSalaryArray, magicianStrengths, magicianWeaknesses];
-var politicianContainerArray = [politicianJobTitleArray, politicianSalaryArray, politicianStrengths, politicianWeaknesses];
-var pornstarContainerArray = [pornstarJobTitleArray, pornstarSalaryArray, pornstarStrengths, pornstarWeaknesses];
-var racingContainerArray = [racingJobTitleArray, racingSalaryArray, racingStrengths, racingWeaknesses];
-var rapperContainerArray = [rapperJobTitleArray, rapperSalaryArray, rapperStrengths, rapperWeaknesses];
-var salesContainerArray = [salesJobTitleArray, salesSalaryArray, salesStrengths, salesWeaknesses];
-var spyContainerArray = [spyJobTitleArray, spySalaryArray, spyStrengths, spyWeaknesses];
+var policeContainerArray = [policeJobTitleArray, policeSalaryArray, policeStrengths, policeWeaknesses, policeMobility];
+var assassinContainerArray = [assassinJobTitleArray, assassinSalaryArray, assassinStrengths, assassinWeaknesses, assassinMobility];
+var criminalContainerArray = [criminalJobTitleArray, criminalSalaryArray, criminalStrengths, criminalWeaknesses, criminalMobility];
+var hoboContainerArray = [hoboJobTitleArray, hoboSalaryArray, hoboStrengths, hoboWeaknesses, hoboMobility];
+var inventorContainerArray = [inventorJobTitleArray, inventorSalaryArray, inventorStrengths, inventorWeaknesses, inventorMobility];
+var magicianContainerArray = [magicianJobTitleArray, magicianSalaryArray, magicianStrengths, magicianWeaknesses, magicianMobility];
+var politicianContainerArray = [politicianJobTitleArray, politicianSalaryArray, politicianStrengths, politicianWeaknesses, politicianMobility];
+var pornstarContainerArray = [pornstarJobTitleArray, pornstarSalaryArray, pornstarStrengths, pornstarWeaknesses, pornstarMobility];
+var racingContainerArray = [racingJobTitleArray, racingSalaryArray, racingStrengths, racingWeaknesses, racingMobility];
+var rapperContainerArray = [rapperJobTitleArray, rapperSalaryArray, rapperStrengths, rapperWeaknesses, rapperMobility];
+var salesContainerArray = [salesJobTitleArray, salesSalaryArray, salesStrengths, salesWeaknesses, salesMobility];
+var spyContainerArray = [spyJobTitleArray, spySalaryArray, spyStrengths, spyWeaknesses, spyMobility];
 
 
 //JOB CONTAINER ARRAYS END
+0
+//ONBOARDING SEQUENCE START
+window.alert("Hi there! Before we get started, I need some info from you.");
+var numberofTurnsInput = window.prompt("How many turns will this game be?");
+var numberofTurnsInt = parseFloat(numberofTurnsInput, 10);     
+var numberofPlayersInput = window.prompt("How many players are there?","Enter a number between 1 and 6");
+var numberofPlayersInt = parseFloat(numberofPlayersInput, 10); 
+//Name and Class
 
+var a;
+for (a = 0; a < (numberofPlayersInt + 1); a++) {
+switch (a) {
+    case 1:
+    //PLAYER 1
+    var player1MasterContainerArray = [];
+    var player1Name = window.prompt("Player 1, what is your name?");
+    player1MasterContainerArray.push(player1Name)
+    var player1Class = window.prompt("Player 1, what is your class?");
+    player1MasterContainerArray.push(player1Class);
+    var player1Money = 0;
+    player1MasterContainerArray.push(player1Money);
+    var player1XP = 0;
+    player1MasterContainerArray.push(player1XP);
+    var player1Children = 0;
+    player1MasterContainerArray.push(player1Children);
+    var player1MaritalStatus = false;
+    player1MasterContainerArray.push(player1MaritalStatus);
+    var player1Mobility = 0;
+    player1MasterContainerArray.push(player1Mobility);
+    break;
+        
+        
+    case 2:
+    //PLAYER 2
+    var player2MasterContainerArray = [];
+    var player2Name = window.prompt("Player 2, what is your name?");
+    player2MasterContainerArray.push(player2Name)
+    var player2Class = window.prompt("Player 2, what is your class?");
+    player2MasterContainerArray.push(player2Class);
+    var player2Money = 0;
+    player2MasterContainerArray.push(player2Money);
+    var player2XP = 0;
+    player2MasterContainerArray.push(player2XP);
+    var player2Children = 0;
+    player2MasterContainerArray.push(player2Children);
+    var player2MaritalStatus = false;
+    player2MasterContainerArray.push(player2MaritalStatus);
+    var player2Mobility = 0;
+    player2MasterContainerArray.push(player2Mobility);
 
+    break;
+        
+        
+    case 3:
+    //PLAYER 3
+    var player3MasterContainerArray = [];
+    var player3Name = window.prompt("Player 3, what is your name?");
+    player3MasterContainerArray.push(player3Name)
+    var player3Class = window.prompt("Player 3, what is your class?");
+    player3MasterContainerArray.push(player3Class);
+    var player3Money = 0;
+    player3MasterContainerArray.push(player3Money);
+    var player3XP = 0;
+    player3MasterContainerArray.push(player3XP);
+    var player3Children = 0;
+    player3MasterContainerArray.push(player3Children);
+    var player3MaritalStatus = false;
+    player3MasterContainerArray.push(player3MaritalStatus);
+    var player3Mobility = 0;
+    player3MasterContainerArray.push(player3Mobility);
+    break;
+        
+        
+        
+        
+    case 4:
+    //PLAYER 4
+    var player4MasterContainerArray = [];
+    var player4Name = window.prompt("Player 4, what is your name?");
+    player4MasterContainerArray.push(player4Name)
+    var player4Class = window.prompt("Player 4, what is your class?");
+    player4MasterContainerArray.push(player4Class);
+    var player4Money = 0;
+    player4MasterContainerArray.push(player4Money);
+    var player4XP = 0;
+    player4MasterContainerArray.push(player4XP);
+    var player4Children = 0;
+    player4MasterContainerArray.push(player4Children);
+    var player4MaritalStatus = false;
+    player4MasterContainerArray.push(player4MaritalStatus);
+    var player4Mobility = 0;
+    player4MasterContainerArray.push(player4Mobility);
+    break;
+        
+        
+        
+    case 5:
+    //PLAYER 5
+    var player5MasterContainerArray = [];
+    var player5Name = window.prompt("Player 5, what is your name?");
+    player5MasterContainerArray.push(player5Name)
+    var player5Class = window.prompt("Player 5, what is your class?");
+    player5MasterContainerArray.push(player5Class);
+    var player5Money = 0;
+    player5MasterContainerArray.push(player5Money);
+    var player5XP = 0;
+    player5MasterContainerArray.push(player5XP);
+    var player5Children = 0;
+    player5MasterContainerArray.push(player5Children);
+    var player5MaritalStatus = false;
+    player5MasterContainerArray.push(player5MaritalStatus);
+    var player5Mobility = 0;
+    player5MasterContainerArray.push(player5Mobility);
+    break;
+        
+        
+        
+    case 6:
+    //PLAYER 6
+    var player6MasterContainerArray = [];
+    var player6Name = window.prompt("Player 6, what is your name?");
+    player6MasterContainerArray.push(player6Name)
+    var player6Class = window.prompt("Player 6, what is your class?");
+    player6MasterContainerArray.push(player6Class);
+    var player6Money = 0;
+    player6MasterContainerArray.push(player6Money);
+    var player6XP = 0;
+    player6MasterContainerArray.push(player6XP);
+    var player6Children = 0;
+    player6MasterContainerArray.push(player6Children);
+    var player6MaritalStatus = false;
+    player6MasterContainerArray.push(player6MaritalStatus);
+    var player6Mobility = 0;
+    player6MasterContainerArray.push(player6Mobility);
+    break; 
+}   
+}
+switch (player1Class) {
+                case "assassin":      
+            player1MasterContainerArray.push(assassinContainerArray);
+                break;
+                case "criminal":      
+            player1MasterContainerArray.push(criminalContainerArray);
+                break;
+                case "hobo":      
+            player1MasterContainerArray.push(hoboContainerArray);
+                break;
+                case "inventor":      
+            player1MasterContainerArray.push(inventorContainerArray);
+                break;
+                case "magician":      
+            player1MasterContainerArray.push(magicianContainerArray);
+                break;
+                case "police":      
+            player1MasterContainerArray.push(policeContainerArray);
+                break;
+                case "politician":      
+            player1MasterContainerArray.push(politicianContainerArray);
+                break;
+                case "pornstar":      
+            player1MasterContainerArray.push(pornstarContainerArray);
+                break;
+                case "racing":      
+            player1MasterContainerArray.push(racingContainerArray);
+                break;
+                case "rapper":      
+            player1MasterContainerArray.push(rapperContainerArray);
+                break;
+                case "sales":      
+            player1MasterContainerArray.push(salesContainerArray);
+                break;
+                case "spy":      
+            player1MasterContainerArray.push(spyContainerArray);
+                break;
+        }
+switch (player2Class) {
+                case "assassin":      
+            player2MasterContainerArray.push(assassinContainerArray);
+                break;
+                case "criminal":      
+            player2MasterContainerArray.push(criminalContainerArray);
+                break;
+                case "hobo":      
+            player2MasterContainerArray.push(hoboContainerArray);
+                break;
+                case "inventor":      
+            player2MasterContainerArray.push(inventorContainerArray);
+                break;
+                case "magician":      
+            player2MasterContainerArray.push(magicianContainerArray);
+                break;
+                case "police":      
+            player2MasterContainerArray.push(policeContainerArray);
+                break;
+                case "politician":      
+            player2MasterContainerArray.push(politicianContainerArray);
+                break;
+                case "pornstar":      
+            player2MasterContainerArray.push(pornstarContainerArray);
+                break;
+                case "racing":      
+            player2MasterContainerArray.push(racingContainerArray);
+                break;
+                case "rapper":      
+            player2MasterContainerArray.push(rapperContainerArray);
+                break;
+                case "sales":      
+            player2MasterContainerArray.push(salesContainerArray);
+                break;
+                case "spy":      
+            player2MasterContainerArray.push(spyContainerArray);
+                break;
+        }
+switch (player3Class) {
+                case "assassin":      
+            player3MasterContainerArray.push(assassinContainerArray);
+                break;
+                case "criminal":      
+            player3MasterContainerArray.push(criminalContainerArray);
+                break;
+                case "hobo":      
+            player3MasterContainerArray.push(hoboContainerArray);
+                break;
+                case "inventor":      
+            player3MasterContainerArray.push(inventorContainerArray);
+                break;
+                case "magician":      
+            player3MasterContainerArray.push(magicianContainerArray);
+                break;
+                case "police":      
+            player3MasterContainerArray.push(policeContainerArray);
+                break;
+                case "politician":      
+            player3MasterContainerArray.push(politicianContainerArray);
+                break;
+                case "pornstar":      
+            player3MasterContainerArray.push(pornstarContainerArray);
+                break;
+                case "racing":      
+            player3MasterContainerArray.push(racingContainerArray);
+                break;
+                case "rapper":      
+            player3MasterContainerArray.push(rapperContainerArray);
+                break;
+                case "sales":      
+            player3MasterContainerArray.push(salesContainerArray);
+                break;
+                case "spy":      
+            player3MasterContainerArray.push(spyContainerArray);
+                break;
+        }
+switch (player4Class) {
+                case "assassin":      
+            player4MasterContainerArray.push(assassinContainerArray);
+                break;
+                case "criminal":      
+            player4MasterContainerArray.push(criminalContainerArray);
+                break;
+                case "hobo":      
+            player4MasterContainerArray.push(hoboContainerArray);
+                break;
+                case "inventor":      
+            player4MasterContainerArray.push(inventorContainerArray);
+                break;
+                case "magician":      
+            player4MasterContainerArray.push(magicianContainerArray);
+                break;
+                case "police":      
+            player4MasterContainerArray.push(policeContainerArray);
+                break;
+                case "politician":      
+            player4MasterContainerArray.push(politicianContainerArray);
+                break;
+                case "pornstar":      
+            player4MasterContainerArray.push(pornstarContainerArray);
+                break;
+                case "racing":      
+            player4MasterContainerArray.push(racingContainerArray);
+                break;
+                case "rapper":      
+            player4MasterContainerArray.push(rapperContainerArray);
+                break;
+                case "sales":      
+            player4MasterContainerArray.push(salesContainerArray);
+                break;
+                case "spy":      
+            player4MasterContainerArray.push(spyContainerArray);
+                break;
+        }
+switch (player5Class) {
+                case "assassin":      
+            player5MasterContainerArray.push(assassinContainerArray);
+                break;
+                case "criminal":      
+            player5MasterContainerArray.push(criminalContainerArray);
+                break;
+                case "hobo":      
+            player5MasterContainerArray.push(hoboContainerArray);
+                break;
+                case "inventor":      
+            player5MasterContainerArray.push(inventorContainerArray);
+                break;
+                case "magician":      
+            player5MasterContainerArray.push(magicianContainerArray);
+                break;
+                case "police":      
+            player5MasterContainerArray.push(policeContainerArray);
+                break;
+                case "politician":      
+            player5MasterContainerArray.push(politicianContainerArray);
+                break;
+                case "pornstar":      
+            player5MasterContainerArray.push(pornstarContainerArray);
+                break;
+                case "racing":      
+            player5MasterContainerArray.push(racingContainerArray);
+                break;
+                case "rapper":      
+            player5MasterContainerArray.push(rapperContainerArray);
+                break;
+                case "sales":      
+            player5MasterContainerArray.push(salesContainerArray);
+                break;
+                case "spy":      
+            player5MasterContainerArray.push(spyContainerArray);
+                break;
+}
+switch (player6Class) {
+                case "assassin":      
+            player6MasterContainerArray.push(assassinContainerArray);
+                break;
+                case "criminal":      
+            player6MasterContainerArray.push(criminalContainerArray);
+                break;
+                case "hobo":      
+            player6MasterContainerArray.push(hoboContainerArray);
+                break;
+                case "inventor":      
+            player6MasterContainerArray.push(inventorContainerArray);
+                break;
+                case "magician":      
+            player6MasterContainerArray.push(magicianContainerArray);
+                break;
+                case "police":      
+            player6MasterContainerArray.push(policeContainerArray);
+                break;
+                case "politician":      
+            player6MasterContainerArray.push(politicianContainerArray);
+                break;
+                case "pornstar":      
+            player6MasterContainerArray.push(pornstarContainerArray);
+                break;
+                case "racing":      
+            player6MasterContainerArray.push(racingContainerArray);
+                break;
+                case "rapper":      
+            player6MasterContainerArray.push(rapperContainerArray);
+                break;
+                case "sales":      
+            player6MasterContainerArray.push(salesContainerArray);
+                break;
+                case "spy":      
+            player6MasterContainerArray.push(spyContainerArray);
+                break;
+        }
+//ONBOARDING SEQUENCE END
 
-
-
-
-
-
-
-
-
-
-//PLAYER 1 CURRENT STATS SCRIPTS START
-var player1Children = 0;
-var player1XP = 0;
-var player1Mobility = 2;   
-document.getElementById("player1Money").innerHTML = "Money: $" + policeSalaryArray[0].toString();
-document.getElementById("player1XP").innerHTML = "Experience: " + player1XP.toString() + "XP";
-document.getElementById("player1Children").innerHTML = "Number of Children: " + player1Children.toString();
+//GAME START (PLAYER 1 START)
+document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player1Money + player1MasterContainerArray[7][1][0]);                                                                   
+document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player1XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player1Children;
 var player1Marriage = false;
 if (player1Marriage === true)
     {
-       document.getElementById("player1Marriage").innerHTML =  "Marital Status: Married";
+       document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Married";
     }
 else
     {
-        document.getElementById("player1Marriage").innerHTML =  "Marital Status: Single";
+        document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
     }    
-document.getElementById("player1JobTitle").innerHTML = "Current Job Title: " + policeJobTitleArray[0]; 
-document.getElementById("player1Salary").innerHTML = "Current Salary: $" + policeSalaryArray[0].toString();
-document.getElementById("player1Mobility").innerHTML =  "Mobility: " + player1Mobility;
-document.getElementById("currentPlayerStrengths").innerHTML = policeStrengths;
-document.getElementById("currentPlayerWeaknesses").innerHTML = policeWeaknesses;
+document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player1MasterContainerArray[7][0][0]; 
+document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player1MasterContainerArray[7][1][0];
+document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player1MasterContainerArray[7][4];
+document.getElementById("currentPlayerStrengths").innerHTML = player1MasterContainerArray[7][2];
+document.getElementById("currentPlayerWeaknesses").innerHTML = player1MasterContainerArray[7][3];
+//(PLAYER 1 END)
+
+
+
+
 //PLAYER 1 CURRENT STATS SCRIPTS END
 //MY SCRIPTS INTIALIZING DATA
 //MY SCRIPTS END

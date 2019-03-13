@@ -55,17 +55,17 @@
 <h5 class="title text-center">Current Stats</h5>
 <div class="currentPlayerStats">
         <ul>
-            <li id="player1Money">Money:</li>
-            <li id="player1XP">Experience:</li>
-            <li id="player1Children">Number of Children: </li>
-            <li id="player1Marriage">Marital Status: </li>
-            <li id="player1JobTitle">Current Job Title: </li>
-            <li id="player1Salary">Current Salary: </li>
-            <li id="player1Property">Properties Owned: </li>
-            <li id="player1Mobility">Mobility: </li>
+            <li id="currentPlayerMoney"></li>
+            <li id="currentPlayerXP">Experience:</li>
+            <li id="currentPlayerChildren">Number of Children: </li>
+            <li id="currentPlayerMarriage">Marital Status: </li>
+            <li id="currentPlayerJobTitle">Current Job Title: </li>
+            <li id="currentPlayerSalary">Current Salary: </li>
+            <li id="currentPlayerProperty">Properties Owned: </li>
+            <li id="currentPlayerMobility">Mobility: </li>
           </ul>
     <h5 class="title text-center">Click to Enter Info</h5>
-        <button type="button" onclick="testFunction()" class="btn btn-secondary btn-lg btn-block">$</button>
+        <button type="button" onclick="" class="btn btn-secondary btn-lg btn-block">$</button>
         <button type="button" onclick="" class="btn btn-secondary btn-lg btn-block">XP</button>
         <button type="button" onclick="" class="btn btn-secondary btn-lg btn-block">Promotion/Demotion</button>
         <button type="button" onclick="" class="btn btn-secondary btn-lg btn-block">Marriage/Divorce</button>
@@ -89,57 +89,6 @@
     </div> 
   </div>
 </div>
-<!-- ONBOARDING SEQUENCE START -->
-<script type="text/javascript">
-alert("Hi there! Before we get started, I need some info from you.");
-playerNumberConfirm: 
-var numberofPlayersInput = window.prompt("How many players are there?","Enter a number between 1 and 6");
-var numberofPlayersInt = parseFloat(numberofPlayersInput, 10);     
-var playerArray = [];  
-            
-var a;
-for (a = 0; a < (numberofPlayersInt + 1); a++ ) {   
-switch (a) {
-    case 1:
-    var player1Name = window.prompt("Player 1, what is your name?");
-        break;
-    case 2:
-    var player2Name = window.prompt("Player 2, what is your name?");
-        break;
-    case 3:
-    var player3Name = window.prompt("Player 3, what is your name?");
-        break;
-    case 4:
-    var player4Name = window.prompt("Player 4, what is your name?");
-        break;
-    case 5:
-    var player5Name = window.prompt("Player 5, what is your name?");
-        break;
-    case 6:
-    var player6Name = window.prompt("Player 6, what is your name?");
-        break;
-    default: 
-}           
-}
-            
-            
-
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-</script>
-                <!-- ONLOAD SEQUENCE END -->
-
         <!-- MY JAVASCRIPT -->
         <script type="text/javascript" src="./gameJavaScript.js"></script>
     <!-- BOOTSRAP JavaScript -->
