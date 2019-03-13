@@ -88,12 +88,11 @@ var spyContainerArray = [spyJobTitleArray, spySalaryArray, spyStrengths, spyWeak
 
 
 //JOB CONTAINER ARRAYS END
-0
 //ONBOARDING SEQUENCE START
 window.alert("Hi there! Before we get started, I need some info from you.");
 var numberofTurnsInput = window.prompt("How many turns will this game be?");
-var numberofTurnsInt = parseFloat(numberofTurnsInput, 10);     
-var numberofPlayersInput = window.prompt("How many players are there?","Enter a number between 1 and 6");
+var numberofTurnsInt = parseFloat(numberofTurnsInput, 10);   
+var numberofPlayersInput = window.prompt("How many players are there?", "Enter a number between 1 and 6");
 var numberofPlayersInt = parseFloat(numberofPlayersInput, 10); 
 //Name and Class
 
@@ -507,13 +506,18 @@ while (turnNumber <= numberofTurnsInt) {
                     {
                         document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
                     }    
-            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player1MasterContainerArray[7][0][0]; 
-            document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player1MasterContainerArray[7][1][0];
-            document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player1MasterContainerArray[7][4];
-            document.getElementById("currentPlayerStrengths").innerHTML = player1MasterContainerArray[7][2];
-            document.getElementById("currentPlayerWeaknesses").innerHTML = player1MasterContainerArray[7][3];
-            player
-            playerTurnNumberSequencer++;
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player2MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player2MasterContainerArray[7][1][0];
+            document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player2MasterContainerArray[7][4];
+            document.getElementById("currentPlayerStrengths").innerHTML = player2MasterContainerArray[7][2];
+            document.getElementById("currentPlayerWeaknesses").innerHTML = player2MasterContainerArray[7][3];
+            if (numberofPlayersInt > 2) {
+                playerTurnNumberSequencer++;
+            }
+            else {
+                playerTurnNumberSequencer = 1;
+                turnNumber++;
+            }
             //(PLAYER 2 TURN END
 
 }
