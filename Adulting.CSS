@@ -63,3 +63,6 @@ h3 {
     padding-left: 10%;
     padding-right: 10%;
 }
+.strengthsText, .weaknessesText {
+    font-size: 12;
+}

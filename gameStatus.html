@@ -4,17 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- MY CSS -->
         <link rel="stylesheet" type="text/css" href="./Adulting.CSS">
-
     <title>Adulting ScoreCard</title>
   </head>
-  
-    
-    
-    
     <body class="backgroundBody">
       <!-- NAVBAR START -->
     <div class="jumbotron jumbotron-fluid text-center">
@@ -24,7 +19,9 @@
     <p class="currentTurnNumber">Turns Remaining: </p>
     <p class="currentPlayerTurn">Current Player Turn: </p>
     <button type="button" class="btn btn-primary btn-lg">Next Player's Turn</button>
-      <br><br><br>
+      <br>
+      <br>
+      <br>
       <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary">
     <input type="radio" name="options" id="option1" autocomplete="off">Name1
@@ -55,41 +52,11 @@
       <div class="card-body">
     <h2 class="title text-center">Name the Class</h2>
           <br>
-              <h5 class="title text-center">Character Log</h5>
-          <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-
-          </ul>
-
-    </div>
-    
-  </div>
-  <div class="card">
-    <div class="card-body">
-    <h5 class="title text-center">Current Stats</h5>
+<h5 class="title text-center">Current Stats</h5>
 <div class="currentPlayerStats">
         <ul>
-            <li id="player1Money"></li>
-            <li id="player1XP"></li>
+            <li id="player1Money">Money:</li>
+            <li id="player1XP">Experience:</li>
             <li id="player1Children">Number of Children: </li>
             <li id="player1Marriage">Marital Status: </li>
             <li id="player1JobTitle">Current Job Title: </li>
@@ -97,9 +64,7 @@
             <li id="player1Property">Properties Owned: </li>
             <li id="player1Mobility">Mobility: </li>
           </ul>
-      </div>
-        <br>
-            <h5 class="title text-center">Click to Enter Info</h5>
+    <h5 class="title text-center">Click to Enter Info</h5>
         <button type="button" onclick="testFunction()" class="btn btn-secondary btn-lg btn-block">$</button>
         <button type="button" onclick="" class="btn btn-secondary btn-lg btn-block">XP</button>
         <button type="button" onclick="" class="btn btn-secondary btn-lg btn-block">Promotion/Demotion</button>
@@ -107,99 +72,76 @@
         <button type="button" onclick="" class="btn btn-secondary btn-lg btn-block">Children</button>
         <button type="button" onclick="" class="btn btn-secondary btn-lg btn-block">Mobility</button>
         <button type="button" onclick="" class="btn btn-secondary btn-lg btn-block">Property</button>
-
+      </div>  
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+    <h5 class="title text-center">Strengths</h5>
+      <p class="card-text"><small class="text-muted"><div id="currentPlayerStrengths"></div></small></p> 
       </div>
   </div>
   <div class="card">
     <div class="card-body">
-      <h5 class="title text-center">Strengths</h5>
-      <p class="text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <br>
     <h5 class="title text-center">Weaknesses</h5>
-        <p class="text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    
-      
-      
-      
-      
-      
-      
+        <p class="card-text"><small class="text-muted"><div id="currentPlayerWeaknesses"></div></small></p>
+        <br>
+    </div> 
   </div>
 </div>
-<!-- PLAYER CARD GROUP END -->
-<!-- MY SCRIPTS START -->
-<!-- MY SCRIPTS INITIALIZING DATA START -->
-<!-- SALARIES START -->
-<script>
-var policeSalaryArray = [5000, 30000, 100000, 500000, 1000000];
-var assassinSalaryArray = [7000, 30000, 100000, 600000, 2000000];
-var criminalSalaryArray = [7000, 50000, 750000, 1000000, 3000000, 5000000];
-var hoboSalaryArray = [5000, 25000, 50000];
-var inventorSalaryArray = [5000, 50000, 100000, 500000, 5000, 3000000];
-var magicianSalaryArray = [2000, 40000, 200000, 1000000, 3000000];
-var politicianSalaryArray = [5000, 40000, 150000, 250000, 500000, 1000000, 3000000, 5000000, 10000000];
-var pornstarSalaryArray = [3000, 20000, 80000, 500000, 1000000, 2000000];
-var racingSalaryArray = [5000, 100000, 500000, 2000000, 3000000];
-var rapperSalaryArray = [5000, 25000, 40000, 500000, 2000000, 4000000];
-var salesSalaryArray = [300000, 500000, 3000000];
+<!-- ONBOARDING SEQUENCE START -->
+<script type="text/javascript">
+alert("Hi there! Before we get started, I need some info from you.");
+playerNumberConfirm: 
+var numberofPlayersInput = window.prompt("How many players are there?","Enter a number between 1 and 6");
+var numberofPlayersInt = parseFloat(numberofPlayersInput, 10);     
+var playerArray = [];  
+            
+var a;
+for (a = 0; a < (numberofPlayersInt + 1); a++ ) {   
+switch (a) {
+    case 1:
+    var player1Name = window.prompt("Player 1, what is your name?");
+        break;
+    case 2:
+    var player2Name = window.prompt("Player 2, what is your name?");
+        break;
+    case 3:
+    var player3Name = window.prompt("Player 3, what is your name?");
+        break;
+    case 4:
+    var player4Name = window.prompt("Player 4, what is your name?");
+        break;
+    case 5:
+    var player5Name = window.prompt("Player 5, what is your name?");
+        break;
+    case 6:
+    var player6Name = window.prompt("Player 6, what is your name?");
+        break;
+    default: 
+}           
+}
+            
+            
+
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 </script>
-<!-- JOB TITLES START -->
-<script>
-var policeJobTitleArray = ["Mall Security", "Police Academy", "Beat Cop", "Detective", "SWAT"];
-var assassinJobTitleArray = ["Mail Carrier", "Army Sniper", "Private Militia", "Jackal", "Professional"];
-var criminalJobTitleArray = ["Petty Thief", "Small Time Dealer", "Regional Kingpin", "Distributor", "Cartel", "Jefe"];
-var hoboJobTitleArray = ["Runaway Teen", "Transient", "Just plain don't give a fuck anymore"];
-var inventorJobTitleArray = ["Dropout", "Robotics", "Consultant", "Scientist", "Recluse", "Time Lord"];
-var magicianJobTitleArray = ["Street Performer", "Ingenuier", "Escape Artist", "Headliner", "Houdini"];
-var politicianJobTitleArray = ["Class President", "Law Degree", "Mayor", "Governer", "Congress", "Secretary of State", "Vice", "President", "Dictator"];
-var pornstarJobTitleArray = ["Sexually Curious", "Web Cam Model", "Co-Star", "Top illing", "Porn Director", "Porn Media Executive"];
-var racingJobTitleArray = ["Shifter Karts", "Pro 4 Trucks", "Rally Cross", "Indy", "F1"];
-var rapperJobTitleArray = ["Backup Dancer", "Battle Rapper", "Internet Sensation", "Prolific Lyricist", "Producer", "Label CEO"];
-var salesJobTitleArray = ["Telemarketer", "Corporate Goon", "Wolf"];
-</script>
-<!-- JOB TITLES END -->
-<!-- PLAYER 1 CURRENT STATS SCRIPTS START -->
-<script>
-    var player1Children = 0;
-    var player1XP = 0;
-    var player1Mobility = 2;
-    
-    document.getElementById("player1Money").innerHTML = "Money: $" + policeSalaryArray[0].toString();
-    
-    document.getElementById("player1XP").innerHTML = "Experience: " + player1XP.toString() + "XP";
-    
-    document.getElementById("player1Children").innerHTML = "Number of Children: " + player1Children.toString();
+                <!-- ONLOAD SEQUENCE END -->
 
-    var player1Marriage = false;
-    if (player1Marriage === true)
-        {
-           document.getElementById("player1Marriage").innerHTML =  "Marital Status: Married";
-        }
-    else
-        {
-            document.getElementById("player1Marriage").innerHTML =  "Marital Status: Single";
-        }    
-    
-    document.getElementById("player1JobTitle").innerHTML = "Current Job Title: " + policeJobTitleArray[0];
-    
-    document.getElementById("player1Salary").innerHTML = "Current Salary: $" + policeSalaryArray[0].toString();
-
-    document.getElementById("player1Mobility").innerHTML =  "Mobility: " + player1Mobility;
-</script>
-<!-- PLAYER 1 CURRENT STATS SCRIPTS END -->
-
-        
-
-
-
-        <!-- SALARIES END -->
-
-
-<!-- MY SCRIPTS INITIALIZING DATA END -->
-<!-- MY SCRIPTS END -->
-
-
+        <!-- MY JAVASCRIPT -->
+        <script type="text/javascript" src="./gameJavaScript.js"></script>
     <!-- BOOTSRAP JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

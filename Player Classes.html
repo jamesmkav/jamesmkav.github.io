@@ -26,17 +26,8 @@
                             <a class="nav-link" href="./Rules.html">Rules</a>
                         </li>
                         <li class="nav-item">
-                            <div class="dropdown">
-                              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Enter the Number of Players to Start a Game</a>
-                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" target="_blank" href="./scorecard2Players.html">2</a>
-                                <a class="dropdown-item" target="_blank" href="./scorecard3Players.html">3</a>
-                                <a class="dropdown-item" target="_blank" href="./scorecard4Players.html">4</a>
-                                <a class="dropdown-item" target="_blank" href="./scorecard5Players.html">5</a>
-                                <a class="dropdown-item" target="_blank" href="./scorecard6Players.html">6</a>
-                              </div>
-                            </div>                        
-                        </li>
+                            <a class="nav-link" href="./gameStatus.html">Let's Play!</a>
+                        </li>                     
                     </ul>
                 </div>
         </nav>
@@ -80,14 +71,15 @@
                                             <h5 class="card-title">Police Strengths</h5>
 
                     <p class="card-text"><small class="text-muted">
-<strong>ALL LEVELS=</strong> No effects from any space in "Life of Crime".<br>Double your dice total for movement when any player is in "Life of Crime", including you.<br>Any player passed by you in the "Life of Crime" immediately go to jail for 2 turns<br>When you are going through the Start space, you may choose to use the "Speed Trap" space and park there. While parked, you may choose to not move after rolling. You collect our salary and other assets or liabilities as any normal turn.<br>
+                        <div id="policeStrengths">
+                        <strong>ALL LEVELS=</strong> No effects from any space in "Life of Crime".<br>Double your dice total for movement when any player is in "Life of Crime", including you.<br>Any player passed by you in the "Life of Crime" immediately go to jail for 2 turns<br>When you are going through the Start space, you may choose to use the "Speed Trap" space and park there. While parked, you may choose to not move after rolling. You collect our salary and other assets or liabilities as any normal turn.<br>
                         <strong>@LEVEL 2=</strong> Every player passed by the cop on the game board pays the cop $500K or lose their next turn.<br>
                         <strong>@LEVEL 3=</strong> +1 Mobility<br>
                         <strong>@LEVEL 3=</strong> If the Assassin attempts a hit on you and fails, you may counter by attempting to shoot them. This is done by both players rolling 4 dice once. Whichever player has the highest total on the dice wins the shootout. If the Police wins the roll, the assassin goes to jail for 4 turns. If the assassin wins, nothing happens and play resumes as normal.<br>
-<strong>@LEVEL 4=</strong> +1 Mobility<br>
-                        
-
+                        <strong>@LEVEL 4=</strong> +1 Mobility<br>
+                        </div>
                         </small></p>
+                        
                     <h5 class="card-title">Police Weaknesses</h5>
                     <p class="card-text"><small class="text-muted">
                         The Police character cannot rob the bank or recieve any positive effects from spaces in "Life of Crime".<br>
@@ -160,6 +152,9 @@
         </div>
     </div>
     <!--FOOTER END-->
+             <!-- MY JAVASCRIPT -->
+        <script type="text/javascript" src="./gameJavaScript.js"></script>
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
