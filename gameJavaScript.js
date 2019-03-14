@@ -178,7 +178,6 @@ switch (a) {
     player4MasterContainerArray.push(player4MaritalStatus);
     var player4Mobility = 0;
     player4MasterContainerArray.push(player4Mobility);
-
     break;
         
         
@@ -200,7 +199,6 @@ switch (a) {
     player5MasterContainerArray.push(player5MaritalStatus);
     var player5Mobility = 0;
     player5MasterContainerArray.push(player5Mobility);
-
     break;
         
         
@@ -414,7 +412,7 @@ switch (player5Class) {
                 case "spy":      
             player5MasterContainerArray.push(spyContainerArray);
                 break;
-}
+        }
 switch (player6Class) {
                 case "assassin":      
             player6MasterContainerArray.push(assassinContainerArray);
@@ -459,30 +457,6 @@ var playerTurnNumberSequencer = 1;
 var turnNumber = 1;
 
 
-//INITIALIZING FIRST PLAYER
-
-            document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
-            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
-            document.getElementById("nameAndClass").innerHTML = player1Name + " the " + player1Class;
-            document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player1Name;
-            
-            
-            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player1Money + player1MasterContainerArray[7][1][0]);                                                                   
-            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player1XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player1Children;
-                if (player1MaritalStatus === true)
-                    {
-                       document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Married";
-                    }
-                else
-                    {
-                        document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
-                    }    
-            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player1MasterContainerArray[7][0][0]; 
-            document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player1MasterContainerArray[7][1][0];
-            document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player1MasterContainerArray[7][4];
-            document.getElementById("currentPlayerStrengths").innerHTML = player1MasterContainerArray[7][2];
-            document.getElementById("currentPlayerWeaknesses").innerHTML = player1MasterContainerArray[7][3];
-
 //NEXT TURN BUTTON SEQUENCE START
 
 function nextTurnButton() {
@@ -491,7 +465,11 @@ function nextTurnButton() {
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
             document.getElementById("nameAndClass").innerHTML = player1Name + " the " + player1Class;
             document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player1Name;
-            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player1Money + player1MasterContainerArray[7][1][0]);                                                                   
+                
+                
+            
+            player1Money = (player1Money + player1MasterContainerArray[7][1][0])
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player1Money;                                                                   
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player1XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player1Children;
                 if (player1MaritalStatus === true)
                     {
@@ -516,7 +494,8 @@ function nextTurnButton() {
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
             document.getElementById("nameAndClass").innerHTML = player2Name + " the " + player2Class;
             document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player2Name;
-            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player2Money + player2MasterContainerArray[7][1][0]);                                                                   
+            player2Money = (player2Money + player2MasterContainerArray[7][1][0])
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player2Money;                                                                       
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player2XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player2Children;
                 if (player2MaritalStatus === true)
                     {
@@ -547,7 +526,8 @@ function nextTurnButton() {
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
             document.getElementById("nameAndClass").innerHTML = player3Name + " the " + player3Class;
             document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player3Name;
-            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player3Money + player3MasterContainerArray[7][1][0]);                                                                   
+            player3Money = (player3Money + player3MasterContainerArray[7][1][0])
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player3Money;                                                                      
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player3XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player3Children;
                 if (player3MaritalStatus === true)
                     {
@@ -578,7 +558,8 @@ function nextTurnButton() {
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
             document.getElementById("nameAndClass").innerHTML = player4Name + " the " + player4Class;
             document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player4Name;
-            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player4Money + player4MasterContainerArray[7][1][0]);                                                                   
+            player4Money = (player4Money + player4MasterContainerArray[7][1][0])
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player4Money;                                                                     
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player4XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player4Children;
                 if (player4MaritalStatus === true)
                     {
@@ -609,7 +590,8 @@ function nextTurnButton() {
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
             document.getElementById("nameAndClass").innerHTML = player5Name + " the " + player5Class;
             document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player5Name;
-            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player5Money + player5MasterContainerArray[7][1][0]);                                                                   
+            player5Money = (player5Money + player5MasterContainerArray[7][1][0])
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player5Money;                                                                   
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player5XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player5Children;
                 if (player5MaritalStatus === true)
                     {
@@ -624,7 +606,7 @@ function nextTurnButton() {
             document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player5MasterContainerArray[7][4];
             document.getElementById("currentPlayerStrengths").innerHTML = player5MasterContainerArray[7][2];
             document.getElementById("currentPlayerWeaknesses").innerHTML = player5MasterContainerArray[7][3];
-            if (numberofPlayersInt > 6) {
+            if (numberofPlayersInt > 5) {
                 playerTurnNumberSequencer++;
             }
             else {
@@ -633,14 +615,14 @@ function nextTurnButton() {
             }                
             }
             //PLAYER 5 TURN END
-    
-            //PLAYER 6 TURN START
+    //PLAYER 6 TURN START
             else if (playerTurnNumberSequencer === 6) {
             document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
             document.getElementById("nameAndClass").innerHTML = player6Name + " the " + player6Class;
             document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player6Name;
-            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player6Money + player6MasterContainerArray[7][1][0]);                                                                   
+            player6Money = (player6Money + player6MasterContainerArray[7][1][0])
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player6Money;                                                                       
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player6XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player6Children;
                 if (player6MaritalStatus === true)
                     {
@@ -655,18 +637,94 @@ function nextTurnButton() {
             document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player6MasterContainerArray[7][4];
             document.getElementById("currentPlayerStrengths").innerHTML = player6MasterContainerArray[7][2];
             document.getElementById("currentPlayerWeaknesses").innerHTML = player6MasterContainerArray[7][3];
-            if (numberofPlayersInt > 7) {
+            if (numberofPlayersInt > 6) {
                 playerTurnNumberSequencer++;
             }
             else {
                 playerTurnNumberSequencer = 1;
                 turnNumber++;
+            }                
             }
-            }
-            //PLAYER 6 TURN END
+            //PLAYER 6 TURN END   
 }
+//NEXT TURN BUTTON SEQUENCE END
 
-        //NEXT TURN BUTTON SEQUENCE END
+//STATS BUTTONS START
+//MONEY
+function moneyButton() {
+    var moneyInput = window.prompt("Please enter an  Money amount. Positive or negative", "");
+    var moneyInt = parseFloat(moneyInput, 10);   
+    switch (document.getElementById("currentPlayerTurn").innerHTML) {
+            
+        case "Current Player turn: " + player1Name:
+        player1Money = moneyInt + player1Money;
+        document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player1Money;             break;
+        case "Current Player turn: " + player2Name:
+        player2Money = moneyInt + player2Money;
+        document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player2Money; 
+        break;
+        case "Current Player turn: " + player3Name:
+        player3Money = moneyInt + player3Money;
+        document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player3Money; 
+        break;
+        case "Current Player turn: " + player4Name:
+        player4Money = moneyInt + player4Money;
+        document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player4Money; 
+        break;
+        case "Current Player turn: " + player5Name:
+        player5Money = moneyInt + player5Money;
+        document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player5Money; 
+        break;
+        case "Current Player turn: " + player6Name:
+        player6Money = moneyInt + player6Money;
+        document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player6Money; 
+        break;
+    }
+    
+}
+function XPButton() {
+        var XPInput = window.prompt("Please enter an  Experience amount. Positive or negative", "");
+        var XPInt = parseFloat(XPInput, 10);
+    
+    switch (document.getElementById("currentPlayerTurn").innerHTML) {
+            
+        case "Current Player turn: " + player1Name:
+        player1XP = XPInt + player1XP;
+        document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player1XP + "XP";                break;
+        case "Current Player turn: " + player2Name:
+        player2XP = XPInt + player2XP;
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player2XP + "XP";        break;
+        case "Current Player turn: " + player3Name:
+        player3XP = XPInt + player3XP;
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player3XP + "XP";        break;
+        case "Current Player turn: " + player4Name:
+        player4Money = XPInt + player4XP;
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player4XP + "XP";        break;
+        case "Current Player turn: " + player5Name:
+        player5Money = XPInt + player5XP;
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player5XP + "XP";        break;
+        case "Current Player turn: " + player6Name:
+        player6Money = XPInt + player6XP;
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player6XP + "XP";        break;
+    }
+}
+function promoButton() {
+    
+}
+function marriageButton() {
+    
+}
+function childrenButton() {
+    
+}
+function mobilityButton() {
+    
+}
+function propertyButton() {
+    
+}
+//STATS BUTTONS START
+
 
 
 
