@@ -457,22 +457,16 @@ switch (player6Class) {
 
 var playerTurnNumberSequencer = 1;
 var turnNumber = 1;
-var turnsRemaining = (numberofTurnsInt - turnNumber);
 
 
+//INITIALIZING FIRST PLAYER
 
-while (turnNumber <= numberofTurnsInt) {
-    //MAIN GAME LOOP
-    
-    
-    while (playerTurnNumberSequencer <= numberofPlayersInt) {
-        //PLAYER NUMBER SEQUENCER
-        
-        
-        if (playerTurnNumberSequencer == 1) {
-            //PLAYER 1 TURN START
             document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
-            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + turnsRemaining;
+            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
+            document.getElementById("nameAndClass").innerHTML = player1Name + " the " + player1Class;
+            document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player1Name;
+            
+            
             document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player1Money + player1MasterContainerArray[7][1][0]);                                                                   
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player1XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player1Children;
                 if (player1MaritalStatus === true)
@@ -488,14 +482,40 @@ while (turnNumber <= numberofTurnsInt) {
             document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player1MasterContainerArray[7][4];
             document.getElementById("currentPlayerStrengths").innerHTML = player1MasterContainerArray[7][2];
             document.getElementById("currentPlayerWeaknesses").innerHTML = player1MasterContainerArray[7][3];
-            player
-            playerTurnNumberSequencer++;
-            //(PLAYER 1 TURN END)
-        }
-        else if (playerTurnNumberSequencer == 2) {
-            //PLAYER 2 TURN START
+
+//NEXT TURN BUTTON SEQUENCE START
+
+function nextTurnButton() {
+            if (playerTurnNumberSequencer === 1) {
             document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
-            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + turnsRemaining;
+            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
+            document.getElementById("nameAndClass").innerHTML = player1Name + " the " + player1Class;
+            document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player1Name;
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player1Money + player1MasterContainerArray[7][1][0]);                                                                   
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player1XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player1Children;
+                if (player1MaritalStatus === true)
+                    {
+                       document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Married";
+                    }
+                else
+                    {
+                        document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
+                    }    
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player1MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player1MasterContainerArray[7][1][0];
+            document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player1MasterContainerArray[7][4];
+            document.getElementById("currentPlayerStrengths").innerHTML = player1MasterContainerArray[7][2];
+            document.getElementById("currentPlayerWeaknesses").innerHTML = player1MasterContainerArray[7][3];
+            playerTurnNumberSequencer = 2;
+            }
+            //PLAYER 1 TURN END
+    
+            //PLAYER 2 TURN START
+            else if (playerTurnNumberSequencer === 2) {
+            document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
+            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
+            document.getElementById("nameAndClass").innerHTML = player2Name + " the " + player2Class;
+            document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player2Name;
             document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player2Money + player2MasterContainerArray[7][1][0]);                                                                   
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player2XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player2Children;
                 if (player2MaritalStatus === true)
@@ -517,12 +537,142 @@ while (turnNumber <= numberofTurnsInt) {
             else {
                 playerTurnNumberSequencer = 1;
                 turnNumber++;
+            }                
             }
-            //(PLAYER 2 TURN END
+            //PLAYER 2 TURN END
+    
+            //PLAYER 3 TURN START
+            else if (playerTurnNumberSequencer === 3) {
+            document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
+            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
+            document.getElementById("nameAndClass").innerHTML = player3Name + " the " + player3Class;
+            document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player3Name;
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player3Money + player3MasterContainerArray[7][1][0]);                                                                   
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player3XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player3Children;
+                if (player3MaritalStatus === true)
+                    {
+                       document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Married";
+                    }
+                else
+                    {
+                        document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
+                    }    
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player3MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player3MasterContainerArray[7][1][0];
+            document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player3MasterContainerArray[7][4];
+            document.getElementById("currentPlayerStrengths").innerHTML = player3MasterContainerArray[7][2];
+            document.getElementById("currentPlayerWeaknesses").innerHTML = player3MasterContainerArray[7][3];
+            if (numberofPlayersInt > 3) {
+                playerTurnNumberSequencer++;
+            }
+            else {
+                playerTurnNumberSequencer = 1;
+                turnNumber++;
+            }
+            }
+            //PLAYER 3 TURN END
+    
+            //PLAYER 4 TURN START
+            else if (playerTurnNumberSequencer === 4) {
+            document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
+            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
+            document.getElementById("nameAndClass").innerHTML = player4Name + " the " + player4Class;
+            document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player4Name;
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player4Money + player4MasterContainerArray[7][1][0]);                                                                   
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player4XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player4Children;
+                if (player4MaritalStatus === true)
+                    {
+                       document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Married";
+                    }
+                else
+                    {
+                        document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
+                    }    
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player4MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player4MasterContainerArray[7][1][0];
+            document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player4MasterContainerArray[7][4];
+            document.getElementById("currentPlayerStrengths").innerHTML = player4MasterContainerArray[7][2];
+            document.getElementById("currentPlayerWeaknesses").innerHTML = player4MasterContainerArray[7][3];
+            if (numberofPlayersInt > 4) {
+                playerTurnNumberSequencer++;
+            }
+            else {
+                playerTurnNumberSequencer = 1;
+                turnNumber++;
+            }                
+            }
+            //PLAYER 5 TURN END
+    
+            //PLAYER 5 TURN START
+            else if (playerTurnNumberSequencer === 5) {
+            document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
+            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
+            document.getElementById("nameAndClass").innerHTML = player5Name + " the " + player5Class;
+            document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player5Name;
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player5Money + player5MasterContainerArray[7][1][0]);                                                                   
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player5XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player5Children;
+                if (player5MaritalStatus === true)
+                    {
+                       document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Married";
+                    }
+                else
+                    {
+                        document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
+                    }    
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player5MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player5MasterContainerArray[7][1][0];
+            document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player5MasterContainerArray[7][4];
+            document.getElementById("currentPlayerStrengths").innerHTML = player5MasterContainerArray[7][2];
+            document.getElementById("currentPlayerWeaknesses").innerHTML = player5MasterContainerArray[7][3];
+            if (numberofPlayersInt > 6) {
+                playerTurnNumberSequencer++;
+            }
+            else {
+                playerTurnNumberSequencer = 1;
+                turnNumber++;
+            }                
+            }
+            //PLAYER 5 TURN END
+    
+            //PLAYER 6 TURN START
+            else if (playerTurnNumberSequencer === 6) {
+            document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
+            document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
+            document.getElementById("nameAndClass").innerHTML = player6Name + " the " + player6Class;
+            document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player6Name;
+            document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player6Money + player6MasterContainerArray[7][1][0]);                                                                   
+            document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player6XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player6Children;
+                if (player6MaritalStatus === true)
+                    {
+                       document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Married";
+                    }
+                else
+                    {
+                        document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
+                    }    
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player6MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player6MasterContainerArray[7][1][0];
+            document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player6MasterContainerArray[7][4];
+            document.getElementById("currentPlayerStrengths").innerHTML = player6MasterContainerArray[7][2];
+            document.getElementById("currentPlayerWeaknesses").innerHTML = player6MasterContainerArray[7][3];
+            if (numberofPlayersInt > 7) {
+                playerTurnNumberSequencer++;
+            }
+            else {
+                playerTurnNumberSequencer = 1;
+                turnNumber++;
+            }
+            }
+            //PLAYER 6 TURN END
+}
 
-}
-}
-}
+        //NEXT TURN BUTTON SEQUENCE END
+
+
+
+
+
+//GAME ENDING SEQUENCE
 
 //TESTING ABOVE
 /*PLAYER 1 TURN START
