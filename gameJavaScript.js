@@ -723,36 +723,6 @@ function mobilityButton() {
 function propertyButton() {
     
 }
-//STATS BUTTONS START
-
-
-
-
-
+//STATS BUTTONS END
 
 //GAME ENDING SEQUENCE
-
-//TESTING ABOVE
-/*PLAYER 1 TURN START
-document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
-document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + turnsRemaining;
-
-//GAME START (PLAYER 1 START)
-document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + (player1Money + player1MasterContainerArray[7][1][0]);                                                                   
-document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player1XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player1Children;
-var player1Marriage = false;
-if (player1Marriage === true)
-    {
-       document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Married";
-    }
-else
-    {
-        document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
-    }    
-document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player1MasterContainerArray[7][0][0]; 
-document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player1MasterContainerArray[7][1][0];
-document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player1MasterContainerArray[7][4];
-document.getElementById("currentPlayerStrengths").innerHTML = player1MasterContainerArray[7][2];
-document.getElementById("currentPlayerWeaknesses").innerHTML = player1MasterContainerArray[7][3];
-player
-PLAYER 1 TURN END*/
