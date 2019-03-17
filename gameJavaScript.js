@@ -451,11 +451,25 @@ switch (player6Class) {
             player6MasterContainerArray.push(spyContainerArray);
                 break;
         }
+
 //ONBOARDING SEQUENCE END
 
 var playerTurnNumberSequencer = 1;
 var turnNumber = 1;
-
+//INITIALIZING PLAYER SALARIES
+var player1Salary = player1MasterContainerArray[7][1][0];
+var player2Salary = player2MasterContainerArray[7][1][0];
+var player3Salary = player3MasterContainerArray[7][1][0];
+var player4Salary = player4MasterContainerArray[7][1][0];
+var player5Salary = player5MasterContainerArray[7][1][0];
+var player6Salary = player6MasterContainerArray[7][1][0];
+//INITIALIZING PLAYER JOB TITLES
+var player1JobTitle = player1MasterContainerArray[7][0][0];
+var player2JobTitle = player2MasterContainerArray[7][0][0];
+var player3JobTitle = player3MasterContainerArray[7][0][0];
+var player4JobTitle = player4MasterContainerArray[7][0][0];
+var player5JobTitle = player5MasterContainerArray[7][0][0];
+var player6JobTitle = player6MasterContainerArray[7][0][0];
 
 //NEXT TURN BUTTON SEQUENCE START
 
@@ -468,7 +482,7 @@ function nextTurnButton() {
                 
                 
             
-            player1Money = (player1Money + player1MasterContainerArray[7][1][0])
+            player1Money = (player1Money + player1Salary);
             document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player1Money;                                                                   
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player1XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player1Children;
                 if (player1MaritalStatus === true)
@@ -479,7 +493,7 @@ function nextTurnButton() {
                     {
                         document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
                     }    
-            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player1MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player1JobTitle; 
             document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player1MasterContainerArray[7][1][0];
             document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player1MasterContainerArray[7][4];
             document.getElementById("currentPlayerStrengths").innerHTML = player1MasterContainerArray[7][2];
@@ -494,7 +508,7 @@ function nextTurnButton() {
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
             document.getElementById("nameAndClass").innerHTML = player2Name + " the " + player2Class;
             document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player2Name;
-            player2Money = (player2Money + player2MasterContainerArray[7][1][0])
+            player2Money = (player2Money + player2Salary);
             document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player2Money;                                                                       
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player2XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player2Children;
                 if (player2MaritalStatus === true)
@@ -505,7 +519,7 @@ function nextTurnButton() {
                     {
                         document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
                     }    
-            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player2MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player2JobTitle; 
             document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player2MasterContainerArray[7][1][0];
             document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player2MasterContainerArray[7][4];
             document.getElementById("currentPlayerStrengths").innerHTML = player2MasterContainerArray[7][2];
@@ -526,7 +540,7 @@ function nextTurnButton() {
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
             document.getElementById("nameAndClass").innerHTML = player3Name + " the " + player3Class;
             document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player3Name;
-            player3Money = (player3Money + player3MasterContainerArray[7][1][0])
+            player3Money = (player3Money + player3Salary);
             document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player3Money;                                                                      
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player3XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player3Children;
                 if (player3MaritalStatus === true)
@@ -537,7 +551,7 @@ function nextTurnButton() {
                     {
                         document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
                     }    
-            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player3MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player3JobTitle; 
             document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player3MasterContainerArray[7][1][0];
             document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player3MasterContainerArray[7][4];
             document.getElementById("currentPlayerStrengths").innerHTML = player3MasterContainerArray[7][2];
@@ -558,7 +572,7 @@ function nextTurnButton() {
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
             document.getElementById("nameAndClass").innerHTML = player4Name + " the " + player4Class;
             document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player4Name;
-            player4Money = (player4Money + player4MasterContainerArray[7][1][0])
+            player4Money = (player4Money + player4Salary);
             document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player4Money;                                                                     
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player4XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player4Children;
                 if (player4MaritalStatus === true)
@@ -569,7 +583,7 @@ function nextTurnButton() {
                     {
                         document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
                     }    
-            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player4MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player4JobTitle; 
             document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player4MasterContainerArray[7][1][0];
             document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player4MasterContainerArray[7][4];
             document.getElementById("currentPlayerStrengths").innerHTML = player4MasterContainerArray[7][2];
@@ -590,7 +604,7 @@ function nextTurnButton() {
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
             document.getElementById("nameAndClass").innerHTML = player5Name + " the " + player5Class;
             document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player5Name;
-            player5Money = (player5Money + player5MasterContainerArray[7][1][0])
+            player5Money = (player5Money + player5Salary);
             document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player5Money;                                                                   
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player5XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player5Children;
                 if (player5MaritalStatus === true)
@@ -601,7 +615,7 @@ function nextTurnButton() {
                     {
                         document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
                     }    
-            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player5MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player5JobTitle; 
             document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player5MasterContainerArray[7][1][0];
             document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player5MasterContainerArray[7][4];
             document.getElementById("currentPlayerStrengths").innerHTML = player5MasterContainerArray[7][2];
@@ -621,7 +635,7 @@ function nextTurnButton() {
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
             document.getElementById("nameAndClass").innerHTML = player6Name + " the " + player6Class;
             document.getElementById("currentPlayerTurn").innerHTML = "Current Player turn: " + player6Name;
-            player6Money = (player6Money + player6MasterContainerArray[7][1][0])
+            player6Money = (player6Money + player6Salary);
             document.getElementById("currentPlayerMoney").innerHTML = "Money: $" + player6Money;                                                                       
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player6XP + "XP";                 document.getElementById("currentPlayerChildren").innerHTML = "Number of Children: " + player6Children;
                 if (player6MaritalStatus === true)
@@ -632,7 +646,7 @@ function nextTurnButton() {
                     {
                         document.getElementById("currentPlayerMarriage").innerHTML =  "Marital Status: Single";
                     }    
-            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player6MasterContainerArray[7][0][0]; 
+            document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player6JobTitle; 
             document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player6MasterContainerArray[7][1][0];
             document.getElementById("currentPlayerMobility").innerHTML =  "Mobility: " + player6MasterContainerArray[7][4];
             document.getElementById("currentPlayerStrengths").innerHTML = player6MasterContainerArray[7][2];
@@ -682,11 +696,12 @@ function moneyButton() {
     }
     
 }
+//XP
 function XPButton() {
         var XPInput = window.prompt("Please enter an  Experience amount. Positive or negative", "");
         var XPInt = parseFloat(XPInput, 10);
     
-    switch (document.getElementById("currentPlayerTurn").innerHTML) {
+        switch (document.getElementById("currentPlayerTurn").innerHTML) {
             
         case "Current Player turn: " + player1Name:
         player1XP = XPInt + player1XP;
@@ -708,8 +723,130 @@ function XPButton() {
             document.getElementById("currentPlayerXP").innerHTML = "Experience: " + player6XP + "XP";        break;
     }
 }
-function promoButton() {
+
+//PROMO
+function promoButton() { 
     
+        switch (document.getElementById("currentPlayerTurn").innerHTML) {
+            
+        case "Current Player turn: " + player1Name:
+                player1MasterContainerArray[7][1].shift();
+                player1MasterContainerArray[7][0].shift();                                               player1Salary = player1MasterContainerArray[7][1][0];
+                player1JobTitle = player1MasterContainerArray[7][0][0];
+                window.alert("You've been promoted! Congrats! Your new salary is " + player1Salary + " and your new Job Title is " + player1JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player1JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player1Salary;
+                break;
+                
+        case "Current Player turn: " + player2Name:
+                player2MasterContainerArray[7][1].shift();
+                player2MasterContainerArray[7][0].shift();                                               player2Salary = player2MasterContainerArray[7][1][0];
+                player2JobTitle = player2MasterContainerArray[7][0][0];
+                window.alert("You've been promoted! Congrats! Your new salary is " + player2Salary + " and your new Job Title is " + player2JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player2JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player2Salary;
+                break;
+                
+        case "Current Player turn: " + player3Name:
+                player3MasterContainerArray[7][1].shift();
+                player3MasterContainerArray[7][0].shift();                                               player3Salary = player3MasterContainerArray[7][1][0];
+                player3JobTitle = player3MasterContainerArray[7][0][0];
+                window.alert("You've been promoted! Congrats! Your new salary is " + player3Salary + " and your new Job Title is " + player3JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player3JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player3Salary;
+                break;
+                
+                case "Current Player turn: " + player4Name:
+                player4MasterContainerArray[7][1].shift();
+                player4MasterContainerArray[7][0].shift();                                               player4Salary = player4MasterContainerArray[7][1][0];
+                player4JobTitle = player4MasterContainerArray[7][0][0];
+                window.alert("You've been promoted! Congrats! Your new salary is " + player4Salary + " and your new Job Title is " + player4JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player4JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player4Salary;
+                break;
+                
+        case "Current Player turn: " + player5Name:
+                player5MasterContainerArray[7][1].shift();
+                player5MasterContainerArray[7][0].shift();                                               player5Salary = player5MasterContainerArray[7][1][0];
+                player5JobTitle = player5MasterContainerArray[7][0][0];
+                window.alert("You've been promoted! Congrats! Your new salary is " + player5Salary + " and your new Job Title is " + player5JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player5JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player5Salary;
+                break;
+                
+        case "Current Player turn: " + player6Name:
+                player6MasterContainerArray[7][1].shift();
+                player6MasterContainerArray[7][0].shift();                                               player6Salary = player6MasterContainerArray[7][1][0];
+                player6JobTitle = player6MasterContainerArray[7][0][0];
+                window.alert("You've been promoted! Congrats! Your new salary is " + player6Salary + " and your new Job Title is " + player6JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player6JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player6Salary;
+                break;
+        
+    }
+}
+//DEMO
+function promoButton() { 
+    
+        switch (document.getElementById("currentPlayerTurn").innerHTML) {
+            
+        case "Current Player turn: " + player1Name:
+                player1MasterContainerArray[7][1].shift();
+                player1MasterContainerArray[7][0].shift();                                               player1Salary = player1MasterContainerArray[7][1][0];
+                player1JobTitle = player1MasterContainerArray[7][0][0];
+                
+                
+                window.alert("You've been demoted! That hurts! Your new salary is " + player1Salary + " and your new Job Title is " + player1JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player1JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player1Salary;
+                break;
+                
+        case "Current Player turn: " + player2Name:
+                player2MasterContainerArray[7][1].shift();
+                player2MasterContainerArray[7][0].shift();                                               player2Salary = player2MasterContainerArray[7][1][0];
+                player2JobTitle = player2MasterContainerArray[7][0][0];
+                window.alert("You've been promoted! Congrats! Your new salary is " + player2Salary + " and your new Job Title is " + player2JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player2JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player2Salary;
+                break;
+                
+        case "Current Player turn: " + player3Name:
+                player3MasterContainerArray[7][1].shift();
+                player3MasterContainerArray[7][0].shift();                                               player3Salary = player3MasterContainerArray[7][1][0];
+                player3JobTitle = player3MasterContainerArray[7][0][0];
+                window.alert("You've been promoted! Congrats! Your new salary is " + player3Salary + " and your new Job Title is " + player3JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player3JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player3Salary;
+                break;
+                
+                case "Current Player turn: " + player4Name:
+                player4MasterContainerArray[7][1].shift();
+                player4MasterContainerArray[7][0].shift();                                               player4Salary = player4MasterContainerArray[7][1][0];
+                player4JobTitle = player4MasterContainerArray[7][0][0];
+                window.alert("You've been promoted! Congrats! Your new salary is " + player4Salary + " and your new Job Title is " + player4JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player4JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player4Salary;
+                break;
+                
+        case "Current Player turn: " + player5Name:
+                player5MasterContainerArray[7][1].shift();
+                player5MasterContainerArray[7][0].shift();                                               player5Salary = player5MasterContainerArray[7][1][0];
+                player5JobTitle = player5MasterContainerArray[7][0][0];
+                window.alert("You've been promoted! Congrats! Your new salary is " + player5Salary + " and your new Job Title is " + player5JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player5JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player5Salary;
+                break;
+                
+        case "Current Player turn: " + player6Name:
+                player6MasterContainerArray[7][1].shift();
+                player6MasterContainerArray[7][0].shift();                                               player6Salary = player6MasterContainerArray[7][1][0];
+                player6JobTitle = player6MasterContainerArray[7][0][0];
+                window.alert("You've been promoted! Congrats! Your new salary is " + player6Salary + " and your new Job Title is " + player6JobTitle);
+                document.getElementById("currentPlayerJobTitle").innerHTML = "Current Job Title: " + player6JobTitle;
+                document.getElementById("currentPlayerSalary").innerHTML = "Current Salary: $" + player6Salary;
+                break;
+        
+    }
 }
 function marriageButton() {
     
