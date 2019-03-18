@@ -140,13 +140,51 @@ switch (a) {
     var player1MasterContainerArray = [];
     var player1Name = window.prompt("Player 1, what is your name?");
     player1MasterContainerArray.push(player1Name)
-    var player1Class = window.prompt("Player 1, what is your class?");
+    
         
-        
-        while (player1Class != "assassin" || "criminal" || "hobo" || "inventor" || "police" || "politician" || "pornstar" || "racing" || "rapper" || "sales" || "spy") {
-            window.alert("That's not a valid class entry. Try one of the following: assassin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
-            player1Class = window.prompt("Player 1, what is your class?");
-            }
+        var i = 1;
+        while (i > 0) {
+        var player1Class = window.prompt("Player 1, what is your class?");
+        if (player1Class === "assassin" ) {
+            i = 0;
+        }
+        else if (player1Class === "criminal") {
+            i = 0;
+        }
+        else if (player1Class === "hobo") {
+            i = 0;
+        }            
+        else if (player1Class === "inventor") {
+            i = 0;
+        }
+        else if (player1Class === "magician") {
+            i = 0;
+        }
+        else if (player1Class === "police") {
+            i = 0;
+        }
+        else if (player1Class === "politician") {
+            i = 0;
+        }
+        else if (player1Class === "pornstar") {
+            i = 0;
+        }
+        else if (player1Class === "racing") {
+            i = 0;
+        }
+        else if (player1Class === "rapper") {
+            i = 0;
+        }
+        else if (player1Class === "sales") {
+            i = 0;
+        }
+        else if (player1Class === "spy") {
+            i = 0;
+        }
+        else {
+            window.alert("That's not a valid class entry. Try one of the following: assasin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
+        }
+}     
     player1MasterContainerArray.push(player1Class);
     var player1Money = 0;
     player1MasterContainerArray.push(player1Money);
@@ -166,11 +204,49 @@ switch (a) {
     var player2MasterContainerArray = [];
     var player2Name = window.prompt("Player 2, what is your name?");
     player2MasterContainerArray.push(player2Name)
-    var player2Class = window.prompt("Player 2, what is your class?");
-        while (player2Class != "assassin" || "criminal" || "hobo" || "inventor" || "police" || "politician" || "pornstar" || "racing" || "rapper" || "sales" || "spy") {
-            window.alert("That's not a valid class entry. Try one of the following: assassin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
-            player2Class = window.prompt("Player 2, what is your class?");
-            }
+    i = 1;
+        while (i > 0) {
+        var player2Class = window.prompt("Player 2, what is your class?");
+        if (player2Class === "assassin" ) {
+            i = 0;
+        }
+        else if (player2Class === "criminal") {
+            i = 0;
+        }
+        else if (player2Class === "hobo") {
+            i = 0;
+        }            
+        else if (player2Class === "inventor") {
+            i = 0;
+        }
+        else if (player2Class === "magician") {
+            i = 0;
+        }
+        else if (player2Class === "police") {
+            i = 0;
+        }
+        else if (player2Class === "politician") {
+            i = 0;
+        }
+        else if (player2Class === "pornstar") {
+            i = 0;
+        }
+        else if (player2Class === "racing") {
+            i = 0;
+        }
+        else if (player2Class === "rapper") {
+            i = 0;
+        }
+        else if (player2Class === "sales") {
+            i = 0;
+        }
+        else if (player2Class === "spy") {
+            i = 0;
+        }
+        else {
+            window.alert("That's not a valid class entry. Try one of the following: assasin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
+        }
+}     
     player2MasterContainerArray.push(player2Class);
     var player2Money = 0;
     player2MasterContainerArray.push(player2Money);
@@ -190,11 +266,49 @@ switch (a) {
     var player3MasterContainerArray = [];
     var player3Name = window.prompt("Player 3, what is your name?");
     player3MasterContainerArray.push(player3Name)
-    var player3Class = window.prompt("Player 3, what is your class?");
-        while (player3Class != "assassin" || "criminal" || "hobo" || "inventor" || "police" || "politician" || "pornstar" || "racing" || "rapper" || "sales" || "spy") {
-            window.alert("That's not a valid class entry. Try one of the following: assassin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
-            player3Class = window.prompt("Player 3, what is your class?");
-            }
+    i = 1;
+        while (i > 0) {
+        var player3Class = window.prompt("Player 3, what is your class?");
+        if (player3Class === "assassin" ) {
+            i = 0;
+        }
+        else if (player3Class === "criminal") {
+            i = 0;
+        }
+        else if (player3Class === "hobo") {
+            i = 0;
+        }            
+        else if (player3Class === "inventor") {
+            i = 0;
+        }
+        else if (player3Class === "magician") {
+            i = 0;
+        }
+        else if (player3Class === "police") {
+            i = 0;
+        }
+        else if (player3Class === "politician") {
+            i = 0;
+        }
+        else if (player3Class === "pornstar") {
+            i = 0;
+        }
+        else if (player3Class === "racing") {
+            i = 0;
+        }
+        else if (player3Class === "rapper") {
+            i = 0;
+        }
+        else if (player3Class === "sales") {
+            i = 0;
+        }
+        else if (player3Class === "spy") {
+            i = 0;
+        }
+        else {
+            window.alert("That's not a valid class entry. Try one of the following: assasin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
+        }
+}     
     player3MasterContainerArray.push(player3Class);
     var player3Money = 0;
     player3MasterContainerArray.push(player3Money);
@@ -207,16 +321,58 @@ switch (a) {
     var player3Mobility = 0;
     player3MasterContainerArray.push(player3Mobility);
     break;
+        
+        
+        
+        
     case 4:
     //PLAYER 4
     var player4MasterContainerArray = [];
     var player4Name = window.prompt("Player 4, what is your name?");
     player4MasterContainerArray.push(player4Name)
-    var player4Class = window.prompt("Player 4, what is your class?");
-        while (player4Class != "assassin" || "criminal" || "hobo" || "inventor" || "police" || "politician" || "pornstar" || "racing" || "rapper" || "sales" || "spy") {
-            window.alert("That's not a valid class entry. Try one of the following: assassin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
-            player4Class = window.prompt("Player 4, what is your class?");
-            }
+    i = 1;
+        while (i > 0) {
+        var player4Class = window.prompt("Player 4, what is your class?");
+        if (player4Class === "assassin" ) {
+            i = 0;
+        }
+        else if (player4Class === "criminal") {
+            i = 0;
+        }
+        else if (player4Class === "hobo") {
+            i = 0;
+        }            
+        else if (player4Class === "inventor") {
+            i = 0;
+        }
+        else if (player4Class === "magician") {
+            i = 0;
+        }
+        else if (player4Class === "police") {
+            i = 0;
+        }
+        else if (player4Class === "politician") {
+            i = 0;
+        }
+        else if (player4Class === "pornstar") {
+            i = 0;
+        }
+        else if (player4Class === "racing") {
+            i = 0;
+        }
+        else if (player4Class === "rapper") {
+            i = 0;
+        }
+        else if (player4Class === "sales") {
+            i = 0;
+        }
+        else if (player4Class === "spy") {
+            i = 0;
+        }
+        else {
+            window.alert("That's not a valid class entry. Try one of the following: assasin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
+        }
+}     
     player4MasterContainerArray.push(player4Class);
     var player4Money = 0;
     player4MasterContainerArray.push(player4Money);
@@ -237,11 +393,49 @@ switch (a) {
     var player5MasterContainerArray = [];
     var player5Name = window.prompt("Player 5, what is your name?");
     player5MasterContainerArray.push(player5Name)
-    var player5Class = window.prompt("Player 5, what is your class?");
-        while (player5Class != "assassin" || "criminal" || "hobo" || "inventor" || "police" || "politician" || "pornstar" || "racing" || "rapper" || "sales" || "spy") {
-            window.alert("That's not a valid class entry. Try one of the following: assassin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
-            player5Class == window.prompt("Player 5, what is your class?");
-            }
+    i = 1;
+        while (i > 0) {
+        var player5Class = window.prompt("Player 5, what is your class?");
+        if (player5Class === "assassin" ) {
+            i = 0;
+        }
+        else if (player5Class === "criminal") {
+            i = 0;
+        }
+        else if (player5Class === "hobo") {
+            i = 0;
+        }            
+        else if (player5Class === "inventor") {
+            i = 0;
+        }
+        else if (player5Class === "magician") {
+            i = 0;
+        }
+        else if (player5Class === "police") {
+            i = 0;
+        }
+        else if (player5Class === "politician") {
+            i = 0;
+        }
+        else if (player5Class === "pornstar") {
+            i = 0;
+        }
+        else if (player5Class === "racing") {
+            i = 0;
+        }
+        else if (player5Class === "rapper") {
+            i = 0;
+        }
+        else if (player5Class === "sales") {
+            i = 0;
+        }
+        else if (player5Class === "spy") {
+            i = 0;
+        }
+        else {
+            window.alert("That's not a valid class entry. Try one of the following: assasin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
+        }
+}     
     player5MasterContainerArray.push(player5Class);
     var player5Money = 0;
     player5MasterContainerArray.push(player5Money);
@@ -262,11 +456,49 @@ switch (a) {
     var player6MasterContainerArray = [];
     var player6Name = window.prompt("Player 6, what is your name?");
     player6MasterContainerArray.push(player6Name)
-    var player6Class = window.prompt("Player 6, what is your class?");
-        while (player6Class !== "assassin" || "criminal" || "hobo" || "inventor" || "police" || "politician" || "pornstar" || "racing" || "rapper" || "sales" || "spy") {
-            window.alert("That's not a valid class entry. Try one of the following: assassin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
-            player6Class = window.prompt("Player 6, what is your class?");
-            }
+    i = 1;
+        while (i > 0) {
+        var player6Class = window.prompt("Player 6, what is your class?");
+        if (player6Class === "assassin" ) {
+            i = 0;
+        }
+        else if (player6Class === "criminal") {
+            i = 0;
+        }
+        else if (player6Class === "hobo") {
+            i = 0;
+        }            
+        else if (player6Class === "inventor") {
+            i = 0;
+        }
+        else if (player6Class === "magician") {
+            i = 0;
+        }
+        else if (player6Class === "police") {
+            i = 0;
+        }
+        else if (player6Class === "politician") {
+            i = 0;
+        }
+        else if (player6Class === "pornstar") {
+            i = 0;
+        }
+        else if (player6Class === "racing") {
+            i = 0;
+        }
+        else if (player6Class === "rapper") {
+            i = 0;
+        }
+        else if (player6Class === "sales") {
+            i = 0;
+        }
+        else if (player6Class === "spy") {
+            i = 0;
+        }
+        else {
+            window.alert("That's not a valid class entry. Try one of the following: assasin, criminal, hobo, inventor, police, politician, pornstar, racing, rapper, sales, spy.");
+        }
+}     
     player6MasterContainerArray.push(player6Class);
     var player6Money = 0;
     player6MasterContainerArray.push(player6Money);
