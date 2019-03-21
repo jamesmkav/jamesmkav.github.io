@@ -970,7 +970,7 @@ function nextTurnButton() {
                     //SECOND PLACE
                     if (winningPlayersArray[1] === player1Total) {
                         secondPlace = player1Name;
-                        winningPlayerNames.push(player2Name);
+                        winningPlayerNames.push(player1Name);
                     }
                     else if (winningPlayersArray[1] === player2Total) {
                         secondPlace = player2Name;
@@ -1024,8 +1024,6 @@ function nextTurnButton() {
                     if (numberofPlayersInt > 2) {
                     window.alert("And right behind that in a miserable third place is " + winningPlayerNames[2] + " with a measly $" + winningPlayersArray[2]);
                     }
-
-
                     //ENDING SEQUENCE END    
                 }
                 
