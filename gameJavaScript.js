@@ -941,77 +941,79 @@ function nextTurnButton() {
                     var winningPlayerNames = [];
                     
                     winningPlayersArray = playerTotalsArray.sort(function (a, b) {  return b - a;  });
+                    
                     //FIRST PLACE
-                    if (winningPlayersArray[0] = player1Total) {
+                    if (winningPlayersArray[0] === player1Total) {
                         firstPlace = player1Name;
                         winningPlayerNames.push(player1Name);
                     }
-                    else if (winningPlayersArray[0] = player2Total) {
+                    else if (winningPlayersArray[0] === player2Total) {
                         firstPlace = player2Name;
                         winningPlayerNames.push(player2Name);
                     }
-                    else if (winningPlayersArray[0] = player3Total) {
+                    else if (winningPlayersArray[0] === player3Total) {
                         firstPlace = player3Name;                        
                         winningPlayerNames.push(player3Name);
                     }
-                    else if (winningPlayersArray[0] = player4Total) {
+                    else if (winningPlayersArray[0] === player4Total) {
                         firstPlace = player4Name;                        
                         winningPlayerNames.push(player4Name);
                     }
-                    else if (winningPlayersArray[0] = player5Total) {
+                    else if (winningPlayersArray[0] === player5Total) {
                         firstPlace = player5Name;
                         winningPlayerNames.push(player5Name);
                     }
-                    else if (winningPlayersArray[0] = player6Total) {
+                    else if (winningPlayersArray[0] === player6Total) {
                         firstPlace = player6Name;
                         winningPlayerNames.push(player6Name);
                     }
                     //SECOND PLACE
-                    if (winningPlayersArray[1] = player1Total) {
+                    if (winningPlayersArray[1] === player1Total) {
                         secondPlace = player1Name;
+                        winningPlayerNames.push(player2Name);
                     }
-                    else if (winningPlayersArray[1] = player2Total) {
+                    else if (winningPlayersArray[1] === player2Total) {
                         secondPlace = player2Name;
                         winningPlayerNames.push(player2Name);
                     }
-                    else if (winningPlayersArray[1] = player3Total) {
+                    else if (winningPlayersArray[1] === player3Total) {
                         secondPlace = player3Name;
                         winningPlayerNames.push(player3Name);
                     }
-                    else if (winningPlayersArray[1] = player4Total) {
+                    else if (winningPlayersArray[1] === player4Total) {
                         secondPlace = player4Name;
                         winningPlayerNames.push(player4Name);
                     }
-                    else if (winningPlayersArray[1] = player5Total) {
+                    else if (winningPlayersArray[1] === player5Total) {
                         secondPlace = player5Name;
                         winningPlayerNames.push(player5Name)
                     }
-                    else if (winningPlayersArray[1] = player6Total) {
+                    else if (winningPlayersArray[1] === player6Total) {
                         secondPlace = player6Name;
                         winningPlayerNames.push(player6Name);
                     }
                     //THIRD PLACE
-                    if (winningPlayersArray[2] = player1Total) {
+                    if (winningPlayersArray[2] === player1Total) {
                         secondPlace = player1Name;
                         winningPlayerNames.push(player1Name);
                     }
-                    else if (winningPlayersArray[2] = player2Total) {
+                    else if (winningPlayersArray[2] === player2Total) {
                         secondPlace = player2Name;
                         winningPlayerNames.push(player2Name);
                     }
-                    else if (winningPlayersArray[2] = player3Total) {
+                    else if (winningPlayersArray[2] === player3Total) {
                         secondPlace = player3Name;
                         winningPlayerNames.push(player3Name);
                     }
-                    else if (winningPlayersArray[2] = player4Total) {
+                    else if (winningPlayersArray[2] === player4Total) {
                         secondPlace = player4Name;
                         winningPlayerNames.push(player4Name);
                     }
-                    else if (winningPlayersArray[2] = player5Total) {
+                    else if (winningPlayersArray[2] === player5Total) {
                         secondPlace = player5Name;
                         winningPlayerNames.push(player5Name);
                     }
-                    else if (winningPlayersArray[2] = player6Total) {
+                    else if (winningPlayersArray[2] === player6Total) {
                         secondPlace = player6Name;
                         winningPlayerNames.push(player6Name);
                     }
@@ -1020,7 +1022,7 @@ function nextTurnButton() {
                     window.alert("In first place we have " + winningPlayerNames[0] + " with a whopping $" + winningPlayersArray[0] + "!");
                     window.alert("In second place we have " + winningPlayerNames[1] + " with $" + winningPlayersArray[1]);
                     if (numberofPlayersInt > 2) {
-                    window.alert("And right behind that in a miserable third place is " + winningPlayerNames[2] + " with a whopping $" + winningPlayersArray[2]);
+                    window.alert("And right behind that in a miserable third place is " + winningPlayerNames[2] + " with a measly $" + winningPlayersArray[2]);
                     }
 
 
