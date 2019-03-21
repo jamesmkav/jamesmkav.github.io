@@ -918,14 +918,115 @@ function nextTurnButton() {
                 else if ((numberofTurnsInt - turnNumber) === 0) {
                     window.alert("Last turn! Get your licks in!"); 
                 }
-                //ENDING SEQUENCE
+                //ENDING SEQUENCE START
                 else if ((numberofTurnsInt - turnNumber) === -1) {  
                 window.alert("Game Over Man!");
                     player1XP = player1XP + (player1Children * 1000000);
-                    var player1Total = player1Money;
-                    window.alert(player1Total);
+                    player2XP = player2XP + (player2Children * 1000000);
+                    player3XP = player3XP + (player3Children * 1000000);
+                    player4XP = player4XP + (player4Children * 1000000);
+                    player5XP = player5XP + (player5Children * 1000000);
+                    player6XP = player6XP + (player6Children * 1000000);
+
+                    var player1Total = player1Money + player1XP;
+                    var player2Total = player2Money + player2XP;
+                    var player3Total = player3Money + player3XP;
+                    var player4Total = player4Money + player4XP;
+                    var player5Total = player5Money + player5XP;
+                    var player6Total = player6Money + player6XP;
                     
+                    var playerTotalsArray = [player1Total, player2Total, player3Total, player4Total, player5Total, player6Total];
+                    var firstPlace;
+                    var secondPlace;
+                    var winningPlayerNames = [];
+                    
+                    winningPlayersArray = playerTotalsArray.sort(function (a, b) {  return b - a;  });
+                    //FIRST PLACE
+                    if (winningPlayersArray[0] = player1Total) {
+                        firstPlace = player1Name;
+                        winningPlayerNames.push(player1Name);
+                    }
+                    else if (winningPlayersArray[0] = player2Total) {
+                        firstPlace = player2Name;
+                        winningPlayerNames.push(player2Name);
+                    }
+                    else if (winningPlayersArray[0] = player3Total) {
+                        firstPlace = player3Name;                        
+                        winningPlayerNames.push(player3Name);
+                    }
+                    else if (winningPlayersArray[0] = player4Total) {
+                        firstPlace = player4Name;                        
+                        winningPlayerNames.push(player4Name);
+                    }
+                    else if (winningPlayersArray[0] = player5Total) {
+                        firstPlace = player5Name;
+                        winningPlayerNames.push(player5Name);
+                    }
+                    else if (winningPlayersArray[0] = player6Total) {
+                        firstPlace = player6Name;
+                        winningPlayerNames.push(player6Name);
+                    }
+                    //SECOND PLACE
+                    if (winningPlayersArray[1] = player1Total) {
+                        secondPlace = player1Name;
+                    }
+                    else if (winningPlayersArray[1] = player2Total) {
+                        secondPlace = player2Name;
+                        winningPlayerNames.push(player2Name);
+                    }
+                    else if (winningPlayersArray[1] = player3Total) {
+                        secondPlace = player3Name;
+                        winningPlayerNames.push(player3Name);
+                    }
+                    else if (winningPlayersArray[1] = player4Total) {
+                        secondPlace = player4Name;
+                        winningPlayerNames.push(player4Name);
+                    }
+                    else if (winningPlayersArray[1] = player5Total) {
+                        secondPlace = player5Name;
+                        winningPlayerNames.push(player5Name)
+                    }
+                    else if (winningPlayersArray[1] = player6Total) {
+                        secondPlace = player6Name;
+                        winningPlayerNames.push(player6Name);
+                    }
+                    //THIRD PLACE
+                    if (winningPlayersArray[2] = player1Total) {
+                        secondPlace = player1Name;
+                        winningPlayerNames.push(player1Name);
+                    }
+                    else if (winningPlayersArray[2] = player2Total) {
+                        secondPlace = player2Name;
+                        winningPlayerNames.push(player2Name);
+                    }
+                    else if (winningPlayersArray[2] = player3Total) {
+                        secondPlace = player3Name;
+                        winningPlayerNames.push(player3Name);
+                    }
+                    else if (winningPlayersArray[2] = player4Total) {
+                        secondPlace = player4Name;
+                        winningPlayerNames.push(player4Name);
+                    }
+                    else if (winningPlayersArray[2] = player5Total) {
+                        secondPlace = player5Name;
+                        winningPlayerNames.push(player5Name);
+                    }
+                    else if (winningPlayersArray[2] = player6Total) {
+                        secondPlace = player6Name;
+                        winningPlayerNames.push(player6Name);
+                    }
+                    
+                    window.alert("The results are in!!!")
+                    window.alert("In first place we have " + winningPlayerNames[0] + " with a whopping $" + winningPlayersArray[0] + "!");
+                    window.alert("In second place we have " + winningPlayerNames[1] + " with $" + winningPlayersArray[1]);
+                    if (numberofPlayersInt > 2) {
+                    window.alert("And right behind that in a miserable third place is " + winningPlayerNames[2] + " with a whopping $" + winningPlayersArray[2]);
+                    }
+
+
+                    //ENDING SEQUENCE END    
                 }
+                
             
 
                 
