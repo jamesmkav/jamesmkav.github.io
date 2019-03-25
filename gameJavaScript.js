@@ -911,13 +911,17 @@ function player6Button() {
 
 function nextTurnButton() {
             if (playerTurnNumberSequencer === 1) {
-                //PLAYER 1 LAST 3/1 TURN WARNING AND ENDING SEQUENCE START
+                //PLAYER 1 LAST 3 TURNS WARNING
                 if ((numberofTurnsInt - turnNumber) === 2) {
                     window.alert("All right everyone! Three turns left! Make em' count!"); 
                 }
+                //PLAYER 1 LAST 1 TURN WARNING
                 else if ((numberofTurnsInt - turnNumber) === 0) {
                     window.alert("Last turn! Get your licks in!"); 
                 }
+                
+                
+                
                 //ENDING SEQUENCE START
                 else if ((numberofTurnsInt - turnNumber) === -1) {  
                 window.alert("Game Over Man!");
@@ -939,6 +943,7 @@ function nextTurnButton() {
                     var firstPlace;
                     var secondPlace;
                     var winningPlayerNames = [];
+                    var winningPlayerClasses = [];
                     
                     winningPlayersArray = playerTotalsArray.sort(function (a, b) {  return b - a;  });
                     
@@ -946,26 +951,32 @@ function nextTurnButton() {
                     if (winningPlayersArray[0] === player1Total) {
                         firstPlace = player1Name;
                         winningPlayerNames.push(player1Name);
+                        winningPlayerClasses.push(player1Class);
                     }
                     else if (winningPlayersArray[0] === player2Total) {
                         firstPlace = player2Name;
                         winningPlayerNames.push(player2Name);
+                        winningPlayerClasses.push(player2Class);
                     }
                     else if (winningPlayersArray[0] === player3Total) {
                         firstPlace = player3Name;                        
                         winningPlayerNames.push(player3Name);
+                        winningPlayerClasses.push(player3Class);
                     }
                     else if (winningPlayersArray[0] === player4Total) {
                         firstPlace = player4Name;                        
                         winningPlayerNames.push(player4Name);
+                        winningPlayerClasses.push(player4Class);
                     }
                     else if (winningPlayersArray[0] === player5Total) {
                         firstPlace = player5Name;
                         winningPlayerNames.push(player5Name);
+                        winningPlayerClasses.push(player5Class);
                     }
                     else if (winningPlayersArray[0] === player6Total) {
                         firstPlace = player6Name;
                         winningPlayerNames.push(player6Name);
+                        winningPlayerClasses.push(player6Class);
                     }
                     //SECOND PLACE
                     if (winningPlayersArray[1] === player1Total) {
@@ -1024,6 +1035,49 @@ function nextTurnButton() {
                     if (numberofPlayersInt > 2) {
                     window.alert("And right behind that in a miserable third place is " + winningPlayerNames[2] + " with a measly $" + winningPlayersArray[2]);
                     }
+                    
+                    
+                    //ENDING SCREENS
+                    if (winningPlayerClasses[0] === "assassin") {
+                        window.location.href = './Endings/assassinEnding.html';
+                    }
+                    else if {
+                        window.location.href = '/Endings/criminalEnding.html';
+                    }
+                    else if {
+                        window.location.href = '/Endings/hoboEnding.html';
+                    }
+                    else if {
+                        window.location.href = '/Endings/inventorEnding.html';
+                    }
+                    else if {
+                        window.location.href = '/Endings/magicianEnding.html';
+                    }
+                    else if {
+                        window.location.href = '/Endings/policeEnding.html';
+                    }
+                    else if {
+                        window.location.href = '/Endings/politicianEnding.html';
+                    }
+                    else if {
+                        window.location.href = '/Endings/pornstarEnding.html';
+                    }
+                    else if {
+                        window.location.href = '/Endings/racingEnding.html';
+                    }
+                    else if {
+                        window.location.href = '/Endings/rapperEnding.html';
+                    }
+                    else if {
+                        window.location.href = '/Endings/salesEnding.html';
+                    }
+                    else if {
+                        window.location.href = '/Endings/spyEnding.html';
+                    }
+                    
+                    
+                    
+                    
                     //ENDING SEQUENCE END    
                 }
                 
@@ -1031,7 +1085,6 @@ function nextTurnButton() {
 
                 
                 
-                //PLAYER 1 LAST 3/1 TURN WARNING AND ENDING SEQUENCE END
                 playerSwitch = 1;
             document.getElementById("currentTurnNumber").innerHTML = "Turn Number: " + turnNumber;
             document.getElementById("currentTurnsRemaining").innerHTML = "Turns Remaining: " + (numberofTurnsInt - turnNumber);
