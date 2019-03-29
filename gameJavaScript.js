@@ -1041,37 +1041,37 @@ function nextTurnButton() {
                     if (winningPlayerClasses[0] === "assassin") {
                         window.location.href = './Endings/assassinEnding.html';
                     }
-                    else if {
+                    else if (winningPlayerClasses[0] === "criminal"){
                         window.location.href = '/Endings/criminalEnding.html';
                     }
-                    else if {
+                    else if (winningPlayerClasses[0] === "hobo"){
                         window.location.href = '/Endings/hoboEnding.html';
                     }
-                    else if {
+                    else if (winningPlayerClasses[0] === "inventor"){
                         window.location.href = '/Endings/inventorEnding.html';
                     }
-                    else if {
+                    else if (winningPlayerClasses[0] === "magician"){
                         window.location.href = '/Endings/magicianEnding.html';
                     }
-                    else if {
+                    else if (winningPlayerClasses[0] === "police"){
                         window.location.href = '/Endings/policeEnding.html';
                     }
-                    else if {
+                    else if (winningPlayerClasses[0] === "politician"){
                         window.location.href = '/Endings/politicianEnding.html';
                     }
-                    else if {
+                    else if (winningPlayerClasses[0] === "pornstar"){
                         window.location.href = '/Endings/pornstarEnding.html';
                     }
-                    else if {
+                    else if (winningPlayerClasses[0] === "racing"){
                         window.location.href = '/Endings/racingEnding.html';
                     }
-                    else if {
+                    else if (winningPlayerClasses[0] === "rapper"){
                         window.location.href = '/Endings/rapperEnding.html';
                     }
-                    else if {
+                    else if (winningPlayerClasses[0] === "sales"){
                         window.location.href = '/Endings/salesEnding.html';
                     }
-                    else if {
+                    else if (winningPlayerClasses[0] === "spy"){
                         window.location.href = '/Endings/spyEnding.html';
                     }
                     
