@@ -1036,7 +1036,6 @@ function nextTurnButton() {
                     window.alert("And right behind that in a miserable third place is " + winningPlayerNames[2] + " with a measly $" + winningPlayersArray[2]);
                     }
                     
-                    
                     //ENDING SCREENS
                     if (winningPlayerClasses[0] === "assassin") {
                         window.location.href = './Endings/assassinEnding.html';
@@ -1074,12 +1073,9 @@ function nextTurnButton() {
                     else if (winningPlayerClasses[0] === "spy"){
                         window.location.href = '/Endings/spyEnding.html';
                     }
-                    
-                    
-                    
-                    
-                    //ENDING SEQUENCE END    
                 }
+                    //ENDING SEQUENCE END    
+               
                 
             
 
