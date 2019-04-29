@@ -34,6 +34,7 @@
     color: white;
     border: solid;
     border-color: black;
+    margin: 15px;
 }
 .footer {
     background-image: linear-gradient(rgb(252, 0, 0), black);
