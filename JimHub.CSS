@@ -1,0 +1,46 @@
+.navbar {
+    padding: 10px;
+}
+.nav-link, .navbar-brand {
+    padding: 10px;
+}
+.navbar-brand {
+    font-size: 30px;
+}
+
+.JimCollagePic {
+    width: 100%;
+    height: auto;
+}
+
+#topJumboTron {
+    margin: 0px;
+    padding: 10px;
+    background-image: linear-gradient(rgb(252, 0, 0), black);
+    color: white;
+}
+
+.JimBioPic {
+    height: 100px;
+    width: auto;
+}
+
+#HomeDescription {
+    border: solid;
+    margin: 10px;
+    padding: 10px;
+}
+.card {
+    color: white;
+    border: solid;
+    border-color: black;
+}
+.footer {
+    background-image: linear-gradient(rgb(252, 0, 0), black);
+    color: white;
+    margin: 0px;
+    padding; 0px;
+}
+.footerText {
+    margin: 0px;
+}
