@@ -1,0 +1,76 @@
+.logoPic {
+    width: 20%;
+    border-bottom: solid;
+    border-right: solid;
+}
+.mainContainer {
+    padding: 0px;
+    margin: 0px;
+}
+.navBarContainer {
+    height: 50px;
+    width: 100%;
+    margin-left: 20%;
+    padding-left: 5%;
+    margin-top: 0px;
+    background-color: skyblue;
+    color: white;
+}
+.navBarItemsList {
+    display: flex;
+}
+.navListItem {
+    display: flex;
+    width: 20%;
+    margin-top: 10px;
+}
+.flexListContainer {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-left: 20px;
+}
+.generalList, .savoryList, .pastryList {
+    width: 190%;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+    margin-top: 17px;
+    border-top: solid;
+    border-color: white;
+}
+.generalListItem, .savoryListItem, .pastryListItem {
+    display: flex;
+    font-size: 12px;
+    background-color: skyblue;
+    padding: 5px 8px 5px 8px;
+    border-bottom: solid;
+    border-color: white;
+}
+.textBodyContainer {
+}
+.leftBar {
+    width: 20%;
+    height: 100%;
+    margin-top: 20%;
+    border-right: solid;
+    background-color: deepskyblue;
+}
+.leftBarHeading {
+    font-size: 12px;
+    text-align: center;
+}
+.bodyContent {
+    width: 80%;
+    padding: 20px;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+h1 {
+    text-align: center;
+    border: solid;
+}
+a {
+    color: white;
+}
