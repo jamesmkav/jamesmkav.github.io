@@ -29,3 +29,6 @@ $(".flexListContainer").mouseleave(function () {
 });
 //NAVBAR FUNCTIONS END
 
+function AboutMeAndThisSite() {
+    $(".bodyContent").css("display", "none");
+}
