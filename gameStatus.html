@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- MY CSS -->
+        <link rel="stylesheet" type="text/css" href="./Adulting.CSS">
+    <title>Adulting ScoreCard</title>
+  </head>
+    <body class="backgroundBody">
+      <!-- NAVBAR START -->
+    <div class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+    <h1 class="display-4">Game Status</h1>
+    <p id="currentTurnNumber">Turn# </p>
+    <p id="currentTurnsRemaining">Turns Remaining: </p>
+    <p id="currentPlayerTurn">Current Player Turn: </p>
+      <br>
+    <button type="button" onclick="nextTurnButton()" class="btn btn-primary btn-lg">Next Player's Turn</button>
+      <br>
+      <br>
+      <p>Click on a Player to see their stats</p>
+      <div id="buttonsDivParent"> 
+      <!-- PLAYER BUTTONS START -->
+      <button type="button" id="player1Button" onclick="player1Button()" class="btn btn-secondary btn-sm">1</button>
+      <button type="button" id="player2Button" onclick="player2Button()" class="btn btn-secondary btn-sm">2</button>
+      <button type="button" id="player3Button" onclick="player3Button()" class="btn btn-secondary btn-sm">3</button>
+      <button type="button" id="player4Button" onclick="player4Button()" class="btn btn-secondary btn-sm">4</button>
+      <button type="button" id="player5Button" onclick="player5Button()" class="btn btn-secondary btn-sm">5</button>
+      <button type="button" id="player6Button" onclick="player6Button()" class="btn btn-secondary btn-sm">6</button>
+      <!-- PLAYER BUTTONS END -->
+      </div> 
+</div>
+<br>
+</div>
+<!-- NAVBAR END -->
+        <!-- PLAYER CARD GROUP START -->
+        <div class="card-group">
+  <div class="card">
+      <div class="card-body">
+          <h2 class="title text-center"><div id="nameAndClass"</div></h2>
+          <br>
+<h5 class="title text-center">Current Stats</h5>
+<div class="currentPlayerStats">
+        <ul>
+            <li id="currentPlayerMoney">Money: </li>
+            <li id="currentPlayerXP">Experience:</li>
+            <li id="currentPlayerChildren">Number of Children: </li>
+            <li id="currentPlayerMarriage">Marital Status: </li>
+            <li id="currentPlayerJobTitle">Current Job Title: </li>
+            <li id="currentPlayerSalary">Current Salary: </li>
+            <li id="currentPlayerProperty">Properties Owned: </li>
+            <li id="currentPlayerMobility">Mobility: </li>
+          </ul>
+    <h5 class="title text-center">Click to Enter Info</h5>
+        <button type="button" onclick="moneyButton()" class="btn btn-secondary btn-lg btn-block">$</button>
+        <button type="button" onclick="XPButton()" class="btn btn-secondary btn-lg btn-block">XP</button>
+        <button type="button" onclick="promoButton()" class="btn btn-secondary btn-lg btn-block">Promotion</button>
+        <button type="button" onclick="marriageButton()" class="btn btn-secondary btn-lg btn-block">Marriage/Divorce</button>
+        <button type="button" onclick="childrenButton()" class="btn btn-secondary btn-lg btn-block">Children</button>
+        <button type="button" onclick="mobilityButton()" class="btn btn-secondary btn-lg btn-block">Mobility</button>
+        <button type="button" onclick="propertyButton()" class="btn btn-secondary btn-lg btn-block">Property</button>
+      </div>  
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+    <h5 class="title text-center">Strengths</h5>
+      <p class="card-text"><small class="text-muted"><div id="currentPlayerStrengths"></div></small></p> 
+      </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+    <h5 class="title text-center">Weaknesses</h5>
+        <p class="card-text"><small class="text-muted"><div id="currentPlayerWeaknesses"></div></small></p>
+        <br>
+    </div> 
+  </div>
+</div>
+        <!-- MY JAVASCRIPT -->
+        <script type="text/javascript" src="./gameJavaScript.js"></script>
+    <!-- BOOTSRAP JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
