@@ -1,0 +1,93 @@
+.jumbotron {
+    margin-bottom: 0px;
+}
+.RulesBody {
+    margin: 25px;
+}
+.bodyContainer {
+    display: flex;
+}
+.nav-link {
+    margin: 10px;
+}
+.firstColumn {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: 10px;
+    margin-top: 0px;
+}
+#firstColumnContent {
+    margin-top: 5%;
+    display: none;
+}
+#assassinClassName, #hoboClassName, #inventorClassName, #magicianClassName, #policeClassName, #politicianClassName, #racingClassName, #salesClassName, #spyClassName {
+    text-align: center;
+    display: none;
+}
+.classImage {
+    width: 100%;
+}
+#assassinImage, #hoboImage, #inventorImage, #magicianImage, #policeImage, #politicianImage, #racingImage, #salesImage, #spyImage {
+    display: none;
+}
+#assassinClassDescription, #hoboClassDescription, #inventorClassDescription, #magicianClassDescription, #policeClassDescription, #politicianClassDescription, #racingClassDescription, #salesClassDescription, #spyClassDescription  {
+    text-align: center;
+    margin: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: black;
+    color: white;
+    display: none;
+}
+.secondColumn {
+    display: flex;
+    height: 100%;
+    width: 60%;
+}
+#secondColumnContent {
+    width: 100%;
+    display: none;
+}
+.card {
+    border-color: black;
+    margin: 10px;
+    margin-left: 0px;
+    text-align: center;
+    color: white;
+    background: rgb(2,0,36);
+    background-color: black
+}
+.card-body {
+    padding: 10px;
+}
+#assassinLV1Salary, #hoboLV1Salary, #inventorLV1Salary, #magicianLV1Salary, #policeLV1Salary, #politicianLV1Salary, #racingLV1Salary, #salesLV1Salary, #spyLV1Salary {
+    display: none;
+}
+#assassinLV1PerkDescription, #hoboLV1PerkDescription, #inventorLV1PerkDescription, #magicianLV1PerkDescription, #policeLV1PerkDescription, #politicianLV1PerkDescription, #racingLV1PerkDescription, #salesLV1PerkDescription, #spyLV1PerkDescription {
+    display: none;
+}
+#assassinLV2Salary, #hoboLV2Salary, #inventorLV2Salary, #magicianLV2Salary, #policeLV2Salary, #politicianLV2Salary, #racingLV2Salary, #salesLV2Salary, #spyLV2Salary {
+    display: none;
+}
+#assassinLV2PerkDescription, #hoboLV2PerkDescription, #inventorLV2PerkDescription, #magicianLV2PerkDescription, #policeLV2PerkDescription, #politicianLV2PerkDescription, #racingLV2PerkDescription, #salesLV2PerkDescription, #spyLV2PerkDescription {
+    display: none;
+}
+#assassinLV3Salary, #hoboLV3Salary, #inventorLV3Salary, #magicianLV3Salary, #policeLV3Salary, #politicianLV3Salary, #racingLV3Salary, #salesLV3Salary, #spyLV3Salary {
+    display: none;
+}
+#assassinLV3PerkDescription, #hoboLV3PerkDescription, #inventorLV3PerkDescription, #magicianLV3PerkDescription, #policeLV3PerkDescription, #politicianLV3PerkDescription, #racingLV3PerkDescription, #salesLV3PerkDescription, #spyLV3PerkDescription {
+    display: none;
+}
+
+
+
+
+
+.classSelectorButtons {
+  text-align: center;  
+}
+button {
+    margin: 5px;
+    margin-left: 0px;
+}

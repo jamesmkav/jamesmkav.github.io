@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="Adulting-CSS.css">
+    <title>Adulting - Player Classes</title>
+    <script src="./Adulting-ClassesJS.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Rules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Adulting-Classes.html">Player Classes</a>
+          </li>
+        </ul>
+          <a class="btn btn-success" href="./Adulting-GameApp.html" target="_blank">Let's Play!</a>
+      </div>
+    </nav>
+    <!-- BODY START -->
+      <h3 class="classSelectorButtons">Choose a Class</h3>
+      <div class="classSelectorButtons">
+          <button type="button" onclick="assassinClassButton()" class="assassinButton btn btn-secondary">Assassin</button>
+          <button type="button" onclick="hoboClassButton()" class="hoboButton btn btn-secondary">Hobo</button>
+          <button type="button" onclick="inventorClassButton()" class="inventorButton btn btn-secondary">Inventor</button>
+          <button type="button" onclick="magicianClassButton()" class="magicianButton btn btn-secondary">Magician</button>
+          <button type="button" onclick="policeClassButton()" class="policeButton btn btn-secondary">Police</button>
+          <button type="button" onclick="politicianClassButton()" class="politicianButton btn btn-secondary">Politician</button>
+          <button type="button" onclick="racingClassButton()" class="racingButton btn btn-secondary">Racing</button>
+          <button type="button" onclick="salesClassButton()" class="salesButton btn btn-secondary">Sales</button>
+          <button type="button" onclick="spyClassButton()" class="spyButton btn btn-secondary">Spy</button>
+      </div>  
+    <div class="bodyContainer">
+      <!-- FIRST COLUMN -->
+      <div class="firstColumn">
+          <div id="firstColumnContent">
+              <!-- CLASS NAMES -->
+              <h1 id="assassinClassName">Assassin</h1>
+              <h1 id="hoboClassName">Hobo</h1>
+              <h1 id="inventorClassName">Inventor</h1>
+              <h1 id="magicianClassName">Magician</h1>
+              <h1 id="policeClassName">Police</h1>
+              <h1 id="politicianClassName">Politician</h1>
+              <h1 id="racingClassName">Racing</h1>
+              <h1 id="salesClassName">Sales</h1>
+              <h1 id="spyClassName">Spy</h1>
+              <!-- CLASS IMAGES -->
+              <img class="classImage" id="assassinImage" src="./Adulting-Images/assassinImage.jpg">
+              <img class="classImage" id="hoboImage" src="./Adulting-Images/hoboImage.jpeg">
+              <img class="classImage" id="inventorImage" src="./Adulting-Images/inventorImage.jpg">
+              <img class="classImage" id="magicianImage" src="./Adulting-Images/magicianImage.jpg">
+              <img class="classImage" id="policeImage" src="./Adulting-Images/policeImage.jpg">
+              <img class="classImage" id="politicianImage" src="./Adulting-Images/politicianImage.jpg">
+              <img class="classImage" id="racingImage" src="./Adulting-Images/racingImage.jpg">
+              <img class="classImage" id="salesImage" src="./Adulting-Images/salesImage.jpg">
+              <img class="classImage" id="spyImage" src="./Adulting-Images/spyImage.jpg">
+              <!--CLASS DESCRIPTIONS -->
+              <div class="card">
+                    <div class="card-body"> 
+                      <p id="assassinClassDescription">As an assassin, you want to literally remove the competition. Once you get going, you don't need a firearm to dispatch your competition. Kill as many of your opponents as you can and carve a path of success through the weak. Once you are a professional, you will have a nice open path to proceed in the later stages of the game.</p>
+              <p id="hoboClassDescription">Sit down partner and let me tell you a tale about life on the road.<br>It ain't pretty but it'll do in a pinch. If you know what I'm saying.<br>Which you don't. Cause things ain't quite been right in the old noggin since the war.<br>Which war you say?<br>I can't even remember now that you mention it. Well, you'll all know soon enough. When the rapture comes that is.</p>
+              <p id="inventorClassDescription">Common education cannot hold you back and you will show your teachers the limits of their feeble minds. Crazy inventions will fly from your fingers and make a new world for others to explore. You will be highly mobile very quickly and be jumping around the board in new ways. Consequences will melt away on your highest level and the board will bend to your will.</p>
+              <p id="magicianClassDescription">When you are a master of illusion, nothing can keep you pinned. You can slip in and out of jail with the greatest of ease. Vegas will bend to your tricks and even assassins will have a hard time defeating you. Once you start climbing your career ladder, you become more mobile and able to jump great distances quickly on the board. Though you and your family will never settle down, you will have a rich life with lots of stories on both sides of the law.</p>
+              <p id="policeClassDescription">The police officer has a number of advantages over the other players in terms of movement. This allows for a predatory strategy where you look for clusters of other players to pass over and charge for speeding tickets. The cop is the obvious foil to the criminal character, or anyone that is obviously going to be attempting to go for "The Bank Robbery". You can travel freely through the "Life of Crime" but you cannot be affected by any of the consequences, good or bad. You also have your own special space in the middle of the board, allowing you to wait for other players slightly behind you with bad intentions.</p>
+              <p id="politicianClassDescription">As the Politician, you are at the mercy of the people. You'll rise and fall in the policial world but don't let that stop you from having a family or being as corrupt as your respective party! You can still recieve promotions the hard way but it doesn't hurt to have a few elections swing in your favor.</p>
+              <p id="racingClassDescription">Zoom zoom! As the Racing career, you will experience high speeds and living dangerously. You can move quickly, and if necessary, squeeze out an extra space in a pinch. When you are out in the woods, you can move double!</p>
+              <p id="salesClassDescription">Well sir/ma me'. It guranteed to be the best character for you! I'll give you my word. I'll be there to assist you through the whole getting to know you process. We're going to be rich! It's just a matter of time before everyone picks up on what you're doing anyway. Why, If I was a betting man, then I'd say you are going to look great on your boat in the Caymans with those people bringing you little drinks with the umbrellas in them. Cheers!</p>
+              <p id="spyClassDescription">The Spy character is slippery and uses his opponents strengths against them. Like a chameleon, the spy has an arsenal of disguises that they can emply for any situation. They do answer to someone though and aren't deadly until later in their career. Until then you must use the attributes of the other players to your advantage.</p>
+                    </div>
+                  </div>
+          </div>
+        </div>
+
+      <!-- SECOND COLUMN -->
+      <!-- LEVELS AND PERKS -->
+      <div class="secondColumn">
+          <div id="secondColumnContent">
+              <div class="perksContainer">
+                  <!-- LV1 START -->
+                  <div class="card">
+                    <div class="card-body"> 
+                      <!--LV1 CLASS NAME -->
+                      <h4 class="card-title">Level 1</h4>
+                      <!--LV1 CLASS SALARY -->
+                        <h5 class="card-title" id="assassinLV1Salary">Salary: $50,000</h5>
+                        <h5 class="card-title" id="hoboLV1Salary">Salary: $20,000</h5>
+                        <h5 class="card-title" id="inventorLV1Salary">Salary: $40,000</h5>
+                        <h5 class="card-title" id="magicianLV1Salary">Salary: $40,000</h5>
+                        <h5 class="card-title" id="policeLV1Salary">Salary: $40,000</h5>
+                        <h5 class="card-title" id="politicianLV1Salary">Salary: $50,000</h5>
+                        <h5 class="card-title" id="racingLV1Salary">Salary: $30,000</h5>
+                        <h5 class="card-title" id="salesLV1Salary">Salary: $40,000</h5>
+                        <h5 class="card-title" id="spyLV1Salary">Salary: $30,000</h5>                       
+                      <!-- LV 1 DESCRIPTION -->
+                      <p id="assassinLV1PerkDescription">The assassin can decide to attempt a hit before or after moving their game piece but not both in one turn. They can attempt a hit on as many players as are within valid distance during that turn, strating with any payer that is within 3 spaces, not including your present space. </p>
+                      <p id="hoboLV1PerkDescription">After rolling for movement, you may choose to do nothing instead of moving <strong>after</strong> you see the zone card or effects of the space. In this instance, you move back to your space before movement, plus 2 spaces and discard the zone card.</p>
+                      <p id="inventorLV1PerkDescription">Each turn, you can try to invent something. This is done by rolling 4 dice. If you get a 20 or higher, draw an item card. You may use it at any point during your current or subsequent turn.</p>
+                      <p id="magicianLV1PerkDescription">At any point during your turn, you may place a token on the space you are occupying. This token can be teleported to before rolling for movement during any subsequent turn and is picked back up when you do so.</p>
+                      <p id="policeLV1PerkDescription">Any player passed by you goes to jail for 1 Turn. You may also use the Speed Trap when passing through any of the START spaces. You may choose to park here and continue movement on your next roll. You may stay parked as many turns as you like. You receive no benefits or consequences in “Life of Crime”.</p>
+                      <p id="politicianLV1PerkDescription">Each turn, <strong>before</strong> moving, a vote is cast. The politician picks either even or odd, and a specific number. If the majority of players roll a number that corresponds to the politician's guess, they recieve a promotion. If not or there is a tie, they are demoted. If the politician guess the total of all players rolls with their specific number, they recieve $2,000,000 instantly. All other Promotions and Demotions through normal play apply as well.</p>
+                      <p id="racingLV1PerkDescription">You may use 3 dice for movement</p>
+                      <p id="salesLV1PerkDescription">Every player you pass, you can try to sell something to. This is done by both players rolling two dice. If you roll a higher total, take the total of your dice and multiply it x10K and recieve this amount of money from the player.</p>
+                      <p id="spyLV1PerkDescription">Take on the perks of any player in the same zone as you. You can only use one player's perks per turn.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- LV2 START -->
+                  <div class="card">
+                    <div class="card-body"> 
+                      <!--LV2 CLASS NAME -->
+                      <h4 class="card-title">Level 2</h4>
+                      <!--LV2 CLASS SALARY -->
+                      <h5 class="card-title" id="assassinLV2Salary">Salary: $300,000</h5>
+                      <h5 class="card-title" id="hoboLV2Salary">Salary: $100,000</h5>
+                     <h5 class="card-title" id="inventorLV2Salary">Salary: $200,000</h5>
+                        <h5 class="card-title" id="magicianLV2Salary">Salary: $200,000</h5>
+                        <h5 class="card-title" id="policeLV2Salary">Salary: $200,000</h5>
+                        <h5 class="card-title" id="politicianLV2Salary">Salary: $400,000</h5>
+                        <h5 class="card-title" id="racingLV2Salary">Salary: $200,000</h5>
+                        <h5 class="card-title" id="salesLV2Salary">Salary: $300,000</h5>
+                        <h5 class="card-title" id="spyLV2Salary">Salary: $200,000</h5> 
+                      <!-- LV 2 DESCRIPTION -->
+                      <p id="assassinLV2PerkDescription">Players within 5 spaces in front of the assassin are valid targets.</p>
+                      <p id="hoboLV2PerkDescription">Each turn spent in jail, recieve +5 XP.</p>
+                      <p id="inventorLV2PerkDescription">With each successful invention, you may choose to take a player's item card rather than drawing one. This is done by picking it blindly out of their hand if they have multiple cards.</p>
+                      <p id="magicianLV2PerkDescription">You can have 2 separate tokens in play at once</p>
+                      <p id="policeLV2PerkDescription">You may use 3 dice for movement and recieve a $500,000 bonus instantly for each player sent to Jail</p>
+                      <p id="politicianLV2PerkDescription">Recieve $5,000,000 for guessing the specific election number</p>
+                      <p id="racingLV2PerkDescription">When you pass a player, roll an extra die and add it to your monvement total.</p>
+                      <p id="salesLV2PerkDescription">Sales pitches can be done at any point during your turn on any and multiple players within 5 spaces in either direction.</p>
+                      <p id="spyLV2PerkDescription">You may see and use the item cards of any player you are currently assuming the identity of.</p>
+                    </div>
+                  </div>
+                  <!-- LV3 START -->
+                  <div class="card">
+                    <div class="card-body"> 
+                      <!--LV3 CLASS NAME -->
+                      <h4 class="card-title">Level 3</h4>
+                      <!--LV3 CLASS SALARY -->
+                      <h5 class="card-title" id="assassinLV3Salary">Salary: $1,000,000</h5>
+                      <h5 class="card-title" id="hoboLV3Salary">Salary: $500,000</h5>
+                       <h5 class="card-title" id="inventorLV3Salary">Salary: $750,000</h5>
+                        <h5 class="card-title" id="magicianLV3Salary">Salary: $1,000,000</h5>
+                        <h5 class="card-title" id="policeLV3Salary">Salary: $750,000</h5>
+                        <h5 class="card-title" id="politicianLV3Salary">Salary: $2,000,000</h5>
+                        <h5 class="card-title" id="racingLV3Salary">Salary: $750,000</h5>
+                        <h5 class="card-title" id="salesLV3Salary">Salary: $1,000,000</h5>
+                        <h5 class="card-title" id="spyLV3Salary">Salary: $750,000</h5>
+                      <!-- LV 3 DESCRIPTION -->
+                      <p id="assassinLV3PerkDescription">Players within 7 spaces in <strong>either</strong> direction of the assassin are valid targets.</p>
+                      <p id="hoboLV3PerkDescription">Recieve a 50% salary bonus of all player's current salaries that are in the same zone as you in addition to your normal salary each turn.</p>
+                      <p id="inventorLV3PerkDescription">Recieve 2 Item cards for each successful invention.</p>
+                      <p id="magicianLV3PerkDescription">Roll 1 Extra Die with any game, player interaction, or result of a Zone Card.</p>
+                      <p id="policeLV3PerkDescription">Recieve a $1,000,000 bonus instantly for each player sent to Jail</p>
+                      <p id="politicianLV3PerkDescription">Any player in Jail pays their salary directly to you.</p>
+                      <p id="racingLV3PerkDescription">You may use 3 dice for movement.</p>
+                      <p id="salesLV3PerkDescription">You may buy Item cards at $1,000,000 each.</p>
+                      <p id="spyLV3PerkDescription">You may assume the identity of players in adjoining zones to your current one.</p>
+                    </div>
+                  </div>
+                </div>         
+          </div>
+        </div>
+    </div>
+       
+    <!-- Optional JavaScript -->
+    <script src="Adulting-ClassesJS.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
