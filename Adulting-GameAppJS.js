@@ -9,20 +9,12 @@ function gameStart() {
     appContainer.style.display = "flex";
 }
 
-
-
-
-
-
-
-
-
 function currentPlayerON() {
     document.getElementById("middleContainer").style.backgroundColor = "white";
     document.getElementById("rightSideContainer").style.backgroundColor = "white";
     document.getElementById("secondaryPlayerContainer").style.marginRight = "5%";
     document.getElementById("nextTurnButton").style.display = "block";
-    document.getElementById("currencyAndPropertyInputs").style.height = "70%";
+    document.getElementById("currencyAndPropertyInputs").style.height = "60%";
 }
 function secondaryPlayerON() {
     document.getElementById("middleContainer").style.backgroundColor = "black";

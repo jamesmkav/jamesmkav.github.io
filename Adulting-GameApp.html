@@ -153,11 +153,10 @@
             <div id="currentPlayerContainer" onclick="currentPlayerON()">
                <div onclick="currentPlayerON" id="currentPlayerNameAndClass">
                    <img id="currentPlayerImage" src="Adulting-Images/assassinImage.jpg"/>
-                  <h4>Name the Class</h4>
+                  <h1 class="currentClassNameStyling">Name the Class</h1>
                </div>
                <div id="currentPlayerStats">
                   <ul id="currentPlayerStatsList">
-                     <li class="playerStatsListItem" id="currentPlayer$">$</li>
                      <li class="playerStatsListItem" id="currentPlayer$">$</li>
                      <li class="playerStatsListItem" id="currentPlayer$">XP</li>
                      <li class="playerStatsListItem" id="currentPlayer$">Marital Status</li>
@@ -167,31 +166,32 @@
                   </ul>
                </div>
             </div>
-            <div id="secondaryPlayerContainer" onclick="secondaryPlayerON()">
-                <div id="secondaryPlayerNameAndClass">
-                  <h3>Name the Class</h3>
-                  <div id="secondaryPlayerStats">
-               <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option1"> Radio
+             <div id="secondaryPlayerOuterContainer">
+             <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary" id="player1Radio">
+                  <input type="radio" name="options"> Player 1
                   </label>
-                  <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option2"> Radio
+                  <label class="btn btn-secondary" id="player2Radio">
+                  <input type="radio" name="options"> Player 2
                   </label>
-                  <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option3"> Radio
+                  <label class="btn btn-secondary" id="player3Radio">
+                  <input type="radio" name="options"> Player 3
                   </label>
-                  <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option4"> Radio
+                  <label class="btn btn-secondary" id="player4Radio">
+                  <input type="radio" name="options"> Player 4
                   </label>
-                  <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option5"> Radio
+                  <label class="btn btn-secondary" id="player5Radio">
+                  <input type="radio" name="options"> Player 5
                   </label>
-                  <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option6"> Radio
+                  <label class="btn btn-secondary" id="player6Radio">
+                  <input type="radio" name="options"> Player 6
                   </label>
                </div>
-               <!-- PLAYER SELECTOR -->
+            <div id="secondaryPlayerInnerContainer" onclick="secondaryPlayerON()">
+                <div id="secondaryPlayerNameAndClass">
+                  <h4 class="secondaryClassNameStyling">Name the Class</h4>
+                  <div id="secondaryPlayerStats">
+               <!-- PLAYER SELECTOR START-->
                      <ul id="secondaryPlayerStatsList">
                         <li class="playerStatsListItem" id="secondaryPlayer$">$</li>
                         <li class="playerStatsListItem" id="secondaryPlayer$">XP</li>
@@ -202,16 +202,24 @@
                      </ul>
                   </div>
                </div>
-               <div id="secondaryPlayerStats"></div>
             </div>
+             </div>
          </div>
          <div id="middleContainer">
             <div id="perks">
                <div class="perksContainer">
                   <!-- LV1 START -->
-                  <div class="card">
-                     <div class="card-body">
-                        <!--LV1 CLASS NAME -->
+                   <div class="card LV0Card">
+                     <div class="card-body LV0CardBody">
+                        <h5 class="card-title">Level 0</h5>
+                        <!--LV1 CLASS SALARY -->
+                        <h5 class="card-title" id="LV1Salary">Salary: $0</h5>
+                        <!-- LV 1 DESCRIPTION -->
+                        <p id="LV1PerkDescription"></p>
+                     </div>
+                  </div>
+                  <div class="card LV1Card">
+                     <div class="card-body LV1CardBody">
                         <h5 class="card-title">Level 1</h5>
                         <!--LV1 CLASS SALARY -->
                         <h5 class="card-title" id="LV1Salary">Salary: ?</h5>
@@ -220,9 +228,8 @@
                      </div>
                   </div>
                   <!-- LV2 START -->
-                  <div class="card">
-                     <div class="card-body">
-                        <!--LV2 CLASS NAME -->
+                  <div class="card LV2Card">
+                     <div class="card-body LV2CardBody">
                         <h5 class="card-title">Level 2</h5>
                         <!--LV2 CLASS SALARY -->
                         <h5 class="card-title" id="LV2Salary">Salary: ?</h5>
@@ -231,9 +238,8 @@
                      </div>
                   </div>
                   <!-- LV3 START -->
-                  <div class="card">
-                     <div class="card-body">
-                        <!--LV3 CLASS NAME -->
+                  <div class="card LV3Card">
+                     <div class="card-body LV3CardBody">
                         <h5 class="card-title">Level 3</h5>
                         <!--LV3 CLASS SALARY -->
                         <h5 class="card-title" id="LV3Salary">Salary: ?</h5>
@@ -248,50 +254,26 @@
             <div id="turnCounter">
                <h3>Turn # of #</h3>
             </div>
-            <div id="currentPlayerName">
-               <h3>It is Player Name's Turn</h3>
-            </div>
             <div id="currencyAndPropertyInputs">
                <div id="statsInputs">
                   <form>
-  <div class="form-group statsInputForm">
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-    <button type="button" class="btn btn-secondary">Secondary</button>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-      <button type="button" class="btn btn-secondary">Secondary</button>
+    <input type="email" class="form-control form-groupMoney" id="currentPlayer$Input" placeholder="name@example.com">
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect2">Example multiple select</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-      <button type="button" class="btn btn-secondary">Secondary</button>
+                      <div class="form-group">
+    <input type="email" class="form-control form-groupXP" id="currentPlayerXPInput" placeholder="name@example.com">
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      <button type="button" class="btn btn-secondary">Secondary</button>
+                      <div class="form-group form-groupMaritalStatus">
+    <label for="formControlRange">Marital Status</label>
+    <input type="range" class="form-control-range" id="formControlRange">
   </div>
-</form>
-               </div>
-               <div id="propertyInputs">This will be the property input
+                      <div class="form-group form-groupChildren">
+    <label for="formControlRange"># of Children</label>
+    <input type="range" class="form-control-range" id="formControlRange">
+  </div>
                </div>
             </div>
-            <button type="button" id="nextTurnButton" class="btn btn-primary btn-lg btn-block">Next Player's Turn</button>
+            <button type="button" id="nextTurnButton" class="btn btn-danger btn-lg btn-block">Next Player's Turn</button>
          </div>
       </div>
       <!-- Optional JavaScript -->
