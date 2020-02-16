@@ -1,7 +1,91 @@
-#InfoForm {
-    margin: 5%;
+html, body {
+   height: 100%; 
+}
+.jumbotron {
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 .playerHeadings {
-    font-size: 20px;
-    background-color: grey;
+    margin-left: 10%;
+    font-size: 30px;
+}
+.form-group, .form-control {
+    width: 75%;
+    margin-left: 10%
+}
+#appContainer {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#leftSideContainer {
+    width: 30%;
+    height: 100%;
+}
+#currentPlayerContainer {
+    height: 50%;
+}
+
+#currentPlayerImage {
+    width: 25%;
+}
+#currentPlayerNameAndClass {
+    text-align: center;
+    display: flex;
+}
+
+#secondaryPlayerNameAndClass {
+}
+#secondaryPlayerContainer {
+    background-color: black;
+    height: 45%;
+    padding: 5%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.btn.btn-secondary {
+    border: solid;
+    font-size: .65rem;
+}
+.btn-group {
+    width: 100%;
+    font-size: 12px;
+}
+
+#middleContainer {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+.card {
+    margin: 10%;
+    border: solid;
+}
+#rightSideContainer {
+    width: 45%;
+    text-align: center;
+}
+#turnCounter {
+    border: solid;
+    height: 5%;
+}
+#currentPlayerName {
+    height: 5%
+}
+#currencyAndPropertyInputs{
+    border: solid;
+    display: flex;
+    height: 70%;
+    margin-bottom: 5%;
+}
+#statsInputs {
+    width: 75%;
+}
+#propertyInputs {
+    width: 25%;
+}
+#nextTurnButton {
+    height: 10%;
+    margin-bottom: 5%;
 }

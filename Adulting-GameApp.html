@@ -1,149 +1,304 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Adulting-GameAppCSS.CSS">
-    <title>Adulting</title>
-  </head>
-  <body>
-      <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4 text-center">Let's get some info first...</h1>
-    <p class="lead text-center">Enter the number of turns and the Player Info below. Click "Start Game" when finished. </p>
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="./Adulting-GameAppCSS.CSS">
+      <title>Adulting</title>
+   </head>
+   <body>
+      <div id="playerInfoContainer">
+         <!-- JUMBOTRON -->
+         <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+               <h1 class="display-4 text-center">Let's get some info first...</h1>
+               <p class="lead text-center">Enter the number of turns and the Player Info below. Click "Start Game" when finished. </p>
+            </div>
+            <button type="button" id="gameStartButton" onclick="gameStart()" class="btn btn-success btn-lg">Start Game</button>
+         </div>
+         <!-- INFO FORM -->
+         <form id="InfoForm">
+            <div class="form-group">
+               <label class="numberOfTurnsLabel playerHeadings">Number of Turns</label>
+               <select class="form-control" id="numberofTurnsInput">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>5</option>
+                  <option>10</option>
+                  <option>15</option>
+                  <option>20</option>
+                  <option>25</option>
+                  <option>30</option>
+                  <option>35</option>
+               </select>
+            </div>
+            <br><br>
+            <!-- PLAYER 1 -->
+            <label class="playerHeadings" for="FormControlInput1">Player 1 Name</label>
+            <input type="email" class="form-control" id="player1NameInput" placeholder="Enter Player 1 Name">
+            <div class="form-group">
+               <label class="numberOfTurnsLabel playerHeadings">Player 1 Class</label>
+               <select class="form-control" id="player1ClassInput">
+                  <option>Assassin</option>
+                  <option>Hobo</option>
+                  <option>Inventor</option>
+                  <option>Magician</option>
+                  <option>Police</option>
+                  <option>Politician</option>
+                  <option>Racing</option>
+                  <option>Sales</option>
+                  <option>Spy</option>
+               </select>
+            </div>
+            <br><br>
+            <!-- PLAYER 2 -->
+            <label class="playerHeadings" for="FormControlInput2">Player 2 Name</label>
+            <input type="email" class="form-control" id="player2NameInput" placeholder="Enter Player 2 Name">
+            <div class="form-group">
+               <label class="numberOfTurnsLabel playerHeadings">Player 2 Class</label>
+               <select class="form-control" id="player2ClassInput">
+                  <option>Assassin</option>
+                  <option>Hobo</option>
+                  <option>Inventor</option>
+                  <option>Magician</option>
+                  <option>Police</option>
+                  <option>Politician</option>
+                  <option>Racing</option>
+                  <option>Sales</option>
+                  <option>Spy</option>
+               </select>
+            </div>
+            <br><br>
+            <!-- PLAYER 3 -->
+            <label class="playerHeadings" for="FormControlInput3">Player 3 Name</label>
+            <input type="email" class="form-control" id="player3NameInput" placeholder="Enter Player 3 Name">
+            <div class="form-group">
+               <label class="numberOfTurnsLabel playerHeadings">Player 3 Class</label>
+               <select class="form-control" id="player3ClassInput">
+                  <option>Assassin</option>
+                  <option>Hobo</option>
+                  <option>Inventor</option>
+                  <option>Magician</option>
+                  <option>Police</option>
+                  <option>Politician</option>
+                  <option>Racing</option>
+                  <option>Sales</option>
+                  <option>Spy</option>
+               </select>
+            </div>
+            <br><br>
+            <!-- PLAYER 4 -->
+            <label class="playerHeadings" for="FormControlInput4">Player 4 Name</label>
+            <input type="email" class="form-control" id="player4NameInput" placeholder="Enter Player 4 Name">
+            <div class="form-group">
+               <label class="numberOfTurnsLabel playerHeadings">Player 4 Class</label>
+               <select class="form-control" id="player4ClassInput">
+                  <option>Assassin</option>
+                  <option>Hobo</option>
+                  <option>Inventor</option>
+                  <option>Magician</option>
+                  <option>Police</option>
+                  <option>Politician</option>
+                  <option>Racing</option>
+                  <option>Sales</option>
+                  <option>Spy</option>
+               </select>
+            </div>
+            <br><br>
+            <!-- PLAYER 5 -->
+            <label class="playerHeadings" for="FormControlInput5">Player 5 Name</label>
+            <input type="email" class="form-control" id="player5NameInput" placeholder="Enter Player 5 Name">
+            <div class="form-group">
+               <label class="numberOfTurnsLabel playerHeadings">Player 5 Class</label>
+               <select class="form-control" id="player5ClassInput">
+                  <option>Assassin</option>
+                  <option>Hobo</option>
+                  <option>Inventor</option>
+                  <option>Magician</option>
+                  <option>Police</option>
+                  <option>Politician</option>
+                  <option>Racing</option>
+                  <option>Sales</option>
+                  <option>Spy</option>
+               </select>
+            </div>
+            <br><br>
+            <!-- PLAYER 6 -->
+            <label class="playerHeadings" for="FormControlInput6">Player 6 Name</label>
+            <input type="email" class="form-control" id="player6NameInput" placeholder="Enter Player 6 Name">
+            <div class="form-group">
+               <label class="numberOfTurnsLabel playerHeadings">Class 6 Class</label>
+               <select class="form-control" id="player6ClassInput">
+                  <option>Assassin</option>
+                  <option>Hobo</option>
+                  <option>Inventor</option>
+                  <option>Magician</option>
+                  <option>Police</option>
+                  <option>Politician</option>
+                  <option>Racing</option>
+                  <option>Sales</option>
+                  <option>Spy</option>
+               </select>
+            </div>
+         </form>
+         <!-- FORM END -->
+      </div>
+      <!-- APP START -->
+      <div id="appContainer">
+         <div id="leftSideContainer">
+            <div id="currentPlayerContainer" onclick="currentPlayerON()">
+               <div onclick="currentPlayerON" id="currentPlayerNameAndClass">
+                   <img id="currentPlayerImage" src="Adulting-Images/assassinImage.jpg"/>
+                  <h4>Name the Class</h4>
+               </div>
+               <div id="currentPlayerStats">
+                  <ul id="currentPlayerStatsList">
+                     <li class="playerStatsListItem" id="currentPlayer$">$</li>
+                     <li class="playerStatsListItem" id="currentPlayer$">$</li>
+                     <li class="playerStatsListItem" id="currentPlayer$">XP</li>
+                     <li class="playerStatsListItem" id="currentPlayer$">Marital Status</li>
+                     <li class="playerStatsListItem" id="currentPlayer$">Children</li>
+                     <li class="playerStatsListItem" id="currentPlayer$"># of Degrees</li>
+                     <li class="playerStatsListItem" id="currentPlayer$">Property Owned</li>
+                  </ul>
+               </div>
+            </div>
+            <div id="secondaryPlayerContainer" onclick="secondaryPlayerON()">
+                <div id="secondaryPlayerNameAndClass">
+                  <h3>Name the Class</h3>
+                  <div id="secondaryPlayerStats">
+               <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option1"> Radio
+                  </label>
+                  <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option2"> Radio
+                  </label>
+                  <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option3"> Radio
+                  </label>
+                  <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option4"> Radio
+                  </label>
+                  <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option5"> Radio
+                  </label>
+                  <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option6"> Radio
+                  </label>
+               </div>
+               <!-- PLAYER SELECTOR -->
+                     <ul id="secondaryPlayerStatsList">
+                        <li class="playerStatsListItem" id="secondaryPlayer$">$</li>
+                        <li class="playerStatsListItem" id="secondaryPlayer$">XP</li>
+                        <li class="playerStatsListItem" id="secondaryPlayer$">Marital Status</li>
+                        <li class="playerStatsListItem" id="secondaryPlayer$">Children</li>
+                        <li class="playerStatsListItem" id="secondaryPlayer$"># of Degrees</li>
+                        <li class="playerStatsListItem" id="secondaryPlayer$">Property Owned</li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="secondaryPlayerStats"></div>
+            </div>
+         </div>
+         <div id="middleContainer">
+            <div id="perks">
+               <div class="perksContainer">
+                  <!-- LV1 START -->
+                  <div class="card">
+                     <div class="card-body">
+                        <!--LV1 CLASS NAME -->
+                        <h5 class="card-title">Level 1</h5>
+                        <!--LV1 CLASS SALARY -->
+                        <h5 class="card-title" id="LV1Salary">Salary: ?</h5>
+                        <!-- LV 1 DESCRIPTION -->
+                        <p id="LV1PerkDescription"></p>
+                     </div>
+                  </div>
+                  <!-- LV2 START -->
+                  <div class="card">
+                     <div class="card-body">
+                        <!--LV2 CLASS NAME -->
+                        <h5 class="card-title">Level 2</h5>
+                        <!--LV2 CLASS SALARY -->
+                        <h5 class="card-title" id="LV2Salary">Salary: ?</h5>
+                        <!-- LV 2 DESCRIPTION -->
+                        <p id="LV2PerkDescription"></p>
+                     </div>
+                  </div>
+                  <!-- LV3 START -->
+                  <div class="card">
+                     <div class="card-body">
+                        <!--LV3 CLASS NAME -->
+                        <h5 class="card-title">Level 3</h5>
+                        <!--LV3 CLASS SALARY -->
+                        <h5 class="card-title" id="LV3Salary">Salary: ?</h5>
+                        <!-- LV 3 DESCRIPTION -->
+                        <p id="LV3PerkDescription"></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="rightSideContainer">
+            <div id="turnCounter">
+               <h3>Turn # of #</h3>
+            </div>
+            <div id="currentPlayerName">
+               <h3>It is Player Name's Turn</h3>
+            </div>
+            <div id="currencyAndPropertyInputs">
+               <div id="statsInputs">
+                  <form>
+  <div class="form-group statsInputForm">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
   </div>
-</div>
-    <form id="InfoForm">
+    <button type="button" class="btn btn-secondary">Secondary</button>
   <div class="form-group">
-    <label class="numberOfTurnsLabel">Number of Turns</label>
-    <select class="form-control" id="numberofTurnsInput">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
       <option>1</option>
       <option>2</option>
       <option>3</option>
+      <option>4</option>
       <option>5</option>
-      <option>10</option>
-      <option>15</option>
-      <option>20</option>
-      <option>25</option>
-      <option>30</option>
-      <option>35</option>
     </select>
-  </div>
-        <div class="form-group">
-            <br><br>
-    <label class="playerHeadings" for="exampleFormControlInput1">Player 1 Name</label>
-    <input type="email" class="form-control" id="player1NameInput" placeholder="Enter Player 1 Name Here">
+      <button type="button" class="btn btn-secondary">Secondary</button>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect2">Player 1 Class</label>
-    <select multiple class="form-control" id="player1ClassInput">
-      <option>Assassin</option>
-      <option>Hobo</option>
-      <option>Inventor</option>
-      <option>Magician</option>
-      <option>Police</option>
-      <option>Politician</option>
-      <option>Racing</option>
-      <option>Sales</option>
-      <option>Spy</option>
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
     </select>
+      <button type="button" class="btn btn-secondary">Secondary</button>
   </div>
-        <br><br>
-    <label for="exampleFormControlInput1">Player 2 Name</label>
-    <input type="email" class="form-control" id="player2NameInput" placeholder="Enter Player 2 Name Here">
-    <div class="form-group">
-    <label for="exampleFormControlSelect2">Player 2 Class</label>
-    <select multiple class="form-control" id="player2ClassInput">
-      <option>Assassin</option>
-      <option>Hobo</option>
-      <option>Inventor</option>
-      <option>Magician</option>
-      <option>Police</option>
-      <option>Politician</option>
-      <option>Racing</option>
-      <option>Sales</option>
-      <option>Spy</option>
-    </select>
-  </div>
-        <br><br>
-    <label for="exampleFormControlInput1">Player 3 Name</label>
-    <input type="email" class="form-control" id="player3NameInput" placeholder="Enter Player 3 Name Here">
   <div class="form-group">
-    <label for="exampleFormControlSelect2">Player 3 Class</label>
-    <select multiple class="form-control" id="player3ClassInput">
-      <option>Assassin</option>
-      <option>Hobo</option>
-      <option>Inventor</option>
-      <option>Magician</option>
-      <option>Police</option>
-      <option>Politician</option>
-      <option>Racing</option>
-      <option>Sales</option>
-      <option>Spy</option>
-    </select>
-  </div>
-        <br><br>
-    <label for="exampleFormControlInput1">Player 4 Name</label>
-    <input type="email" class="form-control" id="player4NameInput" placeholder="Enter Player 4 Name Here">
-  <div class="form-group">
-    <label for="exampleFormControlSelect2">Player 4 Class</label>
-    <select multiple class="form-control" id="player4ClassInput">
-      <option>Assassin</option>
-      <option>Hobo</option>
-      <option>Inventor</option>
-      <option>Magician</option>
-      <option>Police</option>
-      <option>Politician</option>
-      <option>Racing</option>
-      <option>Sales</option>
-      <option>Spy</option>
-    </select>
-  </div>
-        <br><br>
-    <label for="exampleFormControlInput1">Player 5 Name</label>
-    <input type="email" class="form-control" id="player5NameInput" placeholder="Enter Player 5 Name Here">
-  <div class="form-group">
-    <label for="exampleFormControlSelect2">Player 5 Class</label>
-    <select multiple class="form-control" id="player5ClassInput">
-      <option>Assassin</option>
-      <option>Hobo</option>
-      <option>Inventor</option>
-      <option>Magician</option>
-      <option>Police</option>
-      <option>Politician</option>
-      <option>Racing</option>
-      <option>Sales</option>
-      <option>Spy</option>
-    </select>
-  </div>
-        <br><br>
-    <label for="exampleFormControlInput1">Player 6 Name</label>
-    <input type="email" class="form-control" id="player6NameInput" placeholder="Enter Player 6 Name Here">
-  <div class="form-group">
-    <label for="exampleFormControlSelect2">Player 6 Class</label>
-    <select multiple class="form-control" id="player6ClassInput">
-      <option>Assassin</option>
-      <option>Hobo</option>
-      <option>Inventor</option>
-      <option>Magician</option>
-      <option>Police</option>
-      <option>Politician</option>
-      <option>Racing</option>
-      <option>Sales</option>
-      <option>Spy</option>
-    </select>
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <button type="button" class="btn btn-secondary">Secondary</button>
   </div>
 </form>
-
-    <!-- Optional JavaScript -->
+               </div>
+               <div id="propertyInputs">This will be the property input
+               </div>
+            </div>
+            <button type="button" id="nextTurnButton" class="btn btn-primary btn-lg btn-block">Next Player's Turn</button>
+         </div>
+      </div>
+      <!-- Optional JavaScript -->
       <script src="Adulting-GameAppJS.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   </body>
 </html>

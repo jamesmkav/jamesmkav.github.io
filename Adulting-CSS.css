@@ -79,11 +79,6 @@
 #assassinLV3PerkDescription, #hoboLV3PerkDescription, #inventorLV3PerkDescription, #magicianLV3PerkDescription, #policeLV3PerkDescription, #politicianLV3PerkDescription, #racingLV3PerkDescription, #salesLV3PerkDescription, #spyLV3PerkDescription {
     display: none;
 }
-
-
-
-
-
 .classSelectorButtons {
   text-align: center;  
 }
