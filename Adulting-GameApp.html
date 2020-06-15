@@ -1,286 +1,322 @@
 <!doctype html>
-<html lang="en">
+<html>
+   <!-- HEAD START -->
    <head>
-      <!-- Required meta tags -->
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <!-- Bootstrap CSS -->
+      <!-- CSS -->
+      <link rel="stylesheet" href="Adulting-GameAppCSS.CSS">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <link rel="stylesheet" href="./Adulting-GameAppCSS.CSS">
-      <title>Adulting</title>
+      <title>Adulting - GAME APP</title>
    </head>
+   <!-- BODY START -->
    <body>
-      <div id="playerInfoContainer">
-         <!-- JUMBOTRON -->
-         <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-               <h1 class="display-4 text-center">Let's get some info first...</h1>
-               <p class="lead text-center">Enter the number of turns and the Player Info below. Click "Start Game" when finished. </p>
-            </div>
-            <button type="button" id="gameStartButton" onclick="gameStart()" class="btn btn-success btn-lg">Start Game</button>
-         </div>
-         <!-- INFO FORM -->
-         <form id="InfoForm">
-            <div class="form-group">
-               <label class="numberOfTurnsLabel playerHeadings">Number of Turns</label>
-               <select class="form-control" id="numberofTurnsInput">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>5</option>
-                  <option>10</option>
-                  <option>15</option>
-                  <option>20</option>
-                  <option>25</option>
-                  <option>30</option>
-                  <option>35</option>
-               </select>
-            </div>
-            <br><br>
-            <!-- PLAYER 1 -->
-            <label class="playerHeadings" for="FormControlInput1">Player 1 Name</label>
-            <input type="email" class="form-control" id="player1NameInput" placeholder="Enter Player 1 Name">
-            <div class="form-group">
-               <label class="numberOfTurnsLabel playerHeadings">Player 1 Class</label>
-               <select class="form-control" id="player1ClassInput">
-                  <option>Assassin</option>
-                  <option>Hobo</option>
-                  <option>Inventor</option>
-                  <option>Magician</option>
-                  <option>Police</option>
-                  <option>Politician</option>
-                  <option>Racing</option>
-                  <option>Sales</option>
-                  <option>Spy</option>
-               </select>
-            </div>
-            <br><br>
-            <!-- PLAYER 2 -->
-            <label class="playerHeadings" for="FormControlInput2">Player 2 Name</label>
-            <input type="email" class="form-control" id="player2NameInput" placeholder="Enter Player 2 Name">
-            <div class="form-group">
-               <label class="numberOfTurnsLabel playerHeadings">Player 2 Class</label>
-               <select class="form-control" id="player2ClassInput">
-                  <option>Assassin</option>
-                  <option>Hobo</option>
-                  <option>Inventor</option>
-                  <option>Magician</option>
-                  <option>Police</option>
-                  <option>Politician</option>
-                  <option>Racing</option>
-                  <option>Sales</option>
-                  <option>Spy</option>
-               </select>
-            </div>
-            <br><br>
-            <!-- PLAYER 3 -->
-            <label class="playerHeadings" for="FormControlInput3">Player 3 Name</label>
-            <input type="email" class="form-control" id="player3NameInput" placeholder="Enter Player 3 Name">
-            <div class="form-group">
-               <label class="numberOfTurnsLabel playerHeadings">Player 3 Class</label>
-               <select class="form-control" id="player3ClassInput">
-                  <option>Assassin</option>
-                  <option>Hobo</option>
-                  <option>Inventor</option>
-                  <option>Magician</option>
-                  <option>Police</option>
-                  <option>Politician</option>
-                  <option>Racing</option>
-                  <option>Sales</option>
-                  <option>Spy</option>
-               </select>
-            </div>
-            <br><br>
-            <!-- PLAYER 4 -->
-            <label class="playerHeadings" for="FormControlInput4">Player 4 Name</label>
-            <input type="email" class="form-control" id="player4NameInput" placeholder="Enter Player 4 Name">
-            <div class="form-group">
-               <label class="numberOfTurnsLabel playerHeadings">Player 4 Class</label>
-               <select class="form-control" id="player4ClassInput">
-                  <option>Assassin</option>
-                  <option>Hobo</option>
-                  <option>Inventor</option>
-                  <option>Magician</option>
-                  <option>Police</option>
-                  <option>Politician</option>
-                  <option>Racing</option>
-                  <option>Sales</option>
-                  <option>Spy</option>
-               </select>
-            </div>
-            <br><br>
-            <!-- PLAYER 5 -->
-            <label class="playerHeadings" for="FormControlInput5">Player 5 Name</label>
-            <input type="email" class="form-control" id="player5NameInput" placeholder="Enter Player 5 Name">
-            <div class="form-group">
-               <label class="numberOfTurnsLabel playerHeadings">Player 5 Class</label>
-               <select class="form-control" id="player5ClassInput">
-                  <option>Assassin</option>
-                  <option>Hobo</option>
-                  <option>Inventor</option>
-                  <option>Magician</option>
-                  <option>Police</option>
-                  <option>Politician</option>
-                  <option>Racing</option>
-                  <option>Sales</option>
-                  <option>Spy</option>
-               </select>
-            </div>
-            <br><br>
-            <!-- PLAYER 6 -->
-            <label class="playerHeadings" for="FormControlInput6">Player 6 Name</label>
-            <input type="email" class="form-control" id="player6NameInput" placeholder="Enter Player 6 Name">
-            <div class="form-group">
-               <label class="numberOfTurnsLabel playerHeadings">Class 6 Class</label>
-               <select class="form-control" id="player6ClassInput">
-                  <option>Assassin</option>
-                  <option>Hobo</option>
-                  <option>Inventor</option>
-                  <option>Magician</option>
-                  <option>Police</option>
-                  <option>Politician</option>
-                  <option>Racing</option>
-                  <option>Sales</option>
-                  <option>Spy</option>
-               </select>
-            </div>
-         </form>
-         <!-- FORM END -->
-      </div>
-      <!-- APP START -->
-      <div id="appContainer">
-         <div id="leftSideContainer">
-            <div id="currentPlayerContainer" onclick="currentPlayerON()">
-               <div onclick="currentPlayerON" id="currentPlayerNameAndClass">
-                   <img id="currentPlayerImage" src="Adulting-Images/assassinImage.jpg"/>
-                  <h1 class="currentClassNameStyling">Name the Class</h1>
-               </div>
-               <div id="currentPlayerStats">
-                  <ul id="currentPlayerStatsList">
-                     <li class="playerStatsListItem" id="currentPlayer$">$</li>
-                     <li class="playerStatsListItem" id="currentPlayer$">XP</li>
-                     <li class="playerStatsListItem" id="currentPlayer$">Marital Status</li>
-                     <li class="playerStatsListItem" id="currentPlayer$">Children</li>
-                     <li class="playerStatsListItem" id="currentPlayer$"># of Degrees</li>
-                     <li class="playerStatsListItem" id="currentPlayer$">Property Owned</li>
-                  </ul>
-               </div>
-            </div>
-             <div id="secondaryPlayerOuterContainer">
-             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-secondary" id="player1Radio">
-                  <input type="radio" name="options"> Player 1
-                  </label>
-                  <label class="btn btn-secondary" id="player2Radio">
-                  <input type="radio" name="options"> Player 2
-                  </label>
-                  <label class="btn btn-secondary" id="player3Radio">
-                  <input type="radio" name="options"> Player 3
-                  </label>
-                  <label class="btn btn-secondary" id="player4Radio">
-                  <input type="radio" name="options"> Player 4
-                  </label>
-                  <label class="btn btn-secondary" id="player5Radio">
-                  <input type="radio" name="options"> Player 5
-                  </label>
-                  <label class="btn btn-secondary" id="player6Radio">
-                  <input type="radio" name="options"> Player 6
-                  </label>
-               </div>
-            <div id="secondaryPlayerInnerContainer" onclick="secondaryPlayerON()">
-                <div id="secondaryPlayerNameAndClass">
-                  <h4 class="secondaryClassNameStyling">Name the Class</h4>
-                  <div id="secondaryPlayerStats">
-               <!-- PLAYER SELECTOR START-->
-                     <ul id="secondaryPlayerStatsList">
-                        <li class="playerStatsListItem" id="secondaryPlayer$">$</li>
-                        <li class="playerStatsListItem" id="secondaryPlayer$">XP</li>
-                        <li class="playerStatsListItem" id="secondaryPlayer$">Marital Status</li>
-                        <li class="playerStatsListItem" id="secondaryPlayer$">Children</li>
-                        <li class="playerStatsListItem" id="secondaryPlayer$"># of Degrees</li>
-                        <li class="playerStatsListItem" id="secondaryPlayer$">Property Owned</li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-             </div>
-         </div>
-         <div id="middleContainer">
-            <div id="perks">
-               <div class="perksContainer">
-                  <!-- LV1 START -->
-                   <div class="card LV0Card">
-                     <div class="card-body LV0CardBody">
-                        <h5 class="card-title">Level 0</h5>
-                        <!--LV1 CLASS SALARY -->
-                        <h5 class="card-title" id="LV1Salary">Salary: $0</h5>
-                        <!-- LV 1 DESCRIPTION -->
-                        <p id="LV1PerkDescription"></p>
-                     </div>
-                  </div>
-                  <div class="card LV1Card">
-                     <div class="card-body LV1CardBody">
-                        <h5 class="card-title">Level 1</h5>
-                        <!--LV1 CLASS SALARY -->
-                        <h5 class="card-title" id="LV1Salary">Salary: ?</h5>
-                        <!-- LV 1 DESCRIPTION -->
-                        <p id="LV1PerkDescription"></p>
-                     </div>
-                  </div>
-                  <!-- LV2 START -->
-                  <div class="card LV2Card">
-                     <div class="card-body LV2CardBody">
-                        <h5 class="card-title">Level 2</h5>
-                        <!--LV2 CLASS SALARY -->
-                        <h5 class="card-title" id="LV2Salary">Salary: ?</h5>
-                        <!-- LV 2 DESCRIPTION -->
-                        <p id="LV2PerkDescription"></p>
-                     </div>
-                  </div>
-                  <!-- LV3 START -->
-                  <div class="card LV3Card">
-                     <div class="card-body LV3CardBody">
-                        <h5 class="card-title">Level 3</h5>
-                        <!--LV3 CLASS SALARY -->
-                        <h5 class="card-title" id="LV3Salary">Salary: ?</h5>
-                        <!-- LV 3 DESCRIPTION -->
-                        <p id="LV3PerkDescription"></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div id="rightSideContainer">
-            <div id="turnCounter">
-               <h3>Turn # of #</h3>
-            </div>
-            <div id="currencyAndPropertyInputs">
-               <div id="statsInputs">
-                  <form>
-  <div class="form-group">
-    <input type="email" class="form-control form-groupMoney" id="currentPlayer$Input" placeholder="name@example.com">
-  </div>
-                      <div class="form-group">
-    <input type="email" class="form-control form-groupXP" id="currentPlayerXPInput" placeholder="name@example.com">
-  </div>
-                      <div class="form-group form-groupMaritalStatus">
-    <label for="formControlRange">Marital Status</label>
-    <input type="range" class="form-control-range" id="formControlRange">
-  </div>
-                      <div class="form-group form-groupChildren">
-    <label for="formControlRange"># of Children</label>
-    <input type="range" class="form-control-range" id="formControlRange">
-  </div>
-               </div>
-            </div>
-            <button type="button" id="nextTurnButton" class="btn btn-danger btn-lg btn-block">Next Player's Turn</button>
+      <!-- INFO FORM START -->
+      <!-- NUMBER OF PLAYERS -->
+      <div id="numberOfPlayersContainer">
+         <h1 class="playerInfoHeading">How many players will there be in this game?</h1>
+         <div class="form-group">
+            <select class="form-control" id="numberOfPlayersInput">
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+            </select>
+            <button type="button" onclick="playerNumberSubmitButton()" class="btn btn-success">Submit</button>
          </div>
       </div>
-      <!-- Optional JavaScript -->
-      <script src="Adulting-GameAppJS.js"></script>
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <!-- NUMBER OF TURNS -->
+      <div id="numberOfTurnsContainer">
+         <h1 class="playerInfoHeading">...and how many turns will there be in this game?</h1>
+         <div class="form-group">
+            <select class="form-control" id="numberOfTurnsInput">
+               <option>1</option>
+               <option>5</option>
+               <option>10</option>
+               <option>15</option>
+               <option>20</option>
+               <option>25</option>
+               <option>30</option>
+            </select>
+            <button type="button" onclick="turnNumberSubmitButton()" class="btn btn-success">Submit</button>
+         </div>
+      </div>
+      <!-- PLAYER 1 INFO -->
+      <div id="player1Container">
+         <h1 class="playerInfoHeading">Player 1 Info</h1>
+         <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" id="player1Name" placeholder="What should we call you?">
+         </div>
+         <div class="form-group">
+            <label>Class</label>
+            <select class="form-control" id="player1Class">
+               <option class="assassinClass">Assassin</option>
+               <option class="hoboClass">Hobo</option>
+               <option class="inventorClass">Inventor</option>
+               <option class="magicianClass">Magician</option>
+               <option class="policeClass">Police</option>
+               <option class="politicianClass">Politician</option>
+               <option class="racingClass">Racer</option>
+               <option class="salesClass">Sales</option>
+               <option class="spyClass">Spy</option>
+            </select>
+            <button type="button" onclick="player1SubmitButton()" class="btn btn-success">Submit</button>
+         </div>
+      </div>
+      <!-- PLAYER 2 INFO -->
+      <div id="player2Container">
+         <h1 class="playerInfoHeading">Player 2 Info</h1>
+         <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" id="player2Name" placeholder="What should we call you?">
+         </div>
+         <div class="form-group">
+            <label>Class</label>
+            <select class="form-control" id="player2Class">
+               <option class="assassinClass">Assassin</option>
+               <option class="hoboClass">Hobo</option>
+               <option class="inventorClass">Inventor</option>
+               <option class="magicianClass">Magician</option>
+               <option class="policeClass">Police</option>
+               <option class="politicianClass">Politician</option>
+               <option class="racingClass">Racer</option>
+               <option class="salesClass">Sales</option>
+               <option class="spyClass">Spy</option>
+            </select>
+            <button type="button" onclick="player2SubmitButton()" class="btn btn-success">Submit</button>
+         </div>
+      </div>
+      <!-- PLAYER 3 INFO -->
+      <div id="player3Container">
+         <h1 class="playerInfoHeading">Player 3 Info</h1>
+         <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" id="player3Name" placeholder="What should we call you?">
+         </div>
+         <div class="form-group">
+            <label>Class</label>
+            <select class="form-control" id="player3Class">
+               <option class="assassinClass">Assassin</option>
+               <option class="hoboClass">Hobo</option>
+               <option class="inventorClass">Inventor</option>
+               <option class="magicianClass">Magician</option>
+               <option class="policeClass">Police</option>
+               <option class="politicianClass">Politician</option>
+               <option class="racingClass">Racer</option>
+               <option class="salesClass">Sales</option>
+               <option class="spyClass">Spy</option>
+            </select>
+            <button type="button" onclick="player3SubmitButton()" class="btn btn-success">Submit</button>
+         </div>
+      </div>
+      <!-- PLAYER 4 INFO -->
+      <div id="player4Container">
+         <h1 class="playerInfoHeading">Player 4 Info</h1>
+         <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" id="player4Name" placeholder="What should we call you?">
+         </div>
+         <div class="form-group">
+            <label>Class</label>
+            <select class="form-control" id="player4Class">
+               <option class="assassinClass">Assassin</option>
+               <option class="hoboClass">Hobo</option>
+               <option class="inventorClass">Inventor</option>
+               <option class="magicianClass">Magician</option>
+               <option class="policeClass">Police</option>
+               <option class="politicianClass">Politician</option>
+               <option class="racingClass">Racer</option>
+               <option class="salesClass">Sales</option>
+               <option class="spyClass">Spy</option>
+            </select>
+            <button type="button" onclick="player4SubmitButton()" class="btn btn-success">Submit</button>
+         </div>
+      </div>
+      <!-- PLAYER 5 INFO -->
+      <div id="player5Container">
+         <h1 class="playerInfoHeading">Player 5 Info</h1>
+         <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" id="player5Name" placeholder="What should we call you?">
+         </div>
+         <div class="form-group">
+            <label>Class</label>
+            <select class="form-control" id="player5Class">
+               <option class="assassinClass">Assassin</option>
+               <option class="hoboClass">Hobo</option>
+               <option class="inventorClass">Inventor</option>
+               <option class="magicianClass">Magician</option>
+               <option class="policeClass">Police</option>
+               <option class="politicianClass">Politician</option>
+               <option class="racingClass">Racer</option>
+               <option class="salesClass">Sales</option>
+               <option class="spyClass">Spy</option>
+            </select>
+            <button type="button" onclick="player5SubmitButton()" class="btn btn-success">Submit</button>
+         </div>
+      </div>
+       
+       
+      <!-- PLAYER 6 INFO -->
+      <div id="player6Container">
+         <h1 class="playerInfoHeading">Player 6 Info</h1>
+         <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" id="player6Name" placeholder="What should we call you?">
+         </div>
+         <div class="form-group">
+            <label>Class</label>
+            <select class="form-control" id="player6Class">
+               <option class="assassinClass">Assassin</option>
+               <option class="hoboClass">Hobo</option>
+               <option class="inventorClass">Inventor</option>
+               <option class="magicianClass">Magician</option>
+               <option class="policeClass">Police</option>
+               <option class="politicianClass">Politician</option>
+               <option class="racingClass">Racer</option>
+               <option class="salesClass">Sales</option>
+               <option class="spyClass">Spy</option>
+            </select>
+            <button type="button" onclick="player6SubmitButton()" class="btn btn-success">Submit</button>
+         </div>
+      </div>
+       
+       
+      <!-- GAME START BUTTON -->
+      <div id="gameStartContainer">
+         <h1 class="playerInfoHeading">Click the Start button to begin!</h1>
+         <button type="button" onclick="gameStartButton()" class="gameStartButton btn-success">START</button>
+      </div>
+       
+       
+     <!-- GAME APP START -->
+    <div id="gameAppContainer">
+        <!-- JUMBOTRON START -->
+        <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h2 class="text-center" id="currentTurnNumber"></h2>
+                <h2 class="text-center" id="currentPlayerTurn"></h2>
+              </div>
+            <button type="button" id="nextTurnButton" onclick="nextTurnButton()" class="btn btn-warning btn-lg">NEXT TURN</button>
+            
+            
+            <button type="button" class="btn btn-success add text-center" id="addTurnButton" onclick="addTurnButton()">Add a Turn</button>
+            <button type="button" class="btn btn-danger subtract text-center" id="subtractTurnButton" onclick="subtractTurnButton()">Subtract a Turn</button>
+
+            <h2 class="text-center" id="turnCounter"></h2>
+                
+
+            
+            
+            <div id="playerSelectButtonsContainer">
+
+            <button type="button" onclick = "player1Selector()" class="btn btn-secondary" id="player1Button"></button>
+            <button type="button" onclick = "player2Selector()" class="btn btn-secondary" id="player2Button"></button>
+            <button type="button" onclick = "player3Selector()" class="btn btn-secondary" id="player3Button"></button>
+            <button type="button" onclick = "player4Selector()" class="btn btn-secondary" id="player4Button"></button>
+            <button type="button" onclick = "player5Selector()" class="btn btn-secondary" id="player5Button"></button>
+            <button type="button" onclick = "player6Selector()" class="btn btn-secondary" id="player6Button"></button>
+            </div>
+        </div>
+        <!-- JUMBOTRON END -->
+        <div id="masterInfoContainer">
+            <div id="leftSideContainer">
+                <h1 id="selectedPlayerNameAndClass">Name the Class</h1>
+                <div id=imageContainer>
+                    <img id="selectedPlayerImage" src="Adulting-Images/assassinImage.jpg">
+                </div>
+                
+            </div>
+            <div id="rightSideContainer">
+                <!-- STATS LIST -->
+                <ul class="selectedPlayerStatsList" id="selectedPlayerStatsList">
+                <li class="selectedPlayerStatsListItem" id="selectedPlayerSalary">Current Salary</li>
+                <li class="selectedPlayerStatsListItem" id="selectedPlayerLevel">Level</li>
+                <li class="selectedPlayerStatsListItem" id="selectedPlayerMoney">Money</li>
+                <li class="selectedPlayerStatsListItem" id="selectedPlayerXP">XP</li>
+                <li class="selectedPlayerStatsListItem" id="selectedPlayerMaritalStatus">MARITAL STATUS: </li>
+                <li class="selectedPlayerStatsListItem" id="selectedPlayerChildren">Children</li>
+                <li class="selectedPlayerStatsListItem" id="selectedPlayerProperty">Property</li>
+                <li class="selectedPlayerStatsListItem" id="selectedPlayerMovement">Movement</li>
+                <li class="selectedPlayerStatsListItem" id="selectedPlayerDegree">DEGREE</li>
+                <!-- BUTTONS LIST -->
+                </ul>
+                <ul class="selectedPlayerStatsButtons">
+                <li class="selectedPlayerStatsButton" id="salaryButtons">
+                    <button type="button" class="btn btn-success add" onclick="addSalaryButton()">Add X 1</button>
+                    <button type="button" class="btn btn-danger subtract" onclick="subtractSalaryButton()">Subtract X 1</button>
+                </li>                
+                <li class="selectedPlayerStatsButton">
+                    <button type="button" class="btn btn-success add" onclick="addLevelButton()">+ 1</button>
+                    <button type="button" class="btn btn-danger subtract" onclick="subtractLevelButton()">- 1</button>
+                </li>
+                <li class="selectedPlayerStatsButton">
+                    <button type="button" class="btn btn-success add" onclick="addMoneyButton()">Add</button>
+                    <button type="button" class="btn btn-danger subtract" onclick="subtractMoneyButton()">Subtract</button>
+                </li>
+                <li class="selectedPlayerStatsButton">
+                    <button type="button" class="btn btn-success add" onclick="addXPButton()">+ 1</button>
+                    <button type="button" class="btn btn-danger subtract" onclick="subtractXPButton()">- 1</button>
+                </li>
+                <li class="selectedPlayerStatsButton">
+                    <button type="button" class="btn btn-success add" onclick="marriageButton()">Married</button>
+                    <button type="button" class="btn btn-danger subtract" onclick="singleButton()">Single</button>
+                </li>
+                <li class="selectedPlayerStatsButton">
+                    <button type="button" class="btn btn-success add" onclick="addChildrenButton()">+ 1</button>
+                    <button type="button" class="btn btn-danger subtract" onclick="subtractChildrenButton()">- 1</button>
+                </li>
+                <li class="selectedPlayerStatsButton">
+                    <button type="button" class="btn btn-success add" onclick="buyPropertyButton()">Buy + 1</button>
+                    <button type="button" class="btn btn-danger subtract" onclick="sellPropertyButton()">Sell - 1</button>
+                </li>
+                <li class="selectedPlayerStatsButton">
+                    <button type="button" class="btn btn-success add" onclick="addMovementButton()">+ 1</button>
+                    <button type="button" class="btn btn-danger subtract" onclick="subtractMovementButton()">- 1</button>
+                </li>
+                <li class="selectedPlayerStatsButton">
+                    <button type="button" class="btn btn-success add" onclick="degreeYesButton()">Yes</button>
+                    <button type="button" class="btn btn-danger subtract" onclick="degreeNoButton()">No</button>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div id="selectedPlayerMasterPerksContainer">
+        <div class="selectedPlayerPerksContainer"><h3 id="selectedPlayerPerksContainer1"></h3></div>
+        <div class="selectedPlayerPerksContainer"><h3 id="selectedPlayerPerksContainer2"></h3></div>
+        <div class="selectedPlayerPerksContainer"><h3 id="selectedPlayerPerksContainer3"></h3></div>
+        </div>
+        </div>
+       <!-- GAME APP END -->
+       <!-- GAME ENDINGS START -->
+       <div id="endingsContainer">
+       <div class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+    <h1 class="display-4" id="endingName"></h1>
+    <p class="lead">You've successfully defeated your opponents and won!</p>
+  </div>
+</div>
+      <!-- ENDING JUMBOTRON END-->
+<div class="classCard" id="endingLowerContainer">
+            <div id="endingImage">
+            </div>
+            <div id="descriptionContainer">
+                <div class="card-body">
+                    <p class="card-text" id="endingDescription"></p><br><br>
+                </div>
+            </div>
+        </div>
+           </div>
+       
+       
+       
+       
+       
    </body>
+   <!-- JavaScript & JQuery -->
+   <script src="Adulting-GameAppJS.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>

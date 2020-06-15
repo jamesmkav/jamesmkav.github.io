@@ -1,135 +1,171 @@
-/*APP CONTAINER START*/
-html, body {
-   height: 100%; 
-}
-.jumbotron {
-    background-color: black;
-    color: white;
+.playerInfoHeading {
     text-align: center;
 }
-.playerHeadings {
-    margin-left: 10%;
-    font-size: 30px;
+.form-group {
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+
 }
-.form-group, .form-control {
-    width: 75%;
-    margin-left: 10%
+.btn.btn-success {
+    margin-left: 5%;
+    margin-top: 3%;
 }
-#appContainer {
+#numberOfPlayersContainer {
+    margin-top: 20%;
+}
+#numberOfTurnsContainer {
     display: none;
-    width: 100%;
-    height: 100%;
+    margin-top: 20%;
 }
-/*LEFT SIDE CONTAINER START*/
-#leftSideContainer {
-    width: 40%;
-    height: 100%;
+#player1Container {
+    display: none;
+    margin-top: 20%;
 }
-#currentPlayerContainer {
-    height: 60%;
+#player2Container {
+    display: none;
+    margin-top: 20%;
 }
-
-#currentPlayerImage {
-    width: 30%;
-    margin: 5%;
+#player3Container {
+    display: none;
+    margin-top: 20%;
 }
-#currentPlayerStatsList {
-    text-align: center;
-    list-style-type: none;
+#player4Container {
+    display: none;
+    margin-top: 20%;
 }
-.currentClassNameStyling {
-margin-left: 5%;
-    margin-top: 10%;
+#player5Container {
+    display: none;
+    margin-top: 20%;
 }
-#currentPlayerNameAndClass {
-    text-align: center;
-    display: flex;
+#player6Container {
+    display: none;
+    margin-top: 20%;
 }
-#secondaryPlayerOuterContainer {
-    display: flex;
-    width: 100%;
+#gameStartContainer {
+    display: none;
+    margin-top: 20%;
 }
-.secondaryClassNameStyling {
-    margin-left: 25%;
-}
-#secondaryPlayerInnerContainer {
-    background-color: black;
-    height: 30%;
-    width: 100%;
-    padding: 5%;
-    display: flex;
-}
-.btn.btn-secondary {
-    border: solid;
-    font-size: .75rem;
-}
-.btn-group.btn-group-toggle {
-    width: 20%;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-
-}
-#player1Radio {
-    opacity: 30%;
-}
-/*LEFT SIDE CONTAINER END*/
-/*MIDDLE CONTAINER START*/
-
-#middleContainer {
-    width: 30%;
-    height: 100%;
-    text-align: center;
-}
-.card {
-    margin: 10%;
-}
-.LV0Card {
-    border: solid;
-}
-.LV1Card {
-    border: solid 10px;
-    opacity: 20%;
-}
-.LV2Card {
-    border: solid 10px;
-    opacity: 20%;
-
-}
-.LV3Card {
-    border: solid 10px;
-    opacity: 20%;
-
-}
-.card-body.LV0CardBody {
-}
-/*MIDDLE CONTAINER END*/
-/*RIGHT SIDE CONTAINER START*/
-
-#rightSideContainer {
+.gameStartButton {
+    margin-left: 37%;
+    margin-top: 3%;
     width: 25%;
-    text-align: center;
-    height: 100%;
 }
-#turnCounter {
-    border: solid;
-    height: 10%;
-    padding: 5%;
-    margin-bottom: 3%;
+#gameAppContainer {
+    display: none;
 }
-#currencyAndPropertyInputs{
-    border: solid;
-    display: flex;
-    height: 60%;
-    margin-bottom: 5%;
+#player1Button, #player2Button, #player3Button, #player4Button, #player5Button, #player6Button {
+    margin: 1%;
 }
-#statsInputs {
+.jumbotron.jumbotron-fluid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+#playerSelectButtonsContainer {
     width: 100%;
+    text-align: center;
 }
 #nextTurnButton {
-    height: 20%;
-    margin-bottom: 5%;
+    margin-left: 1%;
+    width: 20%;
 }
-/*RIGHT SIDE CONTAINER END*/
-/*APP CONTAINER END*/
+#masterInfoContainer {
+    display: flex;
+}
+#leftSideContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 500px;
+}
+#selectedPlayerNameAndClass {
+    text-align: center;
+    margin-top: 1%;
+}
+#selectedPlayerImage {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid;
+    border-radius: 3%;
+}
+#selectedPlayerStatsList, .selectedPlayerStatsButtons {
+    width: 100%;
+    margin-top: 1%;
+}
+#selectedPlayerStatsList {
+    padding-left: 0px;
+    width: 60%;
+}
+.selectedPlayerStatsButtons {
+    width: 40%;
+}
+.selectedPlayerStatsButtons {
+    margin-right: 1%;
+}
+.selectedPlayerStatsButtons {
+    padding-left: 0px;
+}
+.selectedPlayerStatsListItem, .selectedPlayerStatsButton {
+    height: 11%;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.selectedPlayerStatsListItem {
+    font-size: 23px;
+    border-right: none;
+    padding-left: 10px;
+    border-top: solid;
+}
+#selectedPlayerSalary, #salaryButtons {
+    border-top: none;
+}
+.selectedPlayerStatsButton  {
+    border-left: none;
+    border-top: solid;
+}
+.btn.btn-success.add {
+    margin: 0%;
+    width: 150px;
+}
+.btn.btn-danger.subtract {
+    margin-left: 3%;
+    width: 150px;
+}
+#subtractTurnButton, #addTurnButton {
+    margin-left: 1%;
+}
 
+#rightSideContainer {
+    display: flex;
+    width: 60%;
+    height: 500px;
+}
+#selectedPlayerMasterPerksContainer {
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+    text-align: center;
+}
+.selectedPlayerPerksContainer {
+    margin-top: 1%;
+}
+#endingsContainer {
+    display: none;
+}
+#endingLowerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#descriptionContainer {
+    display: flex;
+}
+#endingDescription {
+    width: 100%;
+}
