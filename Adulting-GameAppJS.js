@@ -594,7 +594,7 @@ function nextTurnButton() {
 function nextTurnMoneyFunction(playerContainerArrayItemNumber) {
             //MONEY + SALARY + DEBT
             if (playerContainerArrayItemNumber.money < 0) {
-                playerContainerArrayItemNumber.money = playerContainerArrayItemNumber.money + playerContainerArrayItemNumber.currentSalary + (playerContainerArrayItemNumber.property * 100000) + (playerContainerArrayItemNumber.money/4);
+                playerContainerArrayItemNumber.money = playerContainerArrayItemNumber.money + playerContainerArrayItemNumber.currentSalary + (playerContainerArrayItemNumber.property * 100000) + (playerContainerArrayItemNumber.money/20);
                 playerContainerArrayItemNumber.money = Math.round(playerContainerArrayItemNumber.money);
             }
             else {
