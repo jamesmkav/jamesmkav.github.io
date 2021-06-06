@@ -1,0 +1,103 @@
+#masterAppContainer {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+#playerNumberInputContainer {
+    width: 70%;
+    margin-left: 15%;
+}
+#playerNumberSubmitButton {
+    margin-top: 5%;
+    width: 30%;
+}
+#playerInfoQuestionsContainer {
+    display: none;
+}
+#playerNumberDisplay {
+    margin-bottom: 5%;
+}
+.form-check {
+    width: 30%;
+    margin-left: 35%;
+}
+#playerNameInput {
+    margin-bottom: 10%;
+}
+#classRadioContainer {
+    margin-bottom: 5%; 
+}
+#appMainContainer {
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+#appMainTop {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+}
+#selectedPlayerTurnNameClass {
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 5%;;
+}
+.playerStatsContainers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+}
+.playerStatsClass {
+    width: 50%;
+    text-align: left;
+    margin-right: 0%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+}
+#manualEditMoney {
+    width: 40%;
+    margin-left: 1.5%;
+}
+.editButtons {
+    width: 20%;
+    margin-left: 1%;
+}
+#drawCardButton {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 3%;
+}
+#perksTable {
+    margin-bottom: 0px;
+}
+#appMainBottom {
+    display: flex;
+    height: 30%;
+    width: 100%;
+}
+#playerSelectorButtonsContainer {
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    width: 94%;
+    margin: 3%;
+}
+.playerSelectorButton {
+    margin: 0% 3% 1% 3%;
+    width: 10%;
+}
+#nextTurnButton {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 0px;
+    display: none;
+}
+#turnCounter {
+    margin-top: 3%;
+}
+

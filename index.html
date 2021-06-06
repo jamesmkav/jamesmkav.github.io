@@ -1,71 +1,140 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="Adulting-CSS.css">
-    <title>Adulting - Rules</title>
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Rules</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Adulting-Classes.html">Player Classes</a>
-          </li>
-        </ul>
-          <a class="btn btn-success" href="./Adulting-GameApp.html" target="_blank">Let's Play!</a>
-      </div>
-    </nav>
-      <!-- JUMBOTRON -->
-    <div class="jumbotron jumbotron-fluid bg-secondary text-white">
-        <div class="container">
-            <h1 class="display-4 text-center">Rules</h1>
-            <p class="lead text-center">An Index and Starting Guide to get you going in your new crappy life.</p>
-        </div>
-     </div>
-     <!-- RULES BODY -->
-     <div class="RulesBody">
-        <h3>Basic Gameplay Rules</h3>
-        <p><strong>STARTING LEVEL</strong> - All players start at Level 0 and make $0 a turn for their salaries.<br><br>
-            <strong>TURN</strong> - Once a player rolls for movement, the previous player's turn is officially over.<br><br>
-            <strong>PROMOTIONS</strong> - For each promotion a player recieves through landing on spaces or drawn cards, they increase 1 Level and recieve a higher salary, as well as a special perk unique to the character class.<br><br>
-            <strong>MOVEMENT</strong> - Every player uses 2 dice for movement each turn, unless specified otherwise through a perk. <br><br>
-            <strong>ROLLING DOUBLES</strong> - Each time a player rolls doubles, they double their salary for that turn. This must be entered manually.<br><br>
-            <strong>DEGREES</strong> - All player classes require a degree before a promotion. This is achieved by graduating from the Education section through passing your Final Exam.<br><br>
-            <strong>FINAL EXAM</strong> - In order to graduate from school, a player must pass a Final Exam. The player to their right draws a Final Exam card. The player must answer at least 3 of the 5 questions correctly to recieve their degree and be eligible for promotions.<br><br>
-            <strong>ITEM SPACES</strong> - After a player draws an item card, they do not have to show it to the other players and may play it on their NEXT turn or during any turn after.<br><br>
-            <strong>LANDING ON THE SAME SPACE</strong> - If a player lands on the same space as another player, they land on the space before this one.<br><br>
-            <strong>BLANK SPACES</strong> - If you land on a blank space, draw a Zone Card from the current zone you landed in.<br><br>
-            <strong>PROPERTY SPACES</strong> - When you land on a Property space, you may purchase it. Each property costs $1M. You recieve $100K for each property you own at the beginning of each turn. Any property you won at the end of the game is sold back for $1M and added to your total. If you own a property that someone lands on, they may buy it from you. The current owner of the property DOES NOT have a choice if it is bought from them. During the beginning of your turn, you may jump to any property space that you own. You do not roll for movement after this.<br><br>
-            <strong>STOP SPACES</strong> - If you land on a STOP space even when mid movement, you stay there until your next turn and follow it's instructions. If moving backwards for any reason, you still stop but do recieve the spaces effects.<br><br>
-            <strong>RUSSIAN ROULETTE</strong> - Roll 1 die. If you roll what is on the card, go back to start and -10XP.<br><br>
-            <strong>DEBT</strong> - If a Player goes below $0, they are in debt. There is a 25% fine each turn for this.<br><br>
-            <strong>SLOTS</strong> - Guess a number between 1 and 6. Roll 4 dice. If the total of 2 or more dice can be totaled to equal your guess, you win the money stated on the space.<br><br>
-            <strong>BLACKJACK</strong> - When in Jail, you are taken off the board. You can pay the bailiff $1M for every year remaining on your sentence to be released early. Otherwise, player stays in Jail for remaining turns in sentence.<br><br>
-            <strong>THE BANK ROBBERY</strong> - The player robbing the bank starts with 4 dice. The total of all the first roll is multiplied by $1M. This is the reward for a successful robbery. The player then has 8 rolls to get all the dice to sixes. Once a six is rolled by any die, that die is taken away and the remaining dice are rolled until there are no more dice or the player fails to do this in 8 or less rolls. If successful, player receives the reward decided and finishes remainder of turn, proceeding as normal. If unsuccessful, the player immediately goes to Jail for 3 years.<br><br>
-            <strong>JAIL</strong> - You have 2 rolls with 4 dice to make a total between 17 and 21. You may roll as many dice as you would like each time. If you lose, pay the amount on the space. If you win, recieve the amount on the space.<br><br>
-            <strong>POKER</strong> - You have 3 rolls with 4 dice to make one of the following "hands". If you lose, pay the amount on the space. If you win, recieve the amount on the space.<br>
-            <strong>- 3 of a Kind</strong><br>
-            <strong>- 2 pair</strong><br>
-            <strong>- Straight</strong><br>
+   <head>
+      <!-- JQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <link href="AdultingCSS.css" rel="stylesheet">
+      <title>Adulting</title>
+   </head>
+   <body>
+      <!-- App Start-->
+      <!-- Intro and Player Info-->
+      <div id="masterAppContainer">
+         <div id="numberOfPlayersInfoContainer">
+            <h1>How many players will be participating?</h1>
+            <div id="playerNumberInputContainer" class="input-group input-group-lg">
+               <span class="input-group-text" id="inputGroup-sizing-lg ">Enter a number</span>
+               <input id="numberOfPlayersInput" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            </div>
+            <button id="playerNumberSubmitButton">Submit</button>
+         </div>
+         <div id="playerInfoQuestionsContainer">
+            <h1 id="playerNumberDisplay"></h1>
+            <input id="playerNameInput" placeholder="Enter a Name...">
+            <h3>Please choose a Class</h3>
+            <div id="classRadioContainer">
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" value="Assassin" id="AssassinRadio">
+                  <label class="form-check-label" for="AssassinRadio">Assassin</label>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" value="Cop" id="CopRadio">
+                  <label class="form-check-label" for="CopRadio">Cop</label>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" value="Thief" id="ThiefRadio">
+                  <label class="form-check-label" for="ThiefRadio">Thief</label>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" value="Politician" id="PoliticianRadio">
+                  <label class="form-check-label" for="PoliticianRadio">Politician</label>
+               </div>
+            </div>
+            <button id="playerInfoSubmitButton"></button>
+         </div>
+         <div id="appMainContainer">
+          <div id="appMainTop">
+            <div id="currentPlayerStatsContainer">
+                <p id="selectedPlayerTurnNameClass"></p>
+                <div class="playerStatsContainers">
+                <p class="playerStatsClass" id="selectedPlayerMoney"></p>
+                <button id="manualEditMoney">Manage Money</button>
+                </div>
+                <div class="playerStatsContainers">
+                <p class="playerStatsClass" id="selectedPlayerXp"></p>
+                <button class="editButtons" id="manualEditXpMinus">-</button>
+                <button class="editButtons" id="manualEditXpPlus">+</button>
+                </div>
+                <div class="playerStatsContainers">
+                <p class="playerStatsClass" id="selectedPlayerLevel"></p>
+                <button class="editButtons" id="manualEditLevelMinus">-</button>
+                <button class="editButtons" id="manualEditLevelPlus">+</button>
 
-         </p>
-     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+                </div>
+                <div class="playerStatsContainers">
+                <p class="playerStatsClass" id="selectedPlayerChildren"></p>
+                <button class="editButtons" id="manualEditChildrenMinus">-</button>
+                <button class="editButtons" id="manualEditChildrenPlus">+</button>
+
+                </div>
+                <div class="playerStatsContainers">
+                <p class="playerStatsClass" id="selectedPlayerProperties"></p>
+                <button class="editButtons" id="manualEditPropertiesMinus">-</button>
+                <button class="editButtons" id="manualEditPropertiesPlus">+</button>
+
+                </div>
+                <div class="playerStatsContainers">
+                <p class="playerStatsClass" id="selectedPlayerMobility"></p>
+                <button class="editButtons" id="manualEditMobilityMinus">-</button>
+                <button class="editButtons" id="manualEditMobilityPlus">+</button>
+
+                </div>
+            </div>
+            <div id="currentPlayerStatsContainer">
+            </div>
+            <button id="drawCardButton">Draw a Card</button>
+              <table id="perksTable" class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Level #</th>
+                    <th scope="col">Perk</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="tablePerk1">
+                    <th scope="row">1</th>
+                    <td id="perk1Text"></td>
+                  </tr>
+                  <tr id="tablePerk2">
+                    <th scope="row">2</th>
+                    <td id="perk2Text"></td>
+                  </tr>
+                  <tr id="tablePerk3">
+                    <th scope="row">3</th>
+                    <td id="perk3Text"></td>
+                  </tr>
+                  <tr id="tablePerk4">
+                    <th scope="row">4</th>
+                    <td id="perk4Text"></td>
+                  </tr>
+                  <tr id="tablePerk5">
+                    <th scope="row">5</th>
+                    <td id="perk5Text"></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+          <div id="appMainBottom">
+              <div id="playerSelectorButtonsContainer">
+                <h3>Player Selector</h3>
+              </div>
+          </div>
+          <button id="nextTurnButton">NEXT TURN</button>
+        </div>
+      </div>
+      <!-- Optional Java<Script; choose one of the two! -->
+      <script src="./AdultingJS.js"></script>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+         -->
+   </body>
 </html>
